@@ -1,0 +1,8 @@
+.idea
+wp-content
+!wp-content/plugins
+!wp-content/themes
+wp-admin
+wp-include
+.maintenance
+wp-config.php
