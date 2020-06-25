@@ -1,0 +1,9 @@
+.idea
+wp-admin
+wp-includes
+wp-content/*
+!wp-content/plugins
+!wp-content/themes
+.maintenance
+wp-config.php
+Apache_2.4-PHP_7.2-7.4_vhost
