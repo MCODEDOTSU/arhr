@@ -14,7 +14,7 @@
 
 <?php else: ?>
 
-    <div class="page">
+    <div class="page page-content fix">
 
         <?php while (have_posts()) : the_post(); ?>
 
