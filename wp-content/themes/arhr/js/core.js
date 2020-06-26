@@ -60,6 +60,9 @@
         },
 
         show: function ($sidebar) {
+            if ($(window).width() > 640) {
+                return;
+            }
             $sidebar.css('visibility', 'visible');
             $('body').addClass('noscroll');
             $sidebar.animate({
@@ -68,6 +71,9 @@
         },
 
         hide: function ($sidebar) {
+            if ($(window).width() > 640) {
+                return;
+            }
             $('body').removeClass('noscroll');
             $sidebar.animate({
                 opacity: 0
