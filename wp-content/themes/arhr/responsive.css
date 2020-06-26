@@ -162,6 +162,23 @@
         font-size: 32px;
         margin: 16px 0 32px;
     }
+
+    .page-content h2 {
+        font-size: 24px;
+        margin: 12px 0;
+    }
+
+    .page-content h3 {
+        font-size: 20px;
+        margin: 8px 0;
+        font-weight: 500;
+    }
+
+    .page-content h4 {
+        font-size: 18px;
+        margin: 8px 0;
+        font-weight: 500;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -235,6 +252,44 @@
         margin: 32px 0;
     }
 
+    .page-content.category .post-item {
+        padding: 16px;
+        height: auto;
+        min-height: 132px;
+    }
+
+    .page-content.category .post-thumbnail {
+        width: 100px;
+        height: 100px;
+        margin: 0 -105px 0 0;
+    }
+
+    .page-content.category .post-data {
+        height: auto;
+        min-height: 100px;
+    }
+
+    .page-content.category .post-data.post-has-thumbnail {
+        padding: 0 0 0 116px;
+    }
+
+    .page-content.category .post-data .post-title {
+        font-size: 18px;
+        margin: 16px 0 4px;
+    }
+
+    .page-content.category .post-description{
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+
+    .page-content.category .post-metadata {
+        position: relative;
+        width: 100%;
+        text-align: right;
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -289,6 +344,22 @@
 
     .page-content li {
         font-size: 16px;
+    }
+
+    #mobile-menu > .mobile-menu {
+        padding: 16px;
+    }
+
+    #mobile-menu .social-menu {
+        margin-bottom: 16px;
+    }
+
+    #mobile-menu .menu-container a {
+        margin: 0 0 8px;
+    }
+
+    #mobile-menu .menu-container .sub-menu {
+        margin: 0 0 0 16px;
     }
 }
 

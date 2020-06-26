@@ -3,6 +3,6 @@ wp-content
 !wp-content/plugins
 !wp-content/themes
 wp-admin
-wp-include
+wp-includes
 .maintenance
 wp-config.php

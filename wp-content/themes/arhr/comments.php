@@ -1,8 +1,7 @@
-<?php if (comments_open()) {
-    comment_form();
-} ?>
 
 <?php if (have_comments()) : global $wp_query; ?>
+
+    <h2 class="comment-title">Обсуждение</h2>
 
     <ul class="comment-list">
         <?php wp_list_comments(); ?>
@@ -16,4 +15,8 @@
     <?php endif; ?>
 
 <?php endif; ?>
+
+<?php if (comments_open()) {
+    comment_form();
+} ?>
 

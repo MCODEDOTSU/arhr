@@ -17,7 +17,8 @@
     header .header-menu .sub-menu,
     header .header-menu .social-container a,
     footer .subscribe .form-input,
-    footer .subscribe .form-submit {
+    footer .subscribe .form-submit,
+    #mobile-menu > .mobile-menu {
         background: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -48,7 +49,12 @@
 
     header .languages-menu a,
     header .main-right .contacts a,
-    header .header-menu .sub-menu a:hover {
+    header .header-menu .sub-menu a:hover,
+    .page-content.single .comment-list .comment-author a,
+    .page-content.single .comment-list .comment-meta a,
+    .page-content.single .comment-list .reply a,
+    .page-content.single .comment-respond .logged-in-as a,
+    .page-content.single .cptch_block .cptch_time_limit_notice {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -69,12 +75,35 @@
     header .logo,
     header .main-right .search-input,
     header .header-menu .menu a,
-    #mobile-panel li.current-lang a {
+    #mobile-panel li.current-lang a,
+    .post-data,
+    .pagination .page-numbers,
+    .page-content.single .comment-form-comment label,
+    .page-content.single .comment-form-comment textarea,
+    .page-content.single .comment-notes span,
+    .page-content.single .comment-form-author label,
+    .page-content.single .comment-form-email label,
+    .page-content.single .comment-form-author input,
+    .page-content.single .comment-form-email input,
+    .page-content.single .comment-form-cookies-consent input[type="checkbox"],
+    .page-content.single .comment-form-cookies-consent label,
+    .page-content.single .cptch_block .cptch_title,
+    .page-content.single .cptch_block .cptch_wrap,
+    .page-content.searchpage .search-input,
+    #mobile-menu .menu-container a {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
     footer .subscribe .form-submit input {
         background: <?= get_theme_mod('color_4', '#222222') ?>;
+    }
+
+    .page-content.single .comment-form-comment textarea,
+    .page-content.single .comment-form-author input,
+    .page-content.single .comment-form-email input,
+    .page-content.single .comment-form-cookies-consent input[type="checkbox"],
+    .page-content.searchpage .search-input {
+        border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
 </style>
