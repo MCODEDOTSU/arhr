@@ -223,6 +223,10 @@
         visibility: visible;
     }
 
+    #mobile-menu {
+        display: block;
+    }
+
     header .top,
     header .header-menu {
         display: none;
