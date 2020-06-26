@@ -1,7 +1,4 @@
 .idea
-wp-content
-!wp-content/plugins
-!wp-content/themes
 wp-admin
 wp-includes
 .maintenance
