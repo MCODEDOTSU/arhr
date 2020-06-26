@@ -823,6 +823,10 @@ MOBILE PANEL
 PAGE
  */
 
+.page-content {
+    margin-bottom: 64px;
+}
+
 .page-content .post-thumbnail {
     margin: 0 -155px 0 0;
     display: inline-block;
