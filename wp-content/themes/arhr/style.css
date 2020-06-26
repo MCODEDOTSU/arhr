@@ -808,6 +808,17 @@ MOBILE PANEL
     margin: 0 0 0 32px;
 }
 
+#mobile-menu .btn-close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAAA6klEQVRYw8XXwQ2CQBRF0QsVUIolUIIlUIKdaAl0oKXZwXMhJgZnYP7nz0jCghByz+qR6SSNwAm40fY6A88eGIArMDeMT8AdGJCEpEnva16ea96f1iSJ1Iu5VXwNqI34iacAtRDJeA4QjcjGtwBRiM34HuAoYjdeAvAiiuKlACuiOG4BlCJMcStgD2GOewA5hCvuBawR7vgRwDfCHZdEH/R7Hd1fBizcocWMmlc3InJeXYjobTcjwrfdioiOmxE14iZErXgxoma8CFE7votoEd9EtIpnES3jSQSSzg3ja8SlW47nA/D4x/H8BYY+6r2NRJMeAAAAAElFTkSuQmCC');
+}
+
 /**
 PAGE
  */
