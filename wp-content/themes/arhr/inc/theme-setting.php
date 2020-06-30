@@ -118,11 +118,18 @@ function _theme_setting($wp_customize)
         ['label' => 'Описание [EN]', 'section' => 'main_section', 'type' => 'text',]
     );
 
-    /* Site Title [RU] */
+    /* Phone */
     $wp_customize->add_setting('phone_header');
     $wp_customize->add_control(
         'phone_header',
         ['label' => 'Телефон в шапке', 'section' => 'main_section', 'type' => 'text',]
+    );
+
+    /* Email */
+    $wp_customize->add_setting('email_header');
+    $wp_customize->add_control(
+        'email_header',
+        ['label' => 'Email в шапке', 'section' => 'main_section', 'type' => 'text',]
     );
 
     /* URL contactform */
@@ -165,6 +172,13 @@ function _theme_setting($wp_customize)
     $wp_customize->add_control(
         'linkedin_link',
         ['label' => 'Ссылка на LinkedIn', 'section' => 'main_section', 'type' => 'text',]
+    );
+
+    /* Zen */
+    $wp_customize->add_setting('zen_link');
+    $wp_customize->add_control(
+        'zen_link',
+        ['label' => 'Ссылка на Яндекс ZEN', 'section' => 'main_section', 'type' => 'text',]
     );
 
     #endregion

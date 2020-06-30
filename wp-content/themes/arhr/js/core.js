@@ -45,13 +45,13 @@
                 fingers: 'all'
             });
 
-            $(document).swipe({
-                swipeRight: (event, direction, distance, duration, fingerCount, fingerData) => {
-                    methods.show.apply(this, [ $sidebar ]);
-                },
-                threshold: 50,
-                fingers: 'all'
-            });
+            // $(document).swipe({
+            //     swipeRight: (event, direction, distance, duration, fingerCount, fingerData) => {
+            //         methods.show.apply(this, [ $sidebar ]);
+            //     },
+            //     threshold: 50,
+            //     fingers: 'all'
+            // });
 
             $(options.openButtonSelector).on('click', function () {
                 methods.show.apply(this, [ $sidebar ]);
