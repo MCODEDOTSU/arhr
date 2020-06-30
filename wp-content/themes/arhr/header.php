@@ -60,9 +60,14 @@
 
                 <div class="contacts">
 
-                    <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
-                        <?= get_theme_mod('phone_header', '') ?>
-                    </a>
+                    <div class="contacts-container">
+                        <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
+                            <?= get_theme_mod('phone_header', '') ?>
+                        </a>
+                        <a class="email" href="mailto:<?= get_theme_mod('email_header', '') ?>">
+                            <?= get_theme_mod('email_header', '') ?>
+                        </a>
+                    </div>
 
                     <a class="btn" href="<?= get_theme_mod('write_link', '#') ?>">
                         <?= __('Write to us', 'arhr') ?>
@@ -81,11 +86,36 @@
             <?php wp_nav_menu(['theme_location' => 'header', 'container_class' => 'menu-container', 'walker' => new MenuWalker()]) ?>
             <div class="social-container">
                 <ul class="menu">
-                    <li><a href="<?= get_theme_mod('facebook_link', '#') ?>" class="facebook" target="_blank"></a></li>
-                    <li><a href="<?= get_theme_mod('vkontakte_link', '#') ?>" class="vkontakte" target="_blank"></a></li>
-                    <li><a href="<?= get_theme_mod('youtube_link', '#') ?>" class="youtube" target="_blank"></a></li>
-                    <li><a href="<?= get_theme_mod('instagram_link', '#') ?>" class="instagram" target="_blank"></a></li>
-                    <li><a href="<?= get_theme_mod('linkedin_link', '#') ?>" class="linkedin" target="_blank"></a></li>
+                    <?php
+                    if(!empty(get_theme_mod('facebook_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('facebook_link', '') ?>" class="facebook" target="_blank"></a></li> <?php
+                    }
+                    ?>
+                    <?php
+                    if(!empty(get_theme_mod('vkontakte_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('vkontakte_link', '') ?>" class="vkontakte" target="_blank"></a></li> <?php
+                    }
+                    ?>
+                    <?php
+                    if(!empty(get_theme_mod('youtube_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('youtube_link', '') ?>" class="youtube" target="_blank"></a></li> <?php
+                    }
+                    ?>
+                    <?php
+                    if(!empty(get_theme_mod('instagram_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('instagram_link', '') ?>" class="instagram" target="_blank"></a></li> <?php
+                    }
+                    ?>
+                    <?php
+                    if(!empty(get_theme_mod('linkedin_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('linkedin_link', '') ?>" class="linkedin" target="_blank"></a></li> <?php
+                    }
+                    ?>
+                    <?php
+                    if(!empty(get_theme_mod('zen_link', ''))) {
+                        ?> <li><a href="<?= get_theme_mod('zen_link', '') ?>" class="zen" target="_blank"></a></li> <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </div>

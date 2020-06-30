@@ -365,6 +365,13 @@
     #mobile-menu .menu-container .sub-menu {
         margin: 0 0 0 16px;
     }
+
+    .contact-form .input-field,
+    .contact-form .input-text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 380px) {

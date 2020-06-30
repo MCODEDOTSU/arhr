@@ -44,6 +44,7 @@
     footer,
     footer .widget_nav_menu .sub-menu,
     #mobile-panel,
+    .contact-form input[type="submit"],
     .mcode-calendar table td > a, .mcode-calendar table td input[type="submit"] {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
@@ -91,7 +92,8 @@
     .page-content.single .cptch_block .cptch_title,
     .page-content.single .cptch_block .cptch_wrap,
     .page-content.searchpage .search-input,
-    #mobile-menu .menu-container a {
+    #mobile-menu .menu-container a,
+    .contact-form textarea {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
