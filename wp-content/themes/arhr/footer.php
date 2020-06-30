@@ -63,9 +63,7 @@
             <li><a href="<?= get_theme_mod('instagram_link', '#') ?>" class="instagram" target="_blank"></a></li>
             <li><a href="<?= get_theme_mod('linkedin_link', '#') ?>" class="linkedin" target="_blank"></a></li>
         </ul>
-
-        <?php wp_nav_menu(['theme_location' => 'top', 'container_class' => 'menu-container', 'depth' => 1, 'walker' => new MenuWalker()]) ?>
-
+        
         <?php wp_nav_menu(['theme_location' => 'header', 'container_class' => 'menu-container', 'walker' => new MenuWalker()]) ?>
 
     </nav>
