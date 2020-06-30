@@ -971,6 +971,33 @@ CATEGORY
     padding: 0 0 0 182px;
 }
 
+.page-content.category-anonsy .category-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    position: relative;
+    padding: 0 332px 0 0;
+    margin: 0 -5px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-content.category-anonsy .sidebar-anonsy {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 0 0 0 -300px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-content.category-anonsy .post-metadata {
+    position: relative;
+    text-align: right;
+    margin: 8px 0 0;
+}
+
 /**
 SEARCHPAGE
  */

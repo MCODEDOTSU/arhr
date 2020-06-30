@@ -1,0 +1,138 @@
+.mcode-calendar table {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+}
+
+.mcode-calendar table.calendar tr,
+.mcode-calendar table.calendar tr:nth-child(2n) {
+    background: none;
+}
+
+.mcode-calendar table.calendar .dw {
+    border-right: none;
+}
+
+.mcode-calendar table th,
+.mcode-calendar table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    border: none;
+    padding: 1px 1px 0 0;
+}
+
+.mcode-calendar table.calendar tr td:last-child,
+.mcode-calendar table.calendar tr th:last-child {
+    padding: 1px 0 0 0;
+}
+
+.mcode-calendar table td {
+    border: 1px solid #969696;
+}
+
+.mcode-calendar table th > div,
+.mcode-calendar table td > div {
+    padding: 10px;
+    height: 40px;
+}
+
+.mcode-calendar table td form {
+    display: block;
+    height: 40px;
+    width: 100%;
+}
+
+.mcode-calendar table td > a,
+.mcode-calendar table td input[type="submit"] {
+    display: block;
+    padding: 10px;
+    background: #dddddd;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.mcode-calendar table td > a:hover,
+.mcode-calendar table td input[type="submit"]:hover {
+    opacity: 0.5;
+}
+
+.mcode-calendar table .row:first-child td {
+    border-top: none;
+}
+
+.mcode-calendar .dw {
+    background: #333333;
+    color: #ffffff;
+    border-right: 1px solid #333333;
+}
+
+.mcode-calendar .btn {
+    background: none;
+    color: #333333;
+}
+
+.mcode-calendar .btn:hover {
+    opacity: 0.5;
+}
+
+.mcode-calendar-future {
+    margin: 20px 0;
+}
+
+.mcode-calendar-future .item {
+    background: #f5f5f5;
+    border-bottom: 1px solid #ffffff;
+    padding: 16px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.mcode-calendar-future .item:hover {
+    background: #cdcdcd;
+}
+
+.mcode-calendar-future .item a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.mcode-calendar-future .item:last-child {
+    border-bottom: none;
+}
+
+.mcode-calendar-future .item h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mcode-calendar-future .item p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+.mcode-calendar-future .item p.description {
+    font-style: italic;
+}
+
+.mcode-calendar-future .item p.datetime {
+    font-size: 13px;
+}
+
+.mcode-calendar table.calendar tr td,
+.mcode-calendar table.calendar tr th {
+    border: none;
+    padding: 1px 1px 0 0;
+}
+
+.mcode-calendar table.calendar td.current div {
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

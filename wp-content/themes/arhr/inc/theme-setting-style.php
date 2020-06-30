@@ -43,7 +43,8 @@
     header .main-right .contacts button,
     footer,
     footer .widget_nav_menu .sub-menu,
-    #mobile-panel {
+    #mobile-panel,
+    .mcode-calendar table td > a, .mcode-calendar table td input[type="submit"] {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
