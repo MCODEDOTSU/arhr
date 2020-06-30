@@ -56,6 +56,15 @@ function arhr_register_sidebar()
         'before_title' => '',
         'after_title' => ''
     ]);
+    register_sidebar([
+        'name' => 'На странице анонсов',
+        'id' => 'sidebar-anonsy',
+        'description' => 'На странице анонсов',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ]);
 }
 
 add_action('widgets_init', 'arhr_register_sidebar');
