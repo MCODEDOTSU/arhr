@@ -22,9 +22,11 @@
 
             <?php endif; ?>
 
-            <?php the_content(); ?>
+            <?php the_tags('<div class="post-tags">', '', '</div>') ?>
 
-            <?php comments_template('/comments.php', true); ?>
+            <?php the_content() ?>
+
+            <?php comments_template('/comments.php', true) ?>
 
         <?php endif ?>
 
