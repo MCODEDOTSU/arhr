@@ -6,7 +6,7 @@ add_theme_support('menus');
 /* enqueue scripts */
 function arhr_enqueue_scripts()
 {
-    wp_enqueue_style('main', get_template_directory_uri() . '/style.css', array(), date('His'));
+    wp_enqueue_style('main', get_template_directory_uri() . '/style.css', [], date('His'));
     wp_enqueue_script('core', get_template_directory_uri() . '/js/core.js', date('His'));
     wp_enqueue_script('touchSwipe', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js');
     wp_enqueue_style('responsive', get_template_directory_uri() . '/responsive.css', [], date('His'));
@@ -74,7 +74,7 @@ add_action('widgets_init', 'arhr_register_sidebar');
 
 class MenuWalker extends Walker_Nav_Menu
 {
-    function end_el(&$output, $item, $depth = 0, $args = array())
+    function end_el(&$output, $item, $depth = 0, $args = [])
     {
         $output .= "</li>";
     }

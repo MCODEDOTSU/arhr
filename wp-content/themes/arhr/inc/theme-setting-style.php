@@ -93,7 +93,8 @@
     .page-content.single .cptch_block .cptch_wrap,
     .page-content.searchpage .search-input,
     #mobile-menu .menu-container a,
-    .contact-form textarea {
+    .contact-form textarea,
+    .mcode-calendar .dw {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 

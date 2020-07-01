@@ -1,15 +1,8 @@
-<?php
-/*
-Template Name: Search Page
-*/
+<?php get_header(); ?>
 
-get_header(); ?>
+    <div class="category page-content fix">
 
-    <div class="searchpage page-content fix">
-
-        <h1><?= __('Search:', 'arhr') ?> "<?= get_search_query(); ?>"</h1>
-
-        <?php get_search_form(); ?>
+        <h1><?= __('All by tag:', 'arhr') ?> "<?php single_cat_title(); ?>"</h1>
 
         <?php if (have_posts()) : ?>
 

@@ -2,9 +2,9 @@
 
     <div class="single-404 page-content fix">
 
-        <h1>Ой! Страница не найдена.</h1>
+        <h1><?= __('Oh! Page not found.', 'arhr') ?></h1>
 
-        <p>По данному адресу ничего не найдено. Попробуйте воспользоваться поиском.</p>
+        <p><?= __('Nothing was found at this address. Try using the search.', 'arhr') ?></p>
 
     </div>
 

@@ -50,13 +50,13 @@
                                 <p class="post-metadata">
                                     <?php
                                     if (get_post_meta( get_the_ID(), 'event_date_start', true ) != '') {
-                                        ?> Начало: <?= get_post_meta( get_the_ID(), 'event_date_start', true ) ?> <?php
+                                        echo __('Start: ', 'arhr') . get_post_meta( get_the_ID(), 'event_date_start', true );
                                         if (get_post_meta( get_the_ID(), 'event_date_finish', true ) != '') {
-                                            ?> <br> <?php
+                                            echo '<br>';
                                         }
                                     }
                                     if (get_post_meta( get_the_ID(), 'event_date_finish', true ) != '') {
-                                        ?> Окончание: <?= get_post_meta( get_the_ID(), 'event_date_finish', true ) ?> <?php
+                                        echo __('Ending: ', 'arhr') . get_post_meta( get_the_ID(), 'event_date_finish', true );
                                     }
                                     ?>
                                 </p>
@@ -70,13 +70,13 @@
                                 <p class="post-metadata">
                                     <?php
                                     if (get_post_meta( get_the_ID(), 'event_date_start', true ) != '') {
-                                        ?> Начало: <?= get_post_meta( get_the_ID(), 'event_date_start', true ) ?> <?php
+                                        echo __('Start: ', 'arhr') . get_post_meta( get_the_ID(), 'event_date_start', true );
                                         if (get_post_meta( get_the_ID(), 'event_date_finish', true ) != '') {
-                                            ?> <br> <?php
+                                            echo '<br>';
                                         }
                                     }
                                     if (get_post_meta( get_the_ID(), 'event_date_finish', true ) != '') {
-                                        ?> Окончание: <?= get_post_meta( get_the_ID(), 'event_date_finish', true ) ?> <?php
+                                        echo __('Ending: ', 'arhr') . get_post_meta( get_the_ID(), 'event_date_finish', true );
                                     }
                                     ?>
                                 </p>

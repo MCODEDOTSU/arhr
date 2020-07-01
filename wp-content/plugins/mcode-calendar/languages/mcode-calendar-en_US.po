@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MCode Calendar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-01 05:37+0000\n"
+"PO-Revision-Date: 2020-07-01 05:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#. Base ID
+#: mcode-calendar.php:26
+msgid "Calendar of events"
+msgstr "Calendar of events"
+
+#: mcode-calendar.php:27
+msgid "Building an event calendar based on an additional field in notes"
+msgstr "Building an event calendar based on an additional field in notes"
+
+#: mcode-calendar.php:61
+msgid "Category: "
+msgstr "Category: "
+
+#: mcode-calendar.php:64
+msgid "Name of the field in which the date of the event is stored: "
+msgstr "Name of the field in which the date of the event is stored: "
+
+#: mcode-calendar.php:100
+msgid "January"
+msgstr "January"
+
+#: mcode-calendar.php:101
+msgid "February"
+msgstr "February"
+
+#: mcode-calendar.php:102
+msgid "March"
+msgstr "March"
+
+#: mcode-calendar.php:103
+msgid "April"
+msgstr "April"
+
+#: mcode-calendar.php:104
+msgid "May"
+msgstr "May"
+
+#: mcode-calendar.php:105
+msgid "June"
+msgstr "June"
+
+#: mcode-calendar.php:106
+msgid "July"
+msgstr "July"
+
+#: mcode-calendar.php:107
+msgid "August"
+msgstr "August"
+
+#: mcode-calendar.php:108
+msgid "September"
+msgstr "September"
+
+#: mcode-calendar.php:109
+msgid "October"
+msgstr "October"
+
+#: mcode-calendar.php:110
+msgid "November"
+msgstr "November"
+
+#: mcode-calendar.php:111
+msgid "December"
+msgstr "December"
+
+#: mcode-calendar.php:115
+msgid "Mon"
+msgstr "Mon"
+
+#: mcode-calendar.php:116
+msgid "Tue"
+msgstr "Tue"
+
+#: mcode-calendar.php:117
+msgid "Wed"
+msgstr "Wed"
+
+#: mcode-calendar.php:118
+msgid "Thu"
+msgstr "Thu"
+
+#: mcode-calendar.php:119
+msgid "Fri"
+msgstr "Fri"
+
+#: mcode-calendar.php:120
+msgid "Sat"
+msgstr "Sat"
+
+#: mcode-calendar.php:121
+msgid "Sun"
+msgstr "Sun"
+
+#: mcode-calendar.php:152
+msgid "Event list"
+msgstr "Event list"
+
+#: mcode-calendar.php:184
+msgid "f_January"
+msgstr "January"
+
+#: mcode-calendar.php:185
+msgid "f_February"
+msgstr "February"
+
+#: mcode-calendar.php:186
+msgid "f_March"
+msgstr "March"
+
+#: mcode-calendar.php:187
+msgid "f_April"
+msgstr "April"
+
+#: mcode-calendar.php:188
+msgid "f_May"
+msgstr "May"
+
+#: mcode-calendar.php:189
+msgid "f_June"
+msgstr "June"
+
+#: mcode-calendar.php:190
+msgid "f_July"
+msgstr "July"
+
+#: mcode-calendar.php:191
+msgid "f_August"
+msgstr "August"
+
+#: mcode-calendar.php:192
+msgid "f_September"
+msgstr "September"
+
+#: mcode-calendar.php:193
+msgid "f_October"
+msgstr "October"
+
+#: mcode-calendar.php:194
+msgid "f_November"
+msgstr "November"
+
+#: mcode-calendar.php:195
+msgid "f_December"
+msgstr "December"
+
+#. Name of the plugin
+msgid "MCode Calendar"
+msgstr "MCode Calendar"
+
+#. Author of the plugin
+msgid "Sirotkina Aliona (info@mcode.su)"
+msgstr "Sirotkina Aliona (info@mcode.su)"
+
+#. Author URI of the plugin
+msgid "http://mcode.su/"
+msgstr "http://mcode.su/"
