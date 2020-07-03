@@ -75,48 +75,63 @@ function _theme_setting($wp_customize)
         ['label' => 'Максимальная ширина контента', 'section' => 'main_section', 'type' => 'number', 'default' => 1340, 'input_attrs' => ['min' => 900, 'step' => 10, 'max' => 2400]]
     );
 
-    /* Logo */
-    $wp_customize->add_setting('logo_image');
+    /* Logo RU */
+    $wp_customize->add_setting('logo_image_ru_RU');
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
-            $wp_customize, 'logo_image',
+            $wp_customize, 'logo_image_ru_RU',
             [
-                'label' => 'Логотип',
+                'label' => 'Логотип [RU]',
                 'section' => 'main_section',
-                'settings' => 'logo_image',
-                'height' => 90,
-                'width' => 90
+                'settings' => 'logo_image_ru_RU',
+                'height' => 62,
+                'width' => 300
             ]
         )
     );
 
-    /* Site Title [RU] */
-    $wp_customize->add_setting('site_title_ru_RU');
+    /* Logo EN */
+    $wp_customize->add_setting('logo_image_en_US');
     $wp_customize->add_control(
-        'site_title_ru_RU',
-        ['label' => 'Название сайта [RU]', 'section' => 'main_section', 'type' => 'text',]
+        new WP_Customize_Image_Control(
+            $wp_customize, 'logo_image_en_US',
+            [
+                'label' => 'Логотип [EN]',
+                'section' => 'main_section',
+                'settings' => 'logo_image_en_US',
+                'height' => 62,
+                'width' => 300
+            ]
+        )
     );
 
-    /* Site Title [EN] */
-    $wp_customize->add_setting('site_title_en_US');
-    $wp_customize->add_control(
-        'site_title_en_US',
-        ['label' => 'Название сайта [EN]', 'section' => 'main_section', 'type' => 'text',]
-    );
-
-    /* Site Description [RU] */
-    $wp_customize->add_setting('site_description_ru_RU');
-    $wp_customize->add_control(
-        'site_description_ru_RU',
-        ['label' => 'Описание [RU]', 'section' => 'main_section', 'type' => 'text',]
-    );
-
-    /* Site Description [EN] */
-    $wp_customize->add_setting('site_description_en_US');
-    $wp_customize->add_control(
-        'site_description_en_US',
-        ['label' => 'Описание [EN]', 'section' => 'main_section', 'type' => 'text',]
-    );
+//    /* Site Title [RU] */
+//    $wp_customize->add_setting('site_title_ru_RU');
+//    $wp_customize->add_control(
+//        'site_title_ru_RU',
+//        ['label' => 'Название сайта [RU]', 'section' => 'main_section', 'type' => 'text',]
+//    );
+//
+//    /* Site Title [EN] */
+//    $wp_customize->add_setting('site_title_en_US');
+//    $wp_customize->add_control(
+//        'site_title_en_US',
+//        ['label' => 'Название сайта [EN]', 'section' => 'main_section', 'type' => 'text',]
+//    );
+//
+//    /* Site Description [RU] */
+//    $wp_customize->add_setting('site_description_ru_RU');
+//    $wp_customize->add_control(
+//        'site_description_ru_RU',
+//        ['label' => 'Описание [RU]', 'section' => 'main_section', 'type' => 'text',]
+//    );
+//
+//    /* Site Description [EN] */
+//    $wp_customize->add_setting('site_description_en_US');
+//    $wp_customize->add_control(
+//        'site_description_en_US',
+//        ['label' => 'Описание [EN]', 'section' => 'main_section', 'type' => 'text',]
+//    );
 
     /* Phone */
     $wp_customize->add_setting('phone_header');

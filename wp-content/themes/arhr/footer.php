@@ -42,31 +42,52 @@
 </footer>
 
 <div id="mobile-panel">
-    <ul class="menu">
-        <li>
-            <a class="btn mobile-btn">
-                <i class="fa fa-bars"></i>
-            </a>
-        </li>
-        <?php pll_the_languages(); ?>
-        <li><a href="/wp-login"><i class="fa fa-user"></i></a></li>
-    </ul>
+    <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
+    <div class="contacts">
+        <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
+            <?= get_theme_mod('phone_header', '') ?>
+        </a>
+        <a class="email" href="mailto:<?= get_theme_mod('email_header', '') ?>">
+            <?= get_theme_mod('email_header', '') ?>
+        </a>
+    </div>
+    <button class="btn mobile-btn mobile-btn-open"></button>
 </div>
 
 <div id="mobile-menu">
-    <nav class="mobile-menu">
 
-        <ul class="menu social-menu">
-            <li><a href="<?= get_theme_mod('facebook_link', '#') ?>" class="facebook" target="_blank"></a></li>
-            <li><a href="<?= get_theme_mod('vkontakte_link', '#') ?>" class="vkontakte" target="_blank"></a></li>
-            <li><a href="<?= get_theme_mod('youtube_link', '#') ?>" class="youtube" target="_blank"></a></li>
-            <li><a href="<?= get_theme_mod('instagram_link', '#') ?>" class="instagram" target="_blank"></a></li>
-            <li><a href="<?= get_theme_mod('linkedin_link', '#') ?>" class="linkedin" target="_blank"></a></li>
-        </ul>
+    <div class="mobile-menu">
 
-        <?php wp_nav_menu(['theme_location' => 'header', 'container_class' => 'menu-container', 'walker' => new MenuWalker()]) ?>
+        <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
 
-    </nav>
+        <div class="contacts">
+            <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
+                <?= get_theme_mod('phone_header', '') ?>
+            </a>
+            <a class="email" href="mailto:<?= get_theme_mod('email_header', '') ?>">
+                <?= get_theme_mod('email_header', '') ?>
+            </a>
+        </div>
+
+        <button class="btn mobile-btn mobile-btn-close"></button>
+
+        <nav>
+            <?php wp_nav_menu(['theme_location' => 'header', 'container_class' => 'menu-container', 'walker' => new MenuWalker()]) ?>
+        </nav>
+
+        <a class="btn btn-write-us" href="<?= get_theme_mod('write_link', '#') ?>">
+            <?= __('Write to us', 'arhr') ?>
+        </a>
+
+        <nav class="languages-menu">
+            <ul class="menu">
+                <?php pll_the_languages(); ?>
+            </ul>
+        </nav>
+
+        <a href="/wp-login" class="account-link"><?= __('Account', 'arhr') ?></a>
+
+    </div>
 </div>
 
 <?php wp_footer(); ?>

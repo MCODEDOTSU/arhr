@@ -34,23 +34,7 @@
 
             <div class="main-left">
 
-                <a href="/" class="logo">
-
-                    <?php if (is_front_page()): ?>
-
-                        <h1 class="title"><?= get_theme_mod('site_title_' . get_locale(), 'МОЙ САЙТ') ?></h1>
-
-                        <h2 class="description"><?= get_theme_mod('site_description_' . get_locale(), 'описание сайта') ?></h2>
-
-                    <?php else: ?>
-
-                        <h2 class="title"><?= get_theme_mod('site_title_' . get_locale(), 'МОЙ САЙТ') ?></h2>
-
-                        <h3 class="description"><?= get_theme_mod('site_description_' . get_locale(), 'описание сайта') ?></h3>
-
-                    <?php endif; ?>
-
-                </a>
+                <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
 
             </div>
 
@@ -69,7 +53,7 @@
                         </a>
                     </div>
 
-                    <a class="btn" href="<?= get_theme_mod('write_link', '#') ?>">
+                    <a class="btn main_button" href="<?= get_theme_mod('write_link', '#') ?>">
                         <?= __('Write to us', 'arhr') ?>
                     </a>
 

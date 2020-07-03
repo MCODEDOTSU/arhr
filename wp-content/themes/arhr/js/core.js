@@ -3,7 +3,8 @@
     $(document).ready(function (e) {
         if ($('#mobile-menu').length !== 0) {
             $('#mobile-menu').mcodeMobileSidebar({
-                openButtonSelector: '#mobile-panel .mobile-btn'
+                openButtonSelector: '#mobile-panel .mobile-btn-open',
+                closeButtonSelector: '#mobile-menu .mobile-btn-close',
             });
         }
     });
@@ -19,6 +20,8 @@
 
         openButtonSelector: '#mobile-menu-button',
 
+        closeButtonSelector: '#mobile-menu-button-close',
+
     };
 
     let methods = {
@@ -30,12 +33,6 @@
         init: function (options) {
 
             let $sidebar = this;
-
-            let $closeButton = $('<button class="btn-close"></button>');
-            $closeButton.on('click', function () {
-                methods.hide.apply(this, [ $sidebar ]);
-            });
-            $sidebar.append($closeButton);
 
             $sidebar.swipe({
                 swipe: (event, direction, distance, duration, fingerCount, fingerData) => {
@@ -55,6 +52,10 @@
 
             $(options.openButtonSelector).on('click', function () {
                 methods.show.apply(this, [ $sidebar ]);
+            });
+
+            $(options.closeButtonSelector).on('click', function () {
+                methods.hide.apply(this, [ $sidebar ]);
             });
 
         },
