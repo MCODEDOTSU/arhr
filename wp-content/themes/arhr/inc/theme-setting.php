@@ -147,11 +147,18 @@ function _theme_setting($wp_customize)
         ['label' => 'Email в шапке', 'section' => 'main_section', 'type' => 'text',]
     );
 
-    /* URL contactform */
-    $wp_customize->add_setting('write_link');
+    /* URL contactform RU */
+    $wp_customize->add_setting('write_link_ru_RU');
     $wp_customize->add_control(
-        'write_link',
-        ['label' => 'Ссылка (якорь) для кнопки "Написать нам"', 'section' => 'main_section', 'type' => 'text',]
+        'write_link_ru_RU',
+        ['label' => 'Ссылка (якорь) для кнопки "Написать нам" [RU]', 'section' => 'main_section', 'type' => 'text',]
+    );
+
+    /* URL contactform EN */
+    $wp_customize->add_setting('write_link_en_US');
+    $wp_customize->add_control(
+        'write_link_en_US',
+        ['label' => 'Ссылка (якорь) для кнопки "Написать нам" [EN]', 'section' => 'main_section', 'type' => 'text',]
     );
 
     /* Facebook */
