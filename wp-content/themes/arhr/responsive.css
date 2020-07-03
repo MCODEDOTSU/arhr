@@ -11,20 +11,8 @@
 
 @media only screen and (max-width: 1200px) {
 
-    header .main-left {
-        width: 340px;
-        margin: 0 -345px 0 0;
-        padding: 0 0 0 90px;
-    }
-
     header .main-right {
-        padding: 0 0 0 372px;
-    }
-
-    header .logo {
-        margin-left: -90px;
-        padding-left: 90px;
-        width: 340px;
+        padding: 0 0 0 332px;
     }
 
     header .main-right .contacts {
@@ -58,8 +46,7 @@
 
     footer .subscribe .form-input input,
     footer .subscribe .form-submit input {
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 14px;
     }
 
     footer .subscribe .ajax-loader {
@@ -134,8 +121,9 @@
     }
 
     header .logo {
-        margin: 0 auto;
         display: block;
+        width: 300px;
+        margin: 0 auto;
     }
 
     header .header-menu .menu-container,
@@ -158,27 +146,39 @@
         line-height: 48px;
     }
 
-    .page-content h1 {
-        font-size: 32px;
-        margin: 16px 0 32px;
+    header .header-menu .sub-menu a {
+        line-height: 1.3;
     }
 
-    .page-content h2 {
-        font-size: 24px;
-        margin: 12px 0;
+    header .header-menu .menu > li > a:before {
+        top: 40px;
     }
 
-    .page-content h3 {
-        font-size: 20px;
-        margin: 8px 0;
-        font-weight: 500;
+    header .header-menu .sub-menu {
+        top: 56px;
     }
 
-    .page-content h4 {
-        font-size: 18px;
-        margin: 8px 0;
-        font-weight: 500;
-    }
+    /*.page-content h1 {*/
+        /*font-size: 32px;*/
+        /*margin: 16px 0 32px;*/
+    /*}*/
+
+    /*.page-content h2 {*/
+        /*font-size: 24px;*/
+        /*margin: 12px 0;*/
+    /*}*/
+
+    /*.page-content h3 {*/
+        /*font-size: 20px;*/
+        /*margin: 8px 0;*/
+        /*font-weight: 500;*/
+    /*}*/
+
+    /*.page-content h4 {*/
+        /*font-size: 18px;*/
+        /*margin: 8px 0;*/
+        /*font-weight: 500;*/
+    /*}*/
 }
 
 @media only screen and (max-width: 900px) {
@@ -227,15 +227,25 @@
         display: block;
     }
 
-    header .top,
-    header .header-menu {
+    header {
         display: none;
         visibility: hidden;
+    }
+
+    .wrapper {
+        padding: 32px 0 0 0;
     }
 
     footer {
         padding: 32px 0 96px;
     }
+
+    footer .subscribe .form-input input,
+    footer .subscribe .form-submit input {
+        font-size: 20px;
+        line-height: 60px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -249,11 +259,6 @@
 
     header .main-right .contacts .btn {
         line-height: 32px;
-    }
-
-    .page-content h1 {
-        font-size: 32px;
-        margin: 32px 0;
     }
 
     .page-content.category .post-item {
@@ -279,7 +284,7 @@
 
     .page-content.category .post-data .post-title {
         font-size: 18px;
-        margin: 16px 0 4px;
+        margin: 0 0 4px;
     }
 
     .page-content.category .post-description{
@@ -296,8 +301,12 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 
+    #mobile-panel .contacts,
+    #mobile-menu .contacts {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -313,41 +322,18 @@
 
     footer h2 {
         height: auto;
+        font-size: 24px;
         padding: 0 0 16px 0;
+        font-weight: 500;
+    }
+
+    footer p,
+    footer .widget_nav_menu a {
+        font-size: 16px;
     }
 
     footer {
         padding: 32px 0;
-    }
-
-    #mobile-panel {
-        height: 32px;
-    }
-
-    #mobile-panel li {
-        width: 25%;
-        margin: 0 -5px 0 0;
-    }
-
-    #mobile-panel li:last-child {
-        margin: 0;
-    }
-
-    #mobile-panel li a {
-        width: 100%;
-        line-height: 32px;
-    }
-
-    .page-content h1 {
-        font-size: 24px;
-    }
-
-    .page-content p {
-        font-size: 16px;
-    }
-
-    .page-content li {
-        font-size: 16px;
     }
 
     #mobile-menu > .mobile-menu {
@@ -374,15 +360,16 @@
     }
 }
 
+@media only screen and (max-width: 420px) {
+
+    #mobile-panel .contacts,
+    #mobile-menu .contacts {
+        display: none;
+    }
+
+}
+
 @media only screen and (max-width: 380px) {
-
-    header .logo {
-        width: 280px;
-    }
-
-    header .logo .title {
-        font-size: 20px;
-    }
 
     header .main-right .contacts a {
         font-size: 16px;

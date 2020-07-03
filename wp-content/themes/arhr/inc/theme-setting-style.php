@@ -4,8 +4,14 @@
         max-width: <?= get_theme_mod('max_width', '1340') ?>px;
     }
 
-    header .logo {
-        background-image: url('<?= get_theme_mod('logo_image', get_template_directory_uri() . 'img/logo.png') ?>');
+    header .logo,
+    #mobile-panel .logo {
+        <?php
+            $locate = get_locale();
+            $back = get_theme_mod('logo_image_' . get_locale(), '') == '' ?
+                get_template_directory_uri() . "/img/logo_header_$locate.svg" :
+                get_theme_mod('logo_image_' . get_locale(), ''); ?>
+        background-image: url('<?= $back ?>');
     }
 
     header {
@@ -18,7 +24,8 @@
     header .header-menu .social-container a,
     footer .subscribe .form-input,
     footer .subscribe .form-submit,
-    #mobile-menu > .mobile-menu {
+    #mobile-menu > .mobile-menu,
+    #mobile-panel {
         background: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -43,9 +50,9 @@
     header .main-right .contacts button,
     footer,
     footer .widget_nav_menu .sub-menu,
-    #mobile-panel,
     .contact-form input[type="submit"],
-    .mcode-calendar table td > a, .mcode-calendar table td input[type="submit"] {
+    .mcode-calendar table td > a, .mcode-calendar table td input[type="submit"],
+    header .main-right .contacts .btn {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -56,7 +63,10 @@
     .page-content.single .comment-list .comment-meta a,
     .page-content.single .comment-list .reply a,
     .page-content.single .comment-respond .logged-in-as a,
-    .page-content.single .cptch_block .cptch_time_limit_notice {
+    .page-content.single .cptch_block .cptch_time_limit_notice,
+    #mobile-panel .contacts a,
+    header .top-menu li a:hover,
+    header .header-menu .menu a:hover {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -94,11 +104,16 @@
     .page-content.searchpage .search-input,
     #mobile-menu .menu-container a,
     .contact-form textarea,
-    .mcode-calendar .dw {
+    .mcode-calendar .dw,
+    #mobile-menu .languages-menu a,
+    #mobile-menu .account-link {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
-    footer .subscribe .form-submit input {
+    footer .subscribe .form-submit input,
+    header .header-menu .menu > li > a:before,
+    #mobile-menu .menu > li.menu-item-has-children > a:before,
+    header .main-right .contacts .btn:hover {
         background: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
