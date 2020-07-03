@@ -41,8 +41,12 @@
 
 </footer>
 
+<?php $homepage = get_locale() == 'ru_RU' ? '/' : '/en'; ?>
+
 <div id="mobile-panel">
-    <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
+
+    <a href="<?= $homepage ?>" class="logo" title="<?= bloginfo('name') ?>"></a>
+
     <div class="contacts">
         <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
             <?= get_theme_mod('phone_header', '') ?>
@@ -51,14 +55,16 @@
             <?= get_theme_mod('email_header', '') ?>
         </a>
     </div>
+
     <button class="btn mobile-btn mobile-btn-open"></button>
+    
 </div>
 
 <div id="mobile-menu">
 
     <div class="mobile-menu">
 
-        <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
+        <a href="<?= $homepage ?>" class="logo" title="<?= bloginfo('name') ?>"></a>
 
         <div class="contacts">
             <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
