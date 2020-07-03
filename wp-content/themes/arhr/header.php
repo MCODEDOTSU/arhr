@@ -53,7 +53,7 @@
                         </a>
                     </div>
 
-                    <a class="btn main_button" href="<?= get_theme_mod('write_link', '#') ?>">
+                    <a class="btn main_button" href="<?= get_theme_mod('write_link_' . get_locale(), '#') ?>">
                         <?= __('Write to us', 'arhr') ?>
                     </a>
 

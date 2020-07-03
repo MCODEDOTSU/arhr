@@ -75,7 +75,7 @@
             <?php wp_nav_menu(['theme_location' => 'header', 'container_class' => 'menu-container', 'walker' => new MenuWalker()]) ?>
         </nav>
 
-        <a class="btn btn-write-us" href="<?= get_theme_mod('write_link', '#') ?>">
+        <a class="btn btn-write-us" href="<?= get_theme_mod('write_link_' . get_locale(), '#') ?>">
             <?= __('Write to us', 'arhr') ?>
         </a>
 
