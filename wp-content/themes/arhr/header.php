@@ -34,7 +34,9 @@
 
             <div class="main-left">
 
-                <a href="/" class="logo" title="<?= bloginfo('name') ?>"></a>
+                <?php $homepage = get_locale() == 'ru_RU' ? '/' : '/en'; ?>
+
+                <a href="<?= $homepage ?>" class="logo" title="<?= bloginfo('name') ?>"></a>
 
             </div>
 
@@ -45,12 +47,15 @@
                 <div class="contacts">
 
                     <div class="contacts-container">
+
                         <a class="phone" href="tel:<?= get_theme_mod('phone_header', '') ?>">
                             <?= get_theme_mod('phone_header', '') ?>
                         </a>
+
                         <a class="email" href="mailto:<?= get_theme_mod('email_header', '') ?>">
                             <?= get_theme_mod('email_header', '') ?>
                         </a>
+
                     </div>
 
                     <a class="btn main_button" href="<?= get_theme_mod('write_link_' . get_locale(), '#') ?>">
