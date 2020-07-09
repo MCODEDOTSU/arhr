@@ -1037,6 +1037,13 @@ PAGE
     margin: 0 0 32px;
 }
 
+.page-content a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #3a85c0;
+    font-weight: 700;
+}
+
 .page-content ul,
 .page-content ol {
     padding: 0 0 0 32px;
@@ -1142,23 +1149,11 @@ CATEGORY
     padding: 0 0 0 182px;
 }
 
-.page-content.category-anonsy .category-content {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    position: relative;
-    padding: 0 332px 0 0;
-    margin: 0 -5px 0 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .page-content.category-anonsy .sidebar-anonsy {
     display: inline-block;
     vertical-align: top;
-    width: 300px;
-    margin: 0 0 0 -300px;
+    width: 100%;
+    margin: 0 0 32px;
     position: relative;
     z-index: 1;
 }
