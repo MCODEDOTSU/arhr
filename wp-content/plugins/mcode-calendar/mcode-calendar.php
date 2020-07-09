@@ -124,32 +124,71 @@ function mcode_calendar($month, $year, $section, $field)
     $day = date('w', mktime(0, 0, 0, $month, 1, $year)) - 1;
     $day = $day == -1 ? 6 : $day;
 
-    $calendar = "<table cellpadding='0' cellspacing='0' class='calendar'>
-                    <thead>
-                        <tr class='i' data-month='$month' data-year='$year'>
-                            <th class='btn prev'><i class='fa fa-angle-left'></i></th>
-                            <th colspan='5'>{$months[$month - 1]}, $year</th>
-                            <th class='btn next'><i class='fa fa-angle-right'></i></th>
-                        </tr>
-                        <tr class='dw'><th><div>" . implode("</div></th><th><div>", $days) . "</div></th></tr>
-                    </thead>
+    $calendar = "<div class='actions'>
+                    <div class='month' data-item='$month'>
+                        <button class='btn prev'><i class='fa fa-angle-left'></i></button>
+                        <span class='i'>{$months[$month - 1]}</span>
+                        <button class='btn next'><i class='fa fa-angle-right'></i></button>
+                    </div>
+                    <div class='year' data-item='$year'>
+                        <button class='btn prev'><i class='fa fa-angle-left'></i></button>
+                        <span class='i'>{$year}</span>
+                        <button class='btn next'><i class='fa fa-angle-right'></i></button>
+                    </div>
+                </div>
+                <table cellpadding='0' cellspacing='0' class='calendar'>
                     <tbody>
                         <tr class='row'>";
 
+    // Предыдущий месяц
+    $date = new DateTime("$year-$month-1");
+    $date->modify('-' . ($day + 1) .' day');
     for ($i = 0; $i < $day; $i++) {
-        $calendar .= "<td class='day empty'></td>";
+
+        $date->modify('+1 day');
+        $m = date_format($date, 'm');
+        $d = date_format($date, 'd');
+        $y = date_format($date, 'Y');
+        $dt = date('Y-m-d', mktime(0, 0, 0, $m, $d, $y));
+
+        if (!empty($events[$dt])) {
+            $event = $events[$dt][0];
+            $eventsCount = count($events[$dt]) - 1;
+            $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
+            $calendar .= "<td class='day event previous'>
+                                <form action='$category' method='POST'>
+                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
+                                        <input type='hidden' name='date' value='$dt'/>
+                                        $d
+                                        <div class='event-title'>{$event['title']}</div>
+                                        $eventsCountHTML
+                                    </div>
+                                </form>
+                              </td>";
+        } else {
+            $calendar .= "<td class='day previous'><div>$d</div></td>";
+        }
+
     }
 
+    // Текущий месяц
     $count = date('t', mktime(0, 0, 0, $month, 1, $year));
     $current = date('Y-m-d');
     for ($i = 1; $i <= $count; $i++) {
         $dt = date('Y-m-d', mktime(0, 0, 0, $month, $i, $year));
         $currentClass = $current == $dt ? 'current' : '';
         if (!empty($events[$dt])) {
+            $event = $events[$dt][0];
+            $eventsCount = count($events[$dt]) - 1;
+            $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
             $calendar .= "<td class='day event $currentClass'>
                                 <form action='$category' method='POST'>
-                                    <input type='hidden' name='date' value='$dt'/>
-                                    <input type='submit' value='$i' title='" . __('Event list', 'mcode-calendar') . "'>
+                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
+                                        <input type='hidden' name='date' value='$dt'/>
+                                        $i
+                                        <div class='event-title'>{$event['title']}</div>
+                                        $eventsCountHTML
+                                    </div>
                                 </form>
                               </td>";
         } else {
@@ -164,10 +203,43 @@ function mcode_calendar($month, $year, $section, $field)
         }
     }
 
+    // Следующий месяц
     if ($day != 0) {
-        for ($i = 7; $i > $day; $i--) {
-            $calendar .= "<td class='day empty'></td>";
+
+        if ($month == 12) {
+            $date = new DateTime(($year + 1) . "-1-1");
+        } else {
+            $date = new DateTime("$year-" . ($month + 1) . "-1");
         }
+
+
+        for ($i = 7; $i > $day; $i--) {
+
+            $m = date_format($date, 'm');
+            $d = date_format($date, 'j');
+            $y = date_format($date, 'Y');
+            $dt = date('Y-m-d', mktime(0, 0, 0, $m, $d, $y));
+            if (!empty($events[$dt])) {
+                $event = $events[$dt][0];
+                $eventsCount = count($events[$dt]) - 1;
+                $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
+                $calendar .= "<td class='day event previous'>
+                                <form action='$category' method='POST'>
+                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
+                                        <input type='hidden' name='date' value='$dt'/>
+                                        $d
+                                        <div class='event-title'>{$event['title']}</div>
+                                        $eventsCountHTML
+                                    </div>
+                                </form>
+                              </td>";
+            } else {
+                $calendar .= "<td class='day previous'><div>$d</div></td>";
+            }
+
+            $date->modify('+1 day');
+        }
+
     }
 
     $calendar .= "</tr></tbody></table>";

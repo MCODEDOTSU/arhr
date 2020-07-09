@@ -13,6 +13,14 @@
 
             <?php echo category_description(); ?>
 
+            <div class="sidebar sidebar-anonsy">
+                <?php
+                if (function_exists('dynamic_sidebar')) {
+                    dynamic_sidebar('sidebar-anonsy');
+                }
+                ?>
+            </div>
+
             <?php
             $option = [
                 'category_name' => 'event-announcements',
@@ -97,14 +105,6 @@
 
             <?php endif ?>
 
-        </div>
-
-        <div class="sidebar sidebar-anonsy">
-            <?php
-            if (function_exists('dynamic_sidebar')) {
-                dynamic_sidebar('sidebar-anonsy');
-            }
-            ?>
         </div>
 
     </div>

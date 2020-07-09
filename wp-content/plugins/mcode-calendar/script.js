@@ -17,35 +17,54 @@
 
             let $calendar = this;
 
-            /**
-             * Btn init functions
-             */
-            $('.btn.prev', this).on('click', function () {
-                methods.prev.apply($calendar);
+            $('.month .btn.prev', this).on('click', function () {
+
+                let month = parseInt($('.month', $calendar).data('item'), 10) - 1;
+                let year = parseInt($('.year', $calendar).data('item'), 10);
+                methods.get.apply($calendar, [{
+                    month: (month < 1 ? 12 : month),
+                    year: (month < 1 ? year - 1 : year)
+                }]);
+
             });
 
-            $('.btn.next', this).on('click', function () {
-                methods.next.apply($calendar);
+            $('.month .btn.next', this).on('click', function () {
+
+                let month = parseInt($('.month', $calendar).data('item'), 10) + 1;
+                let year = parseInt($('.year', $calendar).data('item'), 10);
+                methods.get.apply($calendar, [{
+                    month: (month > 12 ? 1 : month),
+                    year: (month > 12 ? year + 1 : year)
+                }]);
+
             });
 
-        },
+            $('.year .btn.prev', this).on('click', function () {
 
-        next: function () {
-            let month = parseInt($('.i', this).data('month'), 10) + 1;
-            let year = parseInt($('.i', this).data('year'), 10);
-            methods.get.apply(this, [{
-                month: (month > 12 ? 1 : month),
-                year: (month > 12 ? year + 1 : year)
-            }]);
-        },
+                let month = parseInt($('.month', $calendar).data('item'), 10);
+                let year = parseInt($('.year', $calendar).data('item'), 10) - 1;
+                methods.get.apply($calendar, [{
+                    month: (month < 1 ? 12 : month),
+                    year: (month < 1 ? year - 1 : year)
+                }]);
 
-        prev: function () {
-            let month = parseInt($('.i', this).data('month'), 10) - 1;
-            let year = parseInt($('.i', this).data('year'), 10);
-            methods.get.apply(this, [{
-                month: (month < 1 ? 12 : month),
-                year: (month < 1 ? year - 1 : year)
-            }]);
+            });
+
+            $('.year .btn.next', this).on('click', function () {
+
+                let month = parseInt($('.month', $calendar).data('item'), 10);
+                let year = parseInt($('.year', $calendar).data('item'), 10) + 1;
+                methods.get.apply($calendar, [{
+                    month: (month > 12 ? 1 : month),
+                    year: (month > 12 ? year + 1 : year)
+                }]);
+
+            });
+
+            $('form', this).on('click', function () {
+                $(this).submit();
+            });
+
         },
 
         get: function (options) {

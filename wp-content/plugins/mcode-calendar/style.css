@@ -1,3 +1,26 @@
+.mcode-calendar .actions {
+    margin: 0 0 32px;
+}
+
+.mcode-calendar .actions .month,
+.mcode-calendar .actions .year {
+    display: inline-block;
+    vertical-align: top;
+    width: 154px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mcode-calendar .actions button {
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 16px;
+    width: 32px;
+    text-align: center;
+}
+
 .mcode-calendar table {
     width: 100%;
     max-width: 100%;
@@ -17,7 +40,7 @@
 .mcode-calendar table td {
     text-align: center;
     vertical-align: middle;
-    height: 40px;
+    height: 100px;
     border: none;
     padding: 1px 1px 0 0;
 }
@@ -29,31 +52,72 @@
 
 .mcode-calendar table td {
     border: 1px solid #969696;
+    width: calc(100% / 7);
 }
 
 .mcode-calendar table th > div,
 .mcode-calendar table td > div {
     padding: 10px;
-    height: 40px;
+    height: 100px;
+    text-align: left;
+    font-size: 28px;
+    border: 1px solid #000000;
+    font-weight: 300;
 }
 
 .mcode-calendar table td form {
     display: block;
-    height: 40px;
+    height: 100px;
     width: 100%;
+    cursor: pointer;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+.mcode-calendar table td form:hover {
+    opacity: 0.75;
+}
+
+.mcode-calendar table td form > div {
+    padding: 10px;
+    height: 100px;
+    text-align: left;
+    font-size: 28px;
+    border: 1px solid #000000;
+    font-weight: 800;
+    position: relative;
+}
+
+.mcode-calendar table td form > div .event-title {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    height: 42px;
+    overflow: hidden;
+}
+
+.mcode-calendar table td form > div .event-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .mcode-calendar table td > a,
 .mcode-calendar table td input[type="submit"] {
     display: block;
     padding: 10px;
-    background: #dddddd;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     border: none;
     margin: 0;
-    height: 40px;
+    height: 100px;
     width: 100%;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .mcode-calendar table td > a:hover,
@@ -132,8 +196,55 @@
 }
 
 .mcode-calendar table.calendar td.current div {
-    font-weight: 700;
+    font-weight: 900;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.mcode-calendar table td.current form > div .event-title {
+    font-weight: 300;
+}
+
+.mcode-calendar table td.previous {
+    opacity: .5;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .mcode-calendar table td form > div .event-title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .mcode-calendar .actions {
+        text-align: center;
+    }
+
+    .mcode-calendar table th,
+    .mcode-calendar table td,
+    .mcode-calendar table th > div,
+    .mcode-calendar table td > div,
+    .mcode-calendar table td form,
+    .mcode-calendar table td form > div,
+    .mcode-calendar table td > a,
+    .mcode-calendar table td input[type="submit"] {
+        height: 50px;
+    }
+
+    .mcode-calendar table th > div,
+    .mcode-calendar table td > div,
+    .mcode-calendar table td form > div,
+    .mcode-calendar table td > a,
+    .mcode-calendar table td input[type="submit"] {
+        font-size: 20px;
+        padding: 16px 4px 0;
+    }
+
+    .mcode-calendar table td form > div .event-count {
+        top: 4px;
+        right: 4px;
+    }
 }

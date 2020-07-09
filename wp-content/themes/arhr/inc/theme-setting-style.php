@@ -43,7 +43,8 @@
     footer .subscribe .form-submit input,
     footer .subscribe .form-label label,
     footer .subscribe .ajax-loader:before,
-    #mobile-panel li a {
+    #mobile-panel li a,
+    .mcode-calendar table.calendar td.current div {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -51,8 +52,8 @@
     footer,
     footer .widget_nav_menu .sub-menu,
     .contact-form input[type="submit"],
-    .mcode-calendar table td > a, .mcode-calendar table td input[type="submit"],
-    header .main-right .contacts .btn {
+    header .main-right .contacts .btn,
+    .mcode-calendar table.calendar td.current div {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -64,6 +65,7 @@
     .page-content.single .comment-list .reply a,
     .page-content.single .comment-respond .logged-in-as a,
     .page-content.single .cptch_block .cptch_time_limit_notice,
+    .page-content a,
     #mobile-panel .contacts a,
     header .top-menu li a:hover,
     header .header-menu .menu a:hover {
@@ -80,6 +82,10 @@
     blockquote:after,
     q:after {
         color: <?= hex2rgba(get_theme_mod('color_3', '#3a85c0'), 0.2); ?>;
+    }
+
+    .mcode-calendar table.calendar td.current div {
+        border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
     header .top-menu li a,
@@ -106,7 +112,10 @@
     .contact-form textarea,
     .mcode-calendar .dw,
     #mobile-menu .languages-menu a,
-    #mobile-menu .account-link {
+    #mobile-menu .account-link,
+    .mcode-calendar .actions button,
+    .mcode-calendar table td > a,
+    .mcode-calendar table td input[type="submit"] {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -121,7 +130,9 @@
     .page-content.single .comment-form-author input,
     .page-content.single .comment-form-email input,
     .page-content.single .comment-form-cookies-consent input[type="checkbox"],
-    .page-content.searchpage .search-input {
+    .page-content.searchpage .search-input,
+    .mcode-calendar table th > div,
+    .mcode-calendar table td > div {
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
