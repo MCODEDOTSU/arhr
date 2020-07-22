@@ -115,4 +115,10 @@
 
 <div class="wrapper">
 
-	
+    <div class="breadcrumbs fix">
+
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        } ?>
+
+    </div>

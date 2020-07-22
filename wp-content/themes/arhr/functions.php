@@ -91,12 +91,28 @@ add_action('after_setup_theme', 'arhr_register_menu');
 
 /* expert */
 add_filter('excerpt_length', function () {
-    return 25;
+    return 26;
 });
 add_filter('excerpt_more', function ($more) {
     return ' ...';
 });
 /* end expert */
+
+/* short content */
+function get_short_content() {
+    $content = get_the_content('');
+    $content = preg_replace('/<img[^>]+\>/i', '', $content);
+    $content = apply_filters( 'the_content', $content );
+    $length = wp_is_mobile() ? 1 : 4;
+    $result = '';
+    for($i = 0; $i < $length; $i++) {
+        $text = substr( $content, 0, strpos( $content, '</p>' ) + 4);
+        $result .= $text;
+        $content = str_replace($text, '', $content);
+    }
+    return $result;
+}
+/* end short content */
 
 /* comments */
 function arhr_comment_form($fields)

@@ -8,6 +8,8 @@
 
             <?php the_content(); ?>
 
+            <?php get_template_part('inc/homepage-advantages'); ?>
+
         <?php endwhile ?>
 
     </div>
