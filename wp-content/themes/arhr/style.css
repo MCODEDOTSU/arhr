@@ -1261,10 +1261,11 @@ CATEGORY
     z-index: 1;
 }
 
-.page-content.category-anonsy .post-metadata {
+.page-content.category-anonsy .post-event_date {
     position: relative;
-    text-align: right;
     margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 /**

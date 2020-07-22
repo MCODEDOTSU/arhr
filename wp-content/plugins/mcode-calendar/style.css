@@ -63,6 +63,7 @@
     font-size: 28px;
     border: 1px solid #000000;
     font-weight: 300;
+    margin: 0!important;
 }
 
 .mcode-calendar table td form {
@@ -84,9 +85,11 @@
     height: 100px;
     text-align: left;
     font-size: 28px;
+    line-height: 1.1;
     border: 1px solid #000000;
     font-weight: 800;
     position: relative;
+    margin: 0!important;
 }
 
 .mcode-calendar table td form > div .event-title {
@@ -94,6 +97,7 @@
     font-size: 14px;
     font-weight: 300;
     height: 42px;
+    line-height: 1;
     overflow: hidden;
 }
 
