@@ -317,6 +317,10 @@
         margin: 0 -170px 0 0;
     }
 
+    .page-content.category-anonsy .post-event_date {
+        font-size: 18px;
+    }
+
     .arhr-advantages .title {
         font-size: 50px;
     }

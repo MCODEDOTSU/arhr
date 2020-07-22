@@ -114,6 +114,12 @@ function get_short_content() {
 }
 /* end short content */
 
+function get_datetime_formate($datetime) {
+    $tm = strtotime($datetime);
+    $date = new DateTime( $datetime );
+    return get_locale() == 'ru_RU' ? $date->format('d.m.Y H:i:s') : $date->format('Y-m-d H:i:s');
+}
+
 /* comments */
 function arhr_comment_form($fields)
 {
