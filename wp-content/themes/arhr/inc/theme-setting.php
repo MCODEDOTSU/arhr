@@ -66,6 +66,19 @@ function _theme_setting($wp_customize)
         )
     );
 
+    /* Color 4 */
+    $wp_customize->add_setting(
+        'color_5',
+        ['default' => '#bbbbbb', 'sanitize_callback' => 'sanitize_hex_color']
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'color_5',
+            ['label' => 'Цвет #5', 'section' => 'main_section',]
+        )
+    );
+
     /* Max Width */
     $wp_customize->add_setting(
         'max_width'
@@ -104,34 +117,6 @@ function _theme_setting($wp_customize)
             ]
         )
     );
-
-//    /* Site Title [RU] */
-//    $wp_customize->add_setting('site_title_ru_RU');
-//    $wp_customize->add_control(
-//        'site_title_ru_RU',
-//        ['label' => 'Название сайта [RU]', 'section' => 'main_section', 'type' => 'text',]
-//    );
-//
-//    /* Site Title [EN] */
-//    $wp_customize->add_setting('site_title_en_US');
-//    $wp_customize->add_control(
-//        'site_title_en_US',
-//        ['label' => 'Название сайта [EN]', 'section' => 'main_section', 'type' => 'text',]
-//    );
-//
-//    /* Site Description [RU] */
-//    $wp_customize->add_setting('site_description_ru_RU');
-//    $wp_customize->add_control(
-//        'site_description_ru_RU',
-//        ['label' => 'Описание [RU]', 'section' => 'main_section', 'type' => 'text',]
-//    );
-//
-//    /* Site Description [EN] */
-//    $wp_customize->add_setting('site_description_en_US');
-//    $wp_customize->add_control(
-//        'site_description_en_US',
-//        ['label' => 'Описание [EN]', 'section' => 'main_section', 'type' => 'text',]
-//    );
 
     /* Phone */
     $wp_customize->add_setting('phone_header');
@@ -203,6 +188,58 @@ function _theme_setting($wp_customize)
         ['label' => 'Ссылка на Яндекс ZEN', 'section' => 'main_section', 'type' => 'text',]
     );
 
+    #endregion
+    
+    #region Блоки на главной
+
+    $wp_customize->add_section(
+        'blocks_section',
+        [
+            'title' => 'Блоки на главной',
+            'description' => 'Блоки на главной',
+            'priority' => 11,
+        ]
+    );
+    
+    $wp_customize->add_setting('home_count_blocks');
+    $wp_customize->add_control(
+        'home_count_blocks',
+        [ 'label' => 'Количество блоков', 'section' => 'blocks_section', 'type' => 'number', 'input_attrs' => [ 'min' => 4 ] ]
+    );
+    $home_count_blocks = get_theme_mod('home_count_blocks', 4);
+
+    for ($i = 0; $i < $home_count_blocks; $i++) {
+
+        $block_number = $i + 1;
+
+        $wp_customize->add_setting( "home_advantages_{$block_number}_title" );
+        $wp_customize->add_control(
+            "home_advantages_{$block_number}_title",
+            [ 'label' => "Заголовок блока №{$block_number}", 'section' => 'blocks_section', 'type' => 'text' ]
+        );
+
+        $wp_customize->add_setting( "home_advantages_{$block_number}_description" );
+        $wp_customize->add_control(
+            "home_advantages_{$block_number}_description",
+            [ 'label' => "Текст №{$block_number}", 'section' => 'blocks_section', 'type' => 'textarea' ]
+        );
+
+        $wp_customize->add_setting( "home_advantages_{$block_number}_svg" );
+        $wp_customize->add_control(
+            "home_advantages_{$block_number}_svg",
+            [ 'label' => "Иконка блока №{$block_number} в SVG", 'section' => 'blocks_section', 'type' => 'textarea' ]
+        );
+
+        $wp_customize->add_setting("home_advantages_{$block_number}_icon");
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+                $wp_customize, "home_advantages_{$block_number}_icon",
+                [ 'label' => "Иконка блока №{$block_number}", 'section' => 'blocks_section', 'settings' => "home_advantages_{$block_number}_icon" ]
+            )
+        );
+
+    }
+    
     #endregion
 
 }

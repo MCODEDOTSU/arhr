@@ -20,7 +20,7 @@ get_header(); ?>
                     <?php if (has_post_thumbnail()): ?>
 
                         <a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
-                            <?php the_post_thumbnail('thumbnail') ?>
+                            <?php the_post_thumbnail('medium') ?>
                         </a>
 
                         <a class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">

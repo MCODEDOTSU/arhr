@@ -14,7 +14,9 @@
         background-image: url('<?= $back ?>');
     }
 
-    header {
+    header,
+    .page-content.category .post-item:first-child,
+    .page-content.category .post-item.main {
         background: <?= get_theme_mod('color_1', '#fafafa') ?>;
     }
 
@@ -44,8 +46,17 @@
     footer .subscribe .form-label label,
     footer .subscribe .ajax-loader:before,
     #mobile-panel li a,
-    .mcode-calendar table.calendar td.current div {
+    .mcode-calendar table.calendar td.current div,
+    .arhr-advantages .arhr-advantages-item:hover,
+    .arhr-advantages .arhr-advantages-item:hover h2,
+    .arhr-advantages .arhr-advantages-item:hover h3,
+    .arhr-advantages .arhr-advantages-item:hover .container,
+    .page-content .post-tags a:hover {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
+    }
+
+    .arhr-advantages-item:hover svg .a {
+        fill: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
     header .main-right .contacts button,
@@ -53,7 +64,9 @@
     footer .widget_nav_menu .sub-menu,
     .contact-form input[type="submit"],
     header .main-right .contacts .btn,
-    .mcode-calendar table.calendar td.current div {
+    .mcode-calendar table.calendar td.current div,
+    .arhr-advantages .arhr-advantages-item:hover .container,
+    .page-content .post-tags a:hover {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -84,8 +97,14 @@
         color: <?= hex2rgba(get_theme_mod('color_3', '#3a85c0'), 0.2); ?>;
     }
 
-    .mcode-calendar table.calendar td.current div {
+    .mcode-calendar table.calendar td.current div,
+    .arhr-advantages .arhr-advantages-item:hover .container,
+    .page-content .post-tags a {
         border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
+    }
+
+    .arhr-advantages-item svg .a {
+        fill: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
     header .top-menu li a,
@@ -115,7 +134,9 @@
     #mobile-menu .account-link,
     .mcode-calendar .actions button,
     .mcode-calendar table td > a,
-    .mcode-calendar table td input[type="submit"] {
+    .mcode-calendar table td input[type="submit"],
+    .page-content .post-tags a,
+    .breadcrumbs a {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -132,8 +153,16 @@
     .page-content.single .comment-form-cookies-consent input[type="checkbox"],
     .page-content.searchpage .search-input,
     .mcode-calendar table th > div,
-    .mcode-calendar table td > div {
+    .mcode-calendar table td > div,
+    .arhr-advantages .arhr-advantages-item .container,
+    .page-content.category .post-item.main {
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
+    }
+
+    .page-content.category .post-item:first-child,
+    .page-content .border,
+    .breadcrumbs {
+        border-color: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 
 </style>
