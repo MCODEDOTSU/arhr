@@ -1860,10 +1860,10 @@ breadcrumbs
 .breadcrumbs {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
-    border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     margin-top: 32px;
     margin-bottom: 32px;
+    font-size: 14px;
 }
 
 .breadcrumbs i {
@@ -1873,4 +1873,5 @@ breadcrumbs
 .breadcrumbs a {
     text-decoration: none;
     color: #000000;
+    font-size: 14px;
 }
