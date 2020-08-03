@@ -115,10 +115,14 @@
 
 <div class="wrapper">
 
-    <div class="breadcrumbs fix">
+    <?php if ( !is_front_page() && !is_home()) { ?>
 
-        <?php if ( function_exists('yoast_breadcrumb') ) {
-            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-        } ?>
+        <div class="breadcrumbs fix">
 
-    </div>
+            <?php if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            } ?>
+
+        </div>
+
+<?php } ?>
