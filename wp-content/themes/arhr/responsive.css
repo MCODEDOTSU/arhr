@@ -240,7 +240,6 @@
 
 @media only screen and (max-width: 760px) {
 
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -283,6 +282,48 @@
     footer .subscribe .form-submit input {
         font-size: 20px;
         line-height: 60px;
+    }
+
+    .page-content h1 {
+        margin: 50px 0 40px;
+        text-align: center;
+    }
+
+    .page-content h3 {
+        font-size: 24px;
+    }
+
+    .page-content table {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .page-content table tbody,
+    .page-content table tr {
+        display: block;
+    }
+
+    .page-content table td {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .page-content p,
+    .page-content div,
+    .page-content td p,
+    .page-content td div {
+        font-size: 24px;
+    }
+
+    .page-content p.little,
+    .page-content div.little {
+        font-size: 24px;
+    }
+
+    .page-content a {
+        font-size: 24px;
     }
 
     .page-content.category .post-item:first-child .post-data.post-has-thumbnail,
@@ -349,6 +390,31 @@
 
     .breadcrumbs {
         display: none;
+    }
+
+    .contact-form .row {
+        padding: 16px;
+    }
+
+    .contact-form .row.no-border {
+        padding: 0;
+    }
+
+    .contact-form .input-text {
+        width: 100%;
+        margin: 0 0 16px;
+        font-size: 24px;
+    }
+
+    .contact-form .input-field {
+        padding: 0;
+        width: 100%;
+    }
+
+    .contact-form input {
+        font-size: 24px;
+        line-height: 1.5;
+        padding: 8px 16px;
     }
 
 }
@@ -419,12 +485,6 @@
         margin: 0 0 0 16px;
     }
 
-    .contact-form .input-field,
-    .contact-form .input-text {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
 }
 
 @media only screen and (max-width: 420px) {

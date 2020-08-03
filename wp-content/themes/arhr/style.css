@@ -1037,7 +1037,7 @@ PAGE
 .page-content h1 {
     font-size: 40px;
     line-height: 1.2;
-    margin: 0;
+    margin: 25px 0 38px;
     font-weight: 600;
     width: 100%;
 }
@@ -1049,9 +1049,10 @@ PAGE
 }
 
 .page-content h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 12px 0;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .page-content h4 {
@@ -1064,11 +1065,22 @@ PAGE
 .page-content div {
     font-size: 18px;
     line-height: 1.6;
-    margin: 0 0 32px;
+    margin: 0 0 38px;
+    font-weight: 300;
+    max-width: 560px;
+}
+
+.page-content p.little,
+.page-content div.little {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 4px;
+    font-weight: 300;
 }
 
 .page-content a {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.6;
     text-decoration: none;
     color: #3a85c0;
     font-weight: 700;
@@ -1084,6 +1096,14 @@ PAGE
     font-size: 14px;
     line-height: 1.6;
     margin: 0 0 16px;
+}
+
+.page-content td p,
+.page-content td div {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 4px;
+    font-weight: 400;
 }
 
 .page-content img {
@@ -1107,6 +1127,7 @@ PAGE
 .page-content table {
     width: 100%;
     border: none;
+    margin: 0 -16px;
 }
 
 .page-content table td {
@@ -1606,27 +1627,39 @@ CONTACT FORM
 }
 
 .contact-form .row {
-    padding: 8px 0;
-    margin: 0;
+    padding: 12px;
+    margin: 0 0 12px;
+    border: 1px solid #bbbbbb;
+}
+
+.contact-form .row.no-border {
+    border: none;
+    padding: 0;
 }
 
 .contact-form .input-text {
     display: inline-block;
     vertical-align: top;
-    width: 150px;
-    margin: 0 -155px 0 0;
-    line-height: 1.5;
+    width: 140px;
+    margin: 0 -146px 0 0;
+    line-height: 28px;
+    font-size: 14px;
 }
 
 .contact-form .input-field {
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    padding: 0 0 0 170px;
+    padding: 0 0 0 140px;
     line-height: 1.5;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+}
+
+.contact-form .contact-152 .input-field {
+    font-size: 14px;
 }
 
 .contact-form .input-field.full {
@@ -1635,34 +1668,37 @@ CONTACT FORM
 
 .contact-form input {
     font-size: 18px;
-    padding: 8px 16px;
-    font-weight: 400;
-    line-height: 1.5;
+    line-height: 28px;
+    padding: 0 8px;
     width: 100% !important;
     max-width: 100% !important;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: none;
+    background: #fafafa;
 }
 
 .contact-form input[type="checkbox"] {
     padding: 0;
-    width: 24px !important;
-    height: 24px;
+    width: 16px !important;
+    height: 16px;
     line-height: 1.5;
-    margin: 0 10px 3px 0 !important;
+    margin: 0 8px 2px 0 !important;
     vertical-align: middle;
 }
 
 .contact-form input[type="submit"] {
-    width: 200px;
+    max-width: 200px !important;
     border: none;
+    line-height: 28px;
+    font-size: 14px;
 }
 
 .contact-form textarea {
     resize: none;
     width: 100% !important;
-    padding: 5px 10px;
+    padding: 8px;
     line-height: 1.5;
     font-size: 18px;
     font-weight: 400;
@@ -1671,6 +1707,9 @@ CONTACT FORM
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: #222222;
+    border: none;
+    background: #fafafa;
+    height: 97px;
 }
 
 .contact-form input:disabled {

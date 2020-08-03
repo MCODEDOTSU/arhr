@@ -16,7 +16,9 @@
 
     header,
     .page-content.category .post-item:first-child,
-    .page-content.category .post-item.main {
+    .page-content.category .post-item.main,
+    .contact-form input,
+    .contact-form textarea {
         background: <?= get_theme_mod('color_1', '#fafafa') ?>;
     }
 
@@ -51,7 +53,8 @@
     .arhr-advantages .arhr-advantages-item:hover h2,
     .arhr-advantages .arhr-advantages-item:hover h3,
     .arhr-advantages .arhr-advantages-item:hover .container,
-    .page-content .post-tags a:hover {
+    .page-content .post-tags a:hover,
+    .contact-form input[type="submit"] {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -159,6 +162,7 @@
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
+    .contact-form .row,
     .page-content.category .post-item:first-child,
     .page-content .border,
     .breadcrumbs {
