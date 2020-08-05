@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-04 13:44+0000\n"
-"PO-Revision-Date: 2020-08-04 13:45+0000\n"
+"POT-Creation-Date: 2020-08-04 13:42+0000\n"
+"PO-Revision-Date: 2020-08-04 13:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -85,8 +85,8 @@ msgid "The Republic of Kazakhstan"
 msgstr "Республика Казахстан"
 
 #. Name of the template
-msgid "Members of the Association"
-msgstr "Члены Ассоциации"
+msgid "Члены Ассоциации"
+msgstr ""
 
 #: page-members.php:74
 msgid "write a letter"
