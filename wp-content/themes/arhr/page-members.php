@@ -34,9 +34,9 @@
 
         foreach( $pages as $page ) {
 
-            if ($location != get_post_meta($page->ID, 'member_item_location', true)) {
-                $location = get_post_meta($page->ID, 'member_item_location', true);
-                ?> <h2><?= arhr_get_location_name(get_post_meta($page->ID, 'member_item_location', true)) ?></h2><div> <?php
+            $item_location = get_post_meta($page->ID, 'member_item_location', true);
+            if ($location != $item_location) {
+                ?> <h2><?= arhr_get_location_name($item_location) ?></h2><div> <?php
             }
 
             $logo = get_post_meta($page->ID, 'member_item_logo', true);
@@ -175,8 +175,8 @@
 
             </div> <?php
 
-            if ($location != get_post_meta($page->ID, 'member_item_location', true)) {
-                $location = get_post_meta($page->ID, 'member_item_location', true);
+            if ($location != $item_location) {
+                $location = $item_location;
                 ?> </div> <?php
             }
         }
