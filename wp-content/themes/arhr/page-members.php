@@ -34,9 +34,10 @@
 
         foreach( $pages as $page ) {
 
-            $item_location = get_post_meta($page->ID, 'member_item_location', true);
-            if ($location != $item_location) {
-                ?> <h2><?= arhr_get_location_name($item_location) ?></h2><div> <?php
+            if ($location != get_post_meta($page->ID, 'member_item_location', true)) {
+                $separator = $location == 0 ? '<div>' : '</div><div>';
+                $location = get_post_meta($page->ID, 'member_item_location', true);
+                ?> <h2><?= arhr_get_location_name($location) ?></h2><?= $separator ?> <?php
             }
 
             $logo = get_post_meta($page->ID, 'member_item_logo', true);
@@ -174,14 +175,9 @@
 
 
             </div> <?php
-
-            if ($location != $item_location) {
-                $location = $item_location;
-                ?> </div> <?php
-            }
         }
 
-        ?> </div> <?php
+        ?> </div></div> <?php
 
         wp_reset_postdata();
 
