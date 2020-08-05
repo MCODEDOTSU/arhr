@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-04 13:44+0000\n"
-"PO-Revision-Date: 2020-08-04 13:45+0000\n"
+"POT-Creation-Date: 2020-08-05 08:53+0000\n"
+"PO-Revision-Date: 2020-08-05 08:53+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -88,25 +88,29 @@ msgstr "Республика Казахстан"
 msgid "Members of the Association"
 msgstr "Члены Ассоциации"
 
-#: page-members.php:74
+#: page-members.php:74 page-members.php:108 page-members.php:108
 msgid "write a letter"
 msgstr "написать письмо"
 
-#: page-members.php:86
+#: page-members.php:120
 msgid "Mailing address"
 msgstr "Почтовый адрес"
 
-#: page-members.php:95
+#: page-members.php:129 page-members.php:131
 msgid "Web site"
 msgstr "Веб-сайт"
 
-#: page-members.php:107
+#: page-members.php:141 page-members.php:143
 msgid "Phone"
 msgstr "Телефон"
 
-#: page-members.php:116
+#: page-members.php:150 page-members.php:152
 msgid "Fax"
 msgstr "Факс"
+
+#: page-members.php:170
+msgid "collapse description"
+msgstr "свернуть описание"
 
 #. Name of the template
 msgid "Search Page"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-04 13:44+0000\n"
+"POT-Creation-Date: 2020-08-05 08:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -87,24 +87,28 @@ msgstr ""
 msgid "Members of the Association"
 msgstr ""
 
-#: page-members.php:74
+#: page-members.php:74 page-members.php:108 page-members.php:108
 msgid "write a letter"
 msgstr ""
 
-#: page-members.php:86
+#: page-members.php:120
 msgid "Mailing address"
 msgstr ""
 
-#: page-members.php:95
+#: page-members.php:129 page-members.php:131
 msgid "Web site"
 msgstr ""
 
-#: page-members.php:107
+#: page-members.php:141 page-members.php:143
 msgid "Phone"
 msgstr ""
 
-#: page-members.php:116
+#: page-members.php:150 page-members.php:152
 msgid "Fax"
+msgstr ""
+
+#: page-members.php:170
+msgid "collapse description"
 msgstr ""
 
 #. Name of the template
