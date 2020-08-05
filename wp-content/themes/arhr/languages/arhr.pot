@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-01 05:56+0000\n"
+"POT-Creation-Date: 2020-08-04 13:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -27,22 +27,84 @@ msgstr ""
 msgid "All by tag:"
 msgstr ""
 
-#: category-anonsy-meropriyatij.php:53 category-anonsy-meropriyatij.php:73
-#: category-event-announcements.php:53 category-event-announcements.php:73
+#: category-anonsy-meropriyatij.php:74 category-event-announcements.php:74
 msgid "Start: "
 msgstr ""
 
-#: category-anonsy-meropriyatij.php:59 category-anonsy-meropriyatij.php:79
-#: category-event-announcements.php:59 category-event-announcements.php:79
+#: category-anonsy-meropriyatij.php:80 category-event-announcements.php:80
 msgid "Ending: "
 msgstr ""
 
-#: header.php:25
+#: footer.php:85 header.php:62
+msgid "Write to us"
+msgstr ""
+
+#: footer.php:94 header.php:25
 msgid "Account"
 msgstr ""
 
-#: header.php:73
-msgid "Write to us"
+#: functions.php:153
+msgid "Central (Central Federal District)"
+msgstr ""
+
+#: functions.php:154
+msgid "Northwestern (NWFD)"
+msgstr ""
+
+#: functions.php:155
+msgid "Southern (Southern Federal District)"
+msgstr ""
+
+#: functions.php:156
+msgid "North Caucasian (NCFD)"
+msgstr ""
+
+#: functions.php:157
+msgid "Privolzhsky (Volga Federal District)"
+msgstr ""
+
+#: functions.php:158
+msgid "Uralsky (UFO)"
+msgstr ""
+
+#: functions.php:159
+msgid "Siberian (Siberian Federal District)"
+msgstr ""
+
+#: functions.php:160
+msgid "Far Eastern (Far Eastern Federal District)"
+msgstr ""
+
+#: functions.php:161
+msgid "Republic of Belarus"
+msgstr ""
+
+#: functions.php:162
+msgid "The Republic of Kazakhstan"
+msgstr ""
+
+#. Name of the template
+msgid "Members of the Association"
+msgstr ""
+
+#: page-members.php:74
+msgid "write a letter"
+msgstr ""
+
+#: page-members.php:86
+msgid "Mailing address"
+msgstr ""
+
+#: page-members.php:95
+msgid "Web site"
+msgstr ""
+
+#: page-members.php:107
+msgid "Phone"
+msgstr ""
+
+#: page-members.php:116
+msgid "Fax"
 msgstr ""
 
 #. Name of the template

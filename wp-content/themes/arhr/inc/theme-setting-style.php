@@ -84,7 +84,8 @@
     .page-content a,
     #mobile-panel .contacts a,
     header .top-menu li a:hover,
-    header .header-menu .menu a:hover {
+    header .header-menu .menu a:hover,
+    .btn-link {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -165,7 +166,9 @@
     .contact-form .row,
     .page-content.category .post-item:first-child,
     .page-content .border,
-    .breadcrumbs {
+    .breadcrumbs,
+    .page-content .member-items .member-item .member-item-close,
+    .page-content .member-items .member-item .member-item-open {
         border-color: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 

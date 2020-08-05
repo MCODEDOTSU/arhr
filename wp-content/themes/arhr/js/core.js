@@ -7,7 +7,20 @@
                 closeButtonSelector: '#mobile-menu .mobile-btn-close',
             });
         }
+
+        // MEMBERS
+        members_page();
+
     });
+
+    function members_page() {
+        $('.page-content .member-items .member-item .member-item-close').on('click', function () {
+            $(this).parent().addClass('open');
+        });
+        $('.page-content .member-items .member-item .btn-close').on('click', function () {
+            $(this).parents('.member-item').removeClass('open');
+        });
+    }
 
 })(jQuery);
 

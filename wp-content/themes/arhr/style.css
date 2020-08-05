@@ -152,6 +152,16 @@ input[type="submit"]:hover {
     opacity: 0.6;
 }
 
+.btn-link {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #3a85c0;
+}
+
 .menu,
 .sub-menu {
     list-style: none;
@@ -1043,7 +1053,7 @@ PAGE
 }
 
 .page-content h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin: 24px 0;
     font-weight: 600;
 }
@@ -1088,14 +1098,18 @@ PAGE
 
 .page-content ul,
 .page-content ol {
-    padding: 0 0 0 32px;
-    margin: 0 0 32px;
+    margin: 0 0 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    list-style-position: inside;
+    padding: 0;
 }
 
 .page-content li {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 0 0 16px;
+    font-weight: 300;
 }
 
 .page-content td p,
@@ -1874,4 +1888,129 @@ breadcrumbs
     text-decoration: none;
     color: #000000;
     font-size: 14px;
+}
+
+/**
+members
+ */
+
+.page-content .member-items {
+    max-width: 100%;
+    width: 100%;
+}
+
+.page-content .member-items .member-item {
+    max-width: 100%;
+    padding: 16px 16px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: 0 -5px 0 0;
+}
+
+.page-content .member-items .member-item:nth-child(2n) {
+    margin-right: -16px;
+}
+
+.page-content .member-items .member-item.open {
+    width: 100%;
+    margin: 0;
+}
+
+.page-content .member-items .member-item .member-item-close {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    padding: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.page-content .member-items .member-item .member-item-open {
+    max-width: 100%;
+    width: 100%;
+    display: none;
+    margin: 0;
+    border: 1px solid #bbbbbb;
+    padding: 16px;
+}
+
+.page-content .member-items .member-item.open .member-item-close {
+    display: none;
+}
+
+.page-content .member-items .member-item.open .member-item-open {
+    display: block;
+}
+
+.member-items table {
+    width: 100%;
+}
+
+.member-items table td.title {
+    width: 50%;
+}
+
+.member-items table td.contacts {
+    width: 25%;
+    vertical-align: top;
+}
+
+.member-items img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0 -155px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.member-items .member-item-title {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 166px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.member-items h3 {
+    font-weight: 600;
+}
+
+.member-items a {
+    font-weight: 600;
+}
+
+.member-items .member-item-director {
+    font-size: 14px;
+    display: block;
+    margin: 12px 0 8px;
+}
+
+.member-items .member-item-data {
+    display: block;
+    margin: 0 0 16px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.member-items .member-item-data .title {
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    font-weight: 400;
+}
+
+.page-content .member-items p,
+.page-content .member-items div {
+    max-width: 100%;
+    margin: 0 0 16px;
+}
+
+.member-items .actions {
+    display: block;
+    width: 100%;
+    text-align: right;
 }
