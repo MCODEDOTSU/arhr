@@ -150,16 +150,16 @@ add_action('wp_head', 'arhr_theme_setting_style');
 function arhr_get_location_name($id)
 {
     $locations = [
-        1 => __('Central (Central Federal District)', 'arhr'),
-        2 => __('Northwestern (NWFD)', 'arhr'),
-        3 => __('Southern (Southern Federal District)', 'arhr'),
-        4 => __('North Caucasian (NCFD)', 'arhr'),
-        5 => __('Privolzhsky (Volga Federal District)', 'arhr'),
-        6 => __('Uralsky (UFO)', 'arhr'),
-        7 => __('Siberian (Siberian Federal District)', 'arhr'),
-        8 => __('Far Eastern (Far Eastern Federal District)', 'arhr'),
-        9 => __('Republic of Belarus', 'arhr'),
-        10 => __('The Republic of Kazakhstan', 'arhr'),
+        '01' => __('Central (Central Federal District)', 'arhr'),
+        '02' => __('Northwestern (NWFD)', 'arhr'),
+        '03' => __('Southern (Southern Federal District)', 'arhr'),
+        '04' => __('North Caucasian (NCFD)', 'arhr'),
+        '05' => __('Privolzhsky (Volga Federal District)', 'arhr'),
+        '06' => __('Uralsky (UFO)', 'arhr'),
+        '07' => __('Siberian (Siberian Federal District)', 'arhr'),
+        '08' => __('Far Eastern (Far Eastern Federal District)', 'arhr'),
+        '09' => __('Republic of Belarus', 'arhr'),
+        '10' => __('The Republic of Kazakhstan', 'arhr'),
     ];
     return !empty($locations[$id]) ? $locations[$id] : '';
 }
