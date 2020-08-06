@@ -2015,6 +2015,11 @@ members
     font-size: 14pt;
 }
 
+.page-content .member-items li {
+    margin: 0 0 16px;
+    font-size: 14pt;
+}
+
 .member-items .actions {
     display: block;
     width: 100%;
