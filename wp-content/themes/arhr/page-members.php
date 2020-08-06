@@ -55,12 +55,12 @@
                     <span class="title">
 
                         <?php if(!empty($logo)) { ?>
-                            <img src="<?= wp_get_attachment_image_url($logo, 'thumbnail') ?>" />
+                            <img src="<?= wp_get_attachment_image_url($logo, 'thumbnail') ?>" /><!--
                         <?php } else { ?>
-                            <img src="<?= get_template_directory_uri() ?>/img/thumb-150-150.png" />
+                            <img src="<?= get_template_directory_uri() ?>/img/thumb-150-150.png" /><!--
                         <?php } ?>
 
-                        <div class="member-item-title">
+                        --><div class="member-item-title">
 
                             <h3><?= $page->post_title ?></h3>
 
@@ -89,12 +89,12 @@
                             <td class="title">
 
                                 <?php if(!empty($logo)) { ?>
-                                    <img src="<?= wp_get_attachment_image_url($logo, 'thumbnail') ?>" />
+                                    <img src="<?= wp_get_attachment_image_url($logo, 'thumbnail') ?>" /><!--
                                 <?php } else { ?>
-                                    <img src="<?= get_template_directory_uri() ?>/img/thumb-150-150.png" />
+                                    <img src="<?= get_template_directory_uri() ?>/img/thumb-150-150.png" /><!--
                                 <?php } ?>
 
-                                <div class="member-item-title">
+                                --><div class="member-item-title">
 
                                     <h3><?= $page->post_title ?></h3>
 

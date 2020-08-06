@@ -1960,7 +1960,7 @@ members
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin: 0 -155px 0 0;
+    margin: 0 -150px 0 0;
     padding: 0;
     vertical-align: middle;
 }
@@ -1977,16 +1977,19 @@ members
 
 .member-items h3 {
     font-weight: 600;
+    font-size: 16pt;
+    margin: 0;
 }
 
 .member-items a {
     font-weight: 600;
+    font-size: 14pt;
 }
 
 .member-items .member-item-director {
-    font-size: 14px;
+    font-size: 12pt;
     display: block;
-    margin: 12px 0 8px;
+    margin: 4px 0 0;
 }
 
 .member-items .member-item-data {
@@ -1994,6 +1997,7 @@ members
     margin: 0 0 16px;
     font-weight: 300;
     line-height: 1.2;
+    font-size: 14pt;
 }
 
 .member-items .member-item-data .title {
@@ -2001,12 +2005,14 @@ members
     margin: 0;
     display: block;
     font-weight: 400;
+    font-size: 14pt;
 }
 
 .page-content .member-items p,
 .page-content .member-items div {
     max-width: 100%;
     margin: 0 0 16px;
+    font-size: 14pt;
 }
 
 .member-items .actions {
