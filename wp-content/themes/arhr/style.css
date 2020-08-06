@@ -1956,7 +1956,8 @@ members
     vertical-align: top;
 }
 
-.member-items img {
+.member-items .member-item-open .title img,
+.member-items .member-item-close img {
     display: inline-block;
     width: 150px;
     height: 150px;
