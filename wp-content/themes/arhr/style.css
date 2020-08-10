@@ -1894,6 +1894,58 @@ breadcrumbs
 members
  */
 
+.members-map {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0 332px 0 0;
+    margin: 0 -5px 0 0 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.members-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 0 0 0 -300px !important;
+}
+
+.members-list ul {
+    list-style: none;
+}
+
+.members-list li {
+    font-size: 18px !important;
+    margin: 0 0 8px !important;
+    font-weight: 600;
+    position: relative;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.members-list li:hover,
+.members-list li.hover {
+    opacity: 0.5;
+}
+
+.members-list li:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #dddddd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+}
+
 .page-content .member-items {
     max-width: 100%;
     width: 100%;

@@ -14,6 +14,10 @@
 
         <?php the_content(); ?>
 
+        <!-- География Партнерства -->
+
+        <?php get_template_part('inc/members/geography'); ?>
+
         <!-- Список Членов -->
 
         <?php
@@ -37,7 +41,7 @@
             if ($location != get_post_meta($page->ID, 'member_item_location', true)) {
                 $separator = $location == 0 ? '<div>' : '</div><div>';
                 $location = get_post_meta($page->ID, 'member_item_location', true);
-                ?> <h2><?= arhr_get_location_name($location) ?></h2><?= $separator ?> <?php
+                ?> <h2 id="location-<?= $location ?>"><?= arhr_get_location_name($location) ?></h2><?= $separator ?> <?php
             }
 
             $logo = get_post_meta($page->ID, 'member_item_logo', true);

@@ -163,6 +163,10 @@
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
+    .members-list li:before {
+        background: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
+    }
+
     .contact-form .row,
     .page-content.category .post-item:first-child,
     .page-content .border,
