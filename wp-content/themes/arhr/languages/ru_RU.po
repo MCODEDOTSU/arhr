@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-05 08:53+0000\n"
-"PO-Revision-Date: 2020-08-05 08:53+0000\n"
+"POT-Creation-Date: 2020-08-10 09:18+0000\n"
+"PO-Revision-Date: 2020-08-10 09:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -36,19 +36,22 @@ msgstr "Начало:"
 msgid "Ending: "
 msgstr "Окончание:"
 
-#: footer.php:85 header.php:62
+#: footer.php:85 header.php:62 arhr/header.php:68
 msgid "Write to us"
 msgstr "Написать нам"
 
-#: footer.php:94 header.php:25
+#: footer.php:94 header.php:25 arhr/header.php:25
 msgid "Account"
 msgstr "Личный кабинет"
 
-#: functions.php:153
+#: functions.php:153 inc/homepage/geography.php:8 inc/homepage/geography.php:8
+#: inc/homepage/map.php:39 inc/members/geography.php:8
+#: inc/members/geography.php:8 inc/members/map.php:39
 msgid "Central (Central Federal District)"
 msgstr "Центральный (ЦФО)"
 
-#: functions.php:154
+#: functions.php:154 inc/homepage/geography.php:9 inc/homepage/geography.php:9
+#: inc/members/geography.php:9 inc/members/geography.php:9
 msgid "Northwestern (NWFD)"
 msgstr "Северо-западный (СЗФО)"
 
@@ -60,27 +63,39 @@ msgstr "Южный (ЮФО)"
 msgid "North Caucasian (NCFD)"
 msgstr "Северо-Кавказский (СКФО)"
 
-#: functions.php:157
+#: functions.php:157 inc/homepage/geography.php:10
+#: inc/homepage/geography.php:10 inc/members/geography.php:10
+#: inc/members/geography.php:10
 msgid "Privolzhsky (Volga Federal District)"
 msgstr "Приволжский (ПФО)"
 
-#: functions.php:158
+#: functions.php:158 inc/homepage/geography.php:11
+#: inc/homepage/geography.php:11 inc/members/geography.php:11
+#: inc/members/geography.php:11
 msgid "Uralsky (UFO)"
 msgstr "Уральский (УФО)"
 
-#: functions.php:159
+#: functions.php:159 inc/homepage/geography.php:12
+#: inc/homepage/geography.php:12 inc/members/geography.php:12
+#: inc/members/geography.php:12
 msgid "Siberian (Siberian Federal District)"
 msgstr "Сибирский (СФО)"
 
-#: functions.php:160
+#: functions.php:160 inc/homepage/map.php:322 inc/members/map.php:322
 msgid "Far Eastern (Far Eastern Federal District)"
 msgstr "Дальневосточный (ДФО)"
 
-#: functions.php:161
+#: functions.php:161 inc/homepage/geography.php:13
+#: inc/homepage/geography.php:13 inc/homepage/map.php:379
+#: inc/members/geography.php:13 inc/members/geography.php:13
+#: inc/members/map.php:379
 msgid "Republic of Belarus"
 msgstr "Республика Беларусь"
 
-#: functions.php:162
+#: functions.php:162 inc/homepage/geography.php:14
+#: inc/homepage/geography.php:14 inc/homepage/map.php:384
+#: inc/members/geography.php:14 inc/members/geography.php:14
+#: inc/members/map.php:384
 msgid "The Republic of Kazakhstan"
 msgstr "Республика Казахстан"
 
@@ -88,27 +103,27 @@ msgstr "Республика Казахстан"
 msgid "Members of the Association"
 msgstr "Члены Ассоциации"
 
-#: page-members.php:74 page-members.php:108 page-members.php:108
+#: page-members.php:79 page-members.php:113 page-members.php:113
 msgid "write a letter"
 msgstr "написать письмо"
 
-#: page-members.php:120
+#: page-members.php:125
 msgid "Mailing address"
 msgstr "Почтовый адрес"
 
-#: page-members.php:129 page-members.php:131
+#: page-members.php:134 page-members.php:136
 msgid "Web site"
 msgstr "Веб-сайт"
 
-#: page-members.php:141 page-members.php:143
+#: page-members.php:146 page-members.php:148
 msgid "Phone"
 msgstr "Телефон"
 
-#: page-members.php:150 page-members.php:152
+#: page-members.php:155 page-members.php:157
 msgid "Fax"
 msgstr "Факс"
 
-#: page-members.php:170
+#: page-members.php:175
 msgid "collapse description"
 msgstr "свернуть описание"
 
@@ -119,6 +134,14 @@ msgstr "Страница поиска"
 #: search.php:10
 msgid "Search:"
 msgstr "Поиск:"
+
+#: inc/homepage/advantages.php:5
+msgid "Our advantages"
+msgstr "Наши преимущества"
+
+#: inc/members/geography.php:1
+msgid "Geography of the Partnership"
+msgstr "География партнерства"
 
 #. Name of the theme
 msgid "ARHR"

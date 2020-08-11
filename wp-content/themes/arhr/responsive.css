@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1400px) {
+
     .fix {
         padding: 0 32px;
     }
@@ -7,6 +8,47 @@
         height: calc((100vw - 384px) * 0.6);
         overflow: hidden;
     }
+
+    .homepage .map-item.location-01 {
+        left: calc(392px + (100% - 392px) * 0.18);
+    }
+
+    .homepage .map-item.location-02 {
+        left: calc(392px + (100% - 392px) * 0.28);
+    }
+
+    .homepage .map-item.location-03 {
+        left: calc(392px + (100% - 392px) * 0.12);
+    }
+
+    .homepage .map-item.location-04 {
+        left: calc(392px + (100% - 392px) * 0.15);
+    }
+
+    .homepage .map-item.location-05 {
+        left: calc(392px + (100% - 392px) * 0.26);
+    }
+
+    .homepage .map-item.location-06 {
+        left: calc(392px + (100% - 392px) * 0.44);
+    }
+
+    .homepage .map-item.location-07 {
+        left: calc(392px + (100% - 392px) * 0.61);
+    }
+
+    .homepage .map-item.location-08 {
+        left: calc(392px + (100% - 392px) * 0.6);
+    }
+
+    .homepage .map-item.location-09 {
+        left: calc(392px + (100% - 392px) * 0.1);
+    }
+
+    .homepage .map-item.location-10 {
+        left: calc(392px + (100% - 392px) * 0.36);
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -134,15 +176,15 @@
         margin: 0 auto;
     }
 
+    header .header-menu {
+        padding: 16px 0;
+    }
+
     header .header-menu .menu-container,
     header .header-menu .social-container {
         width: 100%;
         margin: 0;
         padding: 0;
-    }
-
-    header .header-menu .menu-container {
-        margin: 8px 0 0;
     }
 
     header .header-menu .social-container {
@@ -178,6 +220,73 @@
     .members-list li {
         font-size: 16px !important;
         margin: 0 0 4px !important;
+    }
+
+    .homepage .map-description {
+        width: 240px;
+        margin: 0 -245px 0 0;
+    }
+
+    .homepage .map-description h2 {
+        font-size: 26pt;
+        margin: 0 0 16px;
+    }
+
+    .homepage .map-description p {
+        font-size: 16pt;
+    }
+
+    .homepage .map-description .btn {
+        padding: 8px 16px;
+        font-size: 10pt;
+    }
+
+    .homepage .map-description .btn.btn-2 {
+        margin: 8px 0 0 0;
+    }
+
+    .homepage .map-container {
+        padding: 0 0 0 272px;
+    }
+
+    .homepage .map-item.location-01 {
+        left: calc(272px + (100% - 272px) * 0.18);
+    }
+
+    .homepage .map-item.location-02 {
+        left: calc(272px + (100% - 272px) * 0.28);
+    }
+
+    .homepage .map-item.location-03 {
+        left: calc(272px + (100% - 272px) * 0.12);
+    }
+
+    .homepage .map-item.location-04 {
+        left: calc(272px + (100% - 272px) * 0.15);
+    }
+
+    .homepage .map-item.location-05 {
+        left: calc(272px + (100% - 272px) * 0.26);
+    }
+
+    .homepage .map-item.location-06 {
+        left: calc(272px + (100% - 272px) * 0.44);
+    }
+
+    .homepage .map-item.location-07 {
+        left: calc(272px + (100% - 272px) * 0.61);
+    }
+
+    .homepage .map-item.location-08 {
+        left: calc(272px + (100% - 272px) * 0.6);
+    }
+
+    .homepage .map-item.location-09 {
+        left: calc(272px + (100% - 272px) * 0.1);
+    }
+
+    .homepage .map-item.location-10 {
+        left: calc(272px + (100% - 272px) * 0.36);
     }
 }
 
@@ -248,6 +357,67 @@
 
     .arhr-advantages .arhr-advantages-item .container {
         height: 310px;
+    }
+
+    .homepage .map-description {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .homepage .map-container {
+        padding: 0;
+        margin: 32px 0 0 0;
+    }
+
+    .homepage .map-item.location-01 {
+        top: 68%;
+        left: calc((100% - 32px) * 0.20);
+    }
+
+    .homepage .map-item.location-02 {
+        top: 56%;
+        left: calc((100% - 32px) * 0.28);
+    }
+
+    .homepage .map-item.location-03 {
+        top: 76%;
+        left: calc((100% - 32px) * 0.12);
+    }
+
+    .homepage .map-item.location-04 {
+        top: 88%;
+        left: calc((100% - 32px) * 0.15);
+    }
+
+    .homepage .map-item.location-05 {
+        top: 73%;
+        left: calc((100% - 32px) * 0.28);
+    }
+
+    .homepage .map-item.location-06 {
+        top: 68%;
+        left: calc((100% - 32px) * 0.46);
+    }
+
+    .homepage .map-item.location-07 {
+        top: 75%;
+        left: calc((100% - 32px) * 0.62);
+    }
+
+    .homepage .map-item.location-08 {
+        top: 60%;
+        left: calc((100% - 32px) * 0.6);
+    }
+
+    .homepage .map-item.location-09 {
+        top: 60%;
+        left: calc((100% - 32px) * 0.12);
+    }
+
+    .homepage .map-item.location-10 {
+        top: 85%;
+        left: calc((100% - 32px) * 0.38);
     }
 
 }

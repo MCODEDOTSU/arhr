@@ -18,7 +18,8 @@
     .page-content.category .post-item:first-child,
     .page-content.category .post-item.main,
     .contact-form input,
-    .contact-form textarea {
+    .contact-form textarea,
+    .homepage .map {
         background: <?= get_theme_mod('color_1', '#fafafa') ?>;
     }
 
@@ -29,7 +30,9 @@
     footer .subscribe .form-input,
     footer .subscribe .form-submit,
     #mobile-menu > .mobile-menu,
-    #mobile-panel {
+    #mobile-panel,
+    .homepage .map-description .btn.btn-2,
+    .homepage .map-item {
         background: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -54,7 +57,10 @@
     .arhr-advantages .arhr-advantages-item:hover h3,
     .arhr-advantages .arhr-advantages-item:hover .container,
     .page-content .post-tags a:hover,
-    .contact-form input[type="submit"] {
+    .contact-form input[type="submit"],
+    .homepage .map-description .btn,
+    .homepage .map-description .btn:hover,
+    .homepage .map-description .btn.btn-2:hover {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -69,7 +75,8 @@
     header .main-right .contacts .btn,
     .mcode-calendar table.calendar td.current div,
     .arhr-advantages .arhr-advantages-item:hover .container,
-    .page-content .post-tags a:hover {
+    .page-content .post-tags a:hover,
+    .homepage .map-description .btn {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -85,7 +92,9 @@
     #mobile-panel .contacts a,
     header .top-menu li a:hover,
     header .header-menu .menu a:hover,
-    .btn-link {
+    .btn-link,
+    .homepage .map-item .map-item-count span,
+    .homepage .map-item a {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -103,7 +112,8 @@
 
     .mcode-calendar table.calendar td.current div,
     .arhr-advantages .arhr-advantages-item:hover .container,
-    .page-content .post-tags a {
+    .page-content .post-tags a,
+    .homepage .map-description .btn {
         border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -140,14 +150,17 @@
     .mcode-calendar table td > a,
     .mcode-calendar table td input[type="submit"],
     .page-content .post-tags a,
-    .breadcrumbs a {
+    .breadcrumbs a,
+    .homepage .map-description a,
+    .homepage .map-description .btn.btn-2 {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
     footer .subscribe .form-submit input,
     header .header-menu .menu > li > a:before,
     #mobile-menu .menu > li.menu-item-has-children > a:before,
-    header .main-right .contacts .btn:hover {
+    header .main-right .contacts .btn:hover,
+    .homepage .map-description .btn:hover {
         background: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -159,7 +172,9 @@
     .mcode-calendar table th > div,
     .mcode-calendar table td > div,
     .arhr-advantages .arhr-advantages-item .container,
-    .page-content.category .post-item.main {
+    .page-content.category .post-item.main,
+    .homepage .map-description .btn:hover,
+    .homepage .map-description .btn:hover {
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 

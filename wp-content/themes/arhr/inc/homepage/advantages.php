@@ -2,7 +2,7 @@
 
 <div class="arhr-advantages fix">
 
-    <h2 class="title">Наши преимущества</h2>
+    <h2 class="title"><?= __('Our advantages', 'arhr') ?></h2>
 
     <div class="items">
 

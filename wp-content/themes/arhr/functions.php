@@ -164,3 +164,39 @@ function arhr_get_location_name($id)
     return !empty($locations[$id]) ? $locations[$id] : '';
 }
 /* end Get Location Name */
+
+/* Get Members */
+function arhr_get_members_list()
+{
+    $pages = get_posts([
+        'numberposts' => -1,
+        'post_status' => 'publish',
+        'orderby' => 'meta_value',
+        'order' => 'ASC',
+        'meta_key' => 'member_item_location',
+        'post_type' => 'page',
+    ]);
+
+    $result = [];
+
+    foreach( $pages as $page ) {
+
+        $location = get_post_meta($page->ID, 'member_item_location', true);
+
+        if (empty($result[$location])) {
+            $result[$location] = [
+                'title' => arhr_get_location_name($location),
+                'items' => []
+            ];
+        }
+
+        $result[$location]['items'][] = [
+            'title' => $page->post_title,
+            'url' => get_permalink($page->ID)
+        ];
+
+    }
+
+    return $result;
+}
+/* end Get Members */

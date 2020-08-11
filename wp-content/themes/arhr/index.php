@@ -2,6 +2,8 @@
 
     <div class="page homepage">
 
+        <?php get_template_part('inc/main/geography'); ?>
+
         <?php while (have_posts()) : the_post(); ?>
 
             <?php the_content(); ?>
