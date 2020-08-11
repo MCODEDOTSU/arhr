@@ -355,6 +355,11 @@
 
 @media only screen and (max-width: 800px) {
 
+    .page-content.page-members .member-items .member-item {
+        width: 100%;
+        padding: 16px 0 0;
+    }
+
     .arhr-advantages .arhr-advantages-item .container {
         height: 310px;
     }
