@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-11 17:18:18+0000\n"
+"PO-Revision-Date: 2020-08-13 17:47:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -640,10 +640,10 @@ msgstr "Ключевое слово схемы \"type\" для %1$s может �
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message.
 #. translators: 1: Theme name. 2: Theme slug.
-#: wp-includes/rest-api.php:636 wp-admin/includes/class-wp-debug-data.php:1049
-#: wp-admin/includes/class-wp-debug-data.php:1068
-#: wp-admin/includes/class-wp-debug-data.php:1165
-#: wp-admin/includes/class-wp-debug-data.php:1330
+#: wp-includes/rest-api.php:636 wp-admin/includes/class-wp-debug-data.php:1055
+#: wp-admin/includes/class-wp-debug-data.php:1074
+#: wp-admin/includes/class-wp-debug-data.php:1171
+#: wp-admin/includes/class-wp-debug-data.php:1336
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
@@ -14489,13 +14489,13 @@ msgid "Sites"
 msgstr "Сайты"
 
 #: wp-signup.php:206 wp-admin/includes/class-wp-links-list-table.php:259
-#: wp-admin/includes/class-wp-debug-data.php:99
-#: wp-admin/includes/class-wp-debug-data.php:104
-#: wp-admin/includes/class-wp-debug-data.php:109
-#: wp-admin/includes/class-wp-debug-data.php:119
-#: wp-admin/includes/class-wp-debug-data.php:748
-#: wp-admin/includes/class-wp-debug-data.php:757
-#: wp-admin/includes/class-wp-debug-data.php:766
+#: wp-admin/includes/class-wp-debug-data.php:100
+#: wp-admin/includes/class-wp-debug-data.php:105
+#: wp-admin/includes/class-wp-debug-data.php:110
+#: wp-admin/includes/class-wp-debug-data.php:115
+#: wp-admin/includes/class-wp-debug-data.php:754
+#: wp-admin/includes/class-wp-debug-data.php:763
+#: wp-admin/includes/class-wp-debug-data.php:772
 msgid "Yes"
 msgstr "Да"
 
@@ -14691,9 +14691,9 @@ msgstr "Изображения"
 #. translators: %s: Theme author link.
 #. translators: %s: Plugin author.
 #: wp-includes/js/dist/block-directory.js:2075
-#: wp-admin/includes/class-wp-debug-data.php:887
-#: wp-admin/includes/class-wp-debug-data.php:934
-#: wp-admin/includes/class-wp-debug-data.php:1263
+#: wp-admin/includes/class-wp-debug-data.php:893
+#: wp-admin/includes/class-wp-debug-data.php:940
+#: wp-admin/includes/class-wp-debug-data.php:1269
 #: wp-admin/includes/class-wp-themes-list-table.php:263
 #: wp-admin/includes/theme.php:815
 #: wp-admin/includes/class-wp-plugins-list-table.php:1026
@@ -14707,9 +14707,9 @@ msgid "By %s"
 msgstr "Автор: %s"
 
 #: wp-includes/js/dist/block-library.js:22943
-#: wp-admin/includes/class-wp-debug-data.php:66
-#: wp-admin/includes/class-wp-debug-data.php:1074
-#: wp-admin/includes/class-wp-debug-data.php:1171
+#: wp-admin/includes/class-wp-debug-data.php:67
+#: wp-admin/includes/class-wp-debug-data.php:1080
+#: wp-admin/includes/class-wp-debug-data.php:1177
 #: wp-admin/includes/class-theme-installer-skin.php:238
 #: wp-admin/includes/class-plugin-installer-skin.php:217
 msgid "Version"
@@ -15102,7 +15102,7 @@ msgstr "Изменить метку"
 #: wp-includes/js/dist/block-library.js:8373
 #: wp-includes/js/dist/block-library.js:9554
 #: wp-includes/js/dist/block-library.js:23475 wp-admin/edit-tags.php:462
-#: wp-admin/includes/class-wp-debug-data.php:1059
+#: wp-admin/includes/class-wp-debug-data.php:1065
 #: wp-admin/includes/media.php:1099 wp-admin/includes/media.php:1227
 #: wp-admin/includes/media.php:2938 wp-admin/includes/media.php:2954
 #: wp-admin/edit-tag-form.php:173
@@ -15123,8 +15123,8 @@ msgid "Description"
 msgstr "Описание"
 
 #: wp-includes/comment-template.php:2341
-#: wp-admin/includes/class-wp-debug-data.php:1065
-#: wp-admin/includes/class-wp-debug-data.php:1162
+#: wp-admin/includes/class-wp-debug-data.php:1071
+#: wp-admin/includes/class-wp-debug-data.php:1168
 #: wp-admin/includes/class-wp-users-list-table.php:357
 #: wp-admin/includes/template.php:476 wp-admin/user-edit.php:401
 #: wp-admin/edit-form-comment.php:49
@@ -15290,13 +15290,13 @@ msgid "Edit"
 msgstr "Изменить"
 
 #: wp-signup.php:210 wp-admin/includes/class-wp-links-list-table.php:261
-#: wp-admin/includes/class-wp-debug-data.php:99
-#: wp-admin/includes/class-wp-debug-data.php:104
-#: wp-admin/includes/class-wp-debug-data.php:109
-#: wp-admin/includes/class-wp-debug-data.php:119
-#: wp-admin/includes/class-wp-debug-data.php:748
-#: wp-admin/includes/class-wp-debug-data.php:757
-#: wp-admin/includes/class-wp-debug-data.php:766
+#: wp-admin/includes/class-wp-debug-data.php:100
+#: wp-admin/includes/class-wp-debug-data.php:105
+#: wp-admin/includes/class-wp-debug-data.php:110
+#: wp-admin/includes/class-wp-debug-data.php:115
+#: wp-admin/includes/class-wp-debug-data.php:754
+#: wp-admin/includes/class-wp-debug-data.php:763
+#: wp-admin/includes/class-wp-debug-data.php:772
 msgid "No"
 msgstr "Нет"
 
@@ -15335,8 +15335,8 @@ msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1209 wp-includes/theme-compat/sidebar.php:29
 #: wp-includes/js/dist/components.js:43008 wp-includes/js/dist/editor.js:8532
-#: wp-admin/includes/class-wp-debug-data.php:1079
-#: wp-admin/includes/class-wp-debug-data.php:1176
+#: wp-admin/includes/class-wp-debug-data.php:1085
+#: wp-admin/includes/class-wp-debug-data.php:1182
 #: wp-admin/includes/class-theme-installer-skin.php:239
 #: wp-admin/includes/class-plugin-installer-skin.php:218
 #: wp-admin/includes/meta-boxes.php:906 wp-admin/includes/meta-boxes.php:1567
