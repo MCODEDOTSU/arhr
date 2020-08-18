@@ -85,6 +85,10 @@ function mcode_calendar_get_days_month_calendar($count)
                 $html .= "<a class='event-item $event_class' href='{$post['permalink']}'><span class='date-start'>{$date}</span><h2>{$post['title']}</h2></a>";
 
             }
+        } else {
+
+            $html .= "<label class='empty'>" . __('No events available', 'mcode-calendar') . "</label>";
+
         }
 
     }

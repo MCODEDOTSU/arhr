@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MCode Calendar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 11:15+0000\n"
-"PO-Revision-Date: 2020-08-18 11:16+0000\n"
+"POT-Creation-Date: 2020-08-18 12:34+0000\n"
+"PO-Revision-Date: 2020-08-18 12:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -13,148 +13,75 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.2; wp-5.5"
+"X-Loco-Version: 2.4.2; wp-5.4"
 
-#: mcode-calendar.php:9
-msgid "f_January"
-msgstr "Января"
-
-#: mcode-calendar.php:10
-msgid "f_February"
-msgstr "Февраля"
-
-#: mcode-calendar.php:11
-msgid "f_March"
-msgstr "Марта"
-
-#: mcode-calendar.php:12
-msgid "f_April"
-msgstr "Апреля"
-
-#: mcode-calendar.php:13
-msgid "f_May"
-msgstr "Мая"
-
-#: mcode-calendar.php:14
-msgid "f_June"
-msgstr "Июня"
-
-#: mcode-calendar.php:15
-msgid "f_July"
-msgstr "Июля"
-
-#: mcode-calendar.php:16
-msgid "f_August"
-msgstr "Августа"
-
-#: mcode-calendar.php:17
-msgid "f_September"
-msgstr "Сентября"
-
-#: mcode-calendar.php:18
-msgid "f_October"
-msgstr "Октября"
-
-#: mcode-calendar.php:19
-msgid "f_November"
-msgstr "Ноября"
-
-#: mcode-calendar.php:20
-msgid "f_December"
-msgstr "Декабря"
-
-#: mcode-calendar.php:24 mcode-calendar.php:447
-msgid "Mon"
-msgstr "пн"
-
-#: mcode-calendar.php:25 mcode-calendar.php:448
-msgid "Tue"
-msgstr "вт"
-
-#: mcode-calendar.php:26 mcode-calendar.php:449
-msgid "Wed"
-msgstr "ср"
-
-#: mcode-calendar.php:27 mcode-calendar.php:450
-msgid "Thu"
-msgstr "чт"
-
-#: mcode-calendar.php:28 mcode-calendar.php:451
-msgid "Fri"
-msgstr "пт"
-
-#: mcode-calendar.php:29 mcode-calendar.php:452
-msgid "Sat"
-msgstr "сб"
-
-#: mcode-calendar.php:30 mcode-calendar.php:453
-msgid "Sun"
-msgstr "вс"
-
-#: mcode-calendar.php:51
+#: mcode-calendar.php:26
 msgid "Calendar"
 msgstr "Календарь"
 
-#: mcode-calendar.php:81
+#: mcode-calendar.php:56
 msgid "Days"
 msgstr "Дни"
 
-#: mcode-calendar.php:83
+#: mcode-calendar.php:58
 msgid "Month"
 msgstr "Месяц"
 
-#: mcode-calendar.php:411 mcode-calendar.php:492 mcode-calendar.php:518
-#: mcode-calendar.php:560
-msgid "Event list"
-msgstr "Список событий"
+#: mcode-calendar.php:90
+msgid "No events available"
+msgstr "Нет доступных мероприятий"
 
-#: mcode-calendar.php:432
+#: mcode-calendar.php:115
 msgid "January"
 msgstr "Январь"
 
-#: mcode-calendar.php:433
+#: mcode-calendar.php:116
 msgid "February"
 msgstr "Февраль"
 
-#: mcode-calendar.php:434
+#: mcode-calendar.php:117
 msgid "March"
 msgstr "Март"
 
-#: mcode-calendar.php:435
+#: mcode-calendar.php:118
 msgid "April"
 msgstr "Апрель"
 
-#: mcode-calendar.php:436
+#: mcode-calendar.php:119
 msgid "May"
 msgstr "Май"
 
-#: mcode-calendar.php:437
+#: mcode-calendar.php:120
 msgid "June"
 msgstr "Июнь"
 
-#: mcode-calendar.php:438
+#: mcode-calendar.php:121
 msgid "July"
 msgstr "Июль"
 
-#: mcode-calendar.php:439
+#: mcode-calendar.php:122
 msgid "August"
 msgstr "Август"
 
-#: mcode-calendar.php:440
+#: mcode-calendar.php:123
 msgid "September"
 msgstr "Сентябрь"
 
-#: mcode-calendar.php:441
+#: mcode-calendar.php:124
 msgid "October"
 msgstr "Октябрь"
 
-#: mcode-calendar.php:442
+#: mcode-calendar.php:125
 msgid "November"
 msgstr "Ноябрь"
 
-#: mcode-calendar.php:443
+#: mcode-calendar.php:126
 msgid "December"
 msgstr "Декабрь"
+
+#: mcode-calendar.php:402
+msgid "Event list"
+msgstr "Список событий"
 
 #: page.php:3
 msgid "Calendar settings"

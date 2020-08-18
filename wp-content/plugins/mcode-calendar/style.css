@@ -107,6 +107,15 @@
     display: none;
 }
 
+.mcode_calendar-days_month .empty {
+    padding: 8px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 14pt;
+    text-align: center;
+    display: block;
+}
+
 .mcode_calendar-full .actions {
     margin: 0 0 32px;
 }

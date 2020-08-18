@@ -62,7 +62,8 @@
     .homepage .map-description .btn:hover,
     .homepage .map-description .btn.btn-2:hover,
     .homepage .calendar-container .event-item.today,
-    .calendar-grid td.current {
+    .calendar-grid td.current,
+    .mcode_calendar-days_month .empty {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -80,7 +81,8 @@
     .page-content .post-tags a:hover,
     .homepage .map-description .btn,
     .homepage .calendar-container .event-item.today,
-    .calendar-grid td.current {
+    .calendar-grid td.current,
+    .mcode_calendar-days_month .empty {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
