@@ -2,23 +2,23 @@
 
     <div class="single page-content fix">
 
-        <div class="border">
+        <div class="border"><!--
 
             <?php if (have_posts()) : the_post(); ?>
 
                 <?php if (has_post_thumbnail()): ?>
 
-                    <a class="post-thumbnail" href="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>"
+                    --><a class="post-thumbnail" href="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>"
                        style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')">
-                    </a>
+                    </a><!--
 
                 <?php else: ?>
 
-                    <div class="post-thumbnail"></div>
+                    --><div class="post-thumbnail"></div><!--
 
                 <?php endif; ?>
 
-                <div class="post-title post-has-thumbnail">
+                --><div class="post-title post-has-thumbnail">
 
                     <p class="post-metadata"><?= get_the_time('d.m.Y') ?></p>
 

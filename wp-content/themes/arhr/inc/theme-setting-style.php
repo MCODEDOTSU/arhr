@@ -60,7 +60,9 @@
     .contact-form input[type="submit"],
     .homepage .map-description .btn,
     .homepage .map-description .btn:hover,
-    .homepage .map-description .btn.btn-2:hover {
+    .homepage .map-description .btn.btn-2:hover,
+    .homepage .calendar-container .event-item.today,
+    .calendar-grid td.current {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
@@ -76,7 +78,9 @@
     .mcode-calendar table.calendar td.current div,
     .arhr-advantages .arhr-advantages-item:hover .container,
     .page-content .post-tags a:hover,
-    .homepage .map-description .btn {
+    .homepage .map-description .btn,
+    .homepage .calendar-container .event-item.today,
+    .calendar-grid td.current {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -94,7 +98,8 @@
     header .header-menu .menu a:hover,
     .btn-link,
     .homepage .map-item .map-item-count span,
-    .homepage .map-item a {
+    .homepage .map-item a,
+    .homepage .news-container a.news-category {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -152,7 +157,9 @@
     .page-content .post-tags a,
     .breadcrumbs a,
     .homepage .map-description a,
-    .homepage .map-description .btn.btn-2 {
+    .homepage .map-description .btn.btn-2,
+    .homepage .news-item .news-data,
+    .homepage .calendar-container a {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -174,7 +181,9 @@
     .arhr-advantages .arhr-advantages-item .container,
     .page-content.category .post-item.main,
     .homepage .map-description .btn:hover,
-    .homepage .map-description .btn:hover {
+    .homepage .map-description .btn:hover,
+    .mcode_calendar-full .calendar-grid th,
+    .mcode_calendar-full .calendar-grid td {
         border-color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -187,7 +196,11 @@
     .page-content .border,
     .breadcrumbs,
     .page-content .member-items .member-item .member-item-close,
-    .page-content .member-items .member-item .member-item-open {
+    .page-content .member-items .member-item .member-item-open,
+    .homepage .calendar-container,
+    .homepage .calendar-container,
+    .homepage .news-item:first-child,
+    .calendar-grid td {
         border-color: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 

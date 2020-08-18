@@ -1,7 +1,23 @@
 (function ($) {
+
     $(document).ready(function () {
-        $('.mcode-calendar').mcodeCalendar();
+
+        $('.mcode_calendar-full').mcodeCalendar();
+
+        $('table.calendar-grid form').on('click', function () {
+            $(this).submit();
+        });
+
+        $('.mcode_calendar-days_month .tab').on('click', function (event) {
+            $('.mcode_calendar-days_month .tab-content.visibility').removeClass('visibility');
+            $(`.mcode_calendar-days_month .tab-content[data-name="${$(this).attr('href')}"]`).addClass('visibility');
+            $('.mcode_calendar-days_month .tab.current').removeClass('current');
+            $(`.mcode_calendar-days_month .tab[href="${$(this).attr('href')}"]`).addClass('current');
+            event.preventDefault();
+        });
+
     });
+
 })(jQuery);
 
 (function ($) {
@@ -61,10 +77,6 @@
 
             });
 
-            $('form', this).on('click', function () {
-                $(this).submit();
-            });
-
         },
 
         get: function (options) {
@@ -73,20 +85,22 @@
                 action: 'mcode_calendar_get',
                 month: options.month,
                 year: options.year,
-                section: this.data('section'),
-                field: this.data('field'),
             };
             $.post( ajax_object.ajax_url, data, function(json) {
+
                 if(json.html) {
                     $calendar.html(json.html);
                     $calendar.mcodeCalendar();
                 } else {
                     console.log(json.error);
                 }
+
+                $('table.calendar-grid form').on('click', function () {
+                    $(this).submit();
+                });
+
             }, 'json');
         },
-
-
     };
 
     $.fn.mcodeCalendar = function (options) {

@@ -1,0 +1,155 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ARHR\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-10 09:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: 404.php:5
+msgid "Oh! Page not found."
+msgstr ""
+
+#: 404.php:7
+msgid "Nothing was found at this address. Try using the search."
+msgstr ""
+
+#: archive.php:5
+msgid "All by tag:"
+msgstr ""
+
+#: category-anonsy-meropriyatij.php:74 category-event-announcements.php:74
+msgid "Start: "
+msgstr ""
+
+#: category-anonsy-meropriyatij.php:80 category-event-announcements.php:80
+msgid "Ending: "
+msgstr ""
+
+#: footer.php:85 header.php:62 arhr/header.php:68
+msgid "Write to us"
+msgstr ""
+
+#: footer.php:94 header.php:25 arhr/header.php:25
+msgid "Account"
+msgstr ""
+
+#: functions.php:153 inc/homepage/geography.php:8 inc/homepage/geography.php:8
+#: inc/homepage/map.php:39 inc/members/geography.php:8
+#: inc/members/geography.php:8 inc/members/map.php:39
+msgid "Central (Central Federal District)"
+msgstr ""
+
+#: functions.php:154 inc/homepage/geography.php:9 inc/homepage/geography.php:9
+#: inc/members/geography.php:9 inc/members/geography.php:9
+msgid "Northwestern (NWFD)"
+msgstr ""
+
+#: functions.php:155
+msgid "Southern (Southern Federal District)"
+msgstr ""
+
+#: functions.php:156
+msgid "North Caucasian (NCFD)"
+msgstr ""
+
+#: functions.php:157 inc/homepage/geography.php:10
+#: inc/homepage/geography.php:10 inc/members/geography.php:10
+#: inc/members/geography.php:10
+msgid "Privolzhsky (Volga Federal District)"
+msgstr ""
+
+#: functions.php:158 inc/homepage/geography.php:11
+#: inc/homepage/geography.php:11 inc/members/geography.php:11
+#: inc/members/geography.php:11
+msgid "Uralsky (UFO)"
+msgstr ""
+
+#: functions.php:159 inc/homepage/geography.php:12
+#: inc/homepage/geography.php:12 inc/members/geography.php:12
+#: inc/members/geography.php:12
+msgid "Siberian (Siberian Federal District)"
+msgstr ""
+
+#: functions.php:160 inc/homepage/map.php:322 inc/members/map.php:322
+msgid "Far Eastern (Far Eastern Federal District)"
+msgstr ""
+
+#: functions.php:161 inc/homepage/geography.php:13
+#: inc/homepage/geography.php:13 inc/homepage/map.php:379
+#: inc/members/geography.php:13 inc/members/geography.php:13
+#: inc/members/map.php:379
+msgid "Republic of Belarus"
+msgstr ""
+
+#: functions.php:162 inc/homepage/geography.php:14
+#: inc/homepage/geography.php:14 inc/homepage/map.php:384
+#: inc/members/geography.php:14 inc/members/geography.php:14
+#: inc/members/map.php:384
+msgid "The Republic of Kazakhstan"
+msgstr ""
+
+#. Name of the template
+msgid "Members of the Association"
+msgstr ""
+
+#: page-members.php:79 page-members.php:113 page-members.php:113
+msgid "write a letter"
+msgstr ""
+
+#: page-members.php:125
+msgid "Mailing address"
+msgstr ""
+
+#: page-members.php:134 page-members.php:136
+msgid "Web site"
+msgstr ""
+
+#: page-members.php:146 page-members.php:148
+msgid "Phone"
+msgstr ""
+
+#: page-members.php:155 page-members.php:157
+msgid "Fax"
+msgstr ""
+
+#: page-members.php:175
+msgid "collapse description"
+msgstr ""
+
+#. Name of the template
+msgid "Search Page"
+msgstr ""
+
+#: search.php:10
+msgid "Search:"
+msgstr ""
+
+#: inc/homepage/advantages.php:5
+msgid "Our advantages"
+msgstr ""
+
+#: inc/members/geography.php:1
+msgid "Geography of the Partnership"
+msgstr ""
+
+#. Name of the theme
+msgid "ARHR"
+msgstr ""
+
+#. Author of the theme
+msgid "Elena Brykova"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://mcode.su/"
+msgstr ""

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MCode Calendar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-01 05:37+0000\n"
+"POT-Creation-Date: 2020-08-18 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,149 +15,169 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.4.0; wp-5.4.2"
 
-#. Base ID
-#: mcode-calendar.php:26
-msgid "Calendar of events"
-msgstr ""
-
-#: mcode-calendar.php:27
-msgid "Building an event calendar based on an additional field in notes"
-msgstr ""
-
-#: mcode-calendar.php:61
-msgid "Category: "
-msgstr ""
-
-#: mcode-calendar.php:64
-msgid "Name of the field in which the date of the event is stored: "
-msgstr ""
-
-#: mcode-calendar.php:100
-msgid "January"
-msgstr ""
-
-#: mcode-calendar.php:101
-msgid "February"
-msgstr ""
-
-#: mcode-calendar.php:102
-msgid "March"
-msgstr ""
-
-#: mcode-calendar.php:103
-msgid "April"
-msgstr ""
-
-#: mcode-calendar.php:104
-msgid "May"
-msgstr ""
-
-#: mcode-calendar.php:105
-msgid "June"
-msgstr ""
-
-#: mcode-calendar.php:106
-msgid "July"
-msgstr ""
-
-#: mcode-calendar.php:107
-msgid "August"
-msgstr ""
-
-#: mcode-calendar.php:108
-msgid "September"
-msgstr ""
-
-#: mcode-calendar.php:109
-msgid "October"
-msgstr ""
-
-#: mcode-calendar.php:110
-msgid "November"
-msgstr ""
-
-#: mcode-calendar.php:111
-msgid "December"
-msgstr ""
-
-#: mcode-calendar.php:115
-msgid "Mon"
-msgstr ""
-
-#: mcode-calendar.php:116
-msgid "Tue"
-msgstr ""
-
-#: mcode-calendar.php:117
-msgid "Wed"
-msgstr ""
-
-#: mcode-calendar.php:118
-msgid "Thu"
-msgstr ""
-
-#: mcode-calendar.php:119
-msgid "Fri"
-msgstr ""
-
-#: mcode-calendar.php:120
-msgid "Sat"
-msgstr ""
-
-#: mcode-calendar.php:121
-msgid "Sun"
-msgstr ""
-
-#: mcode-calendar.php:152
-msgid "Event list"
-msgstr ""
-
-#: mcode-calendar.php:184
+#: mcode-calendar.php:9
 msgid "f_January"
 msgstr ""
 
-#: mcode-calendar.php:185
+#: mcode-calendar.php:10
 msgid "f_February"
 msgstr ""
 
-#: mcode-calendar.php:186
+#: mcode-calendar.php:11
 msgid "f_March"
 msgstr ""
 
-#: mcode-calendar.php:187
+#: mcode-calendar.php:12
 msgid "f_April"
 msgstr ""
 
-#: mcode-calendar.php:188
+#: mcode-calendar.php:13
 msgid "f_May"
 msgstr ""
 
-#: mcode-calendar.php:189
+#: mcode-calendar.php:14
 msgid "f_June"
 msgstr ""
 
-#: mcode-calendar.php:190
+#: mcode-calendar.php:15
 msgid "f_July"
 msgstr ""
 
-#: mcode-calendar.php:191
+#: mcode-calendar.php:16
 msgid "f_August"
 msgstr ""
 
-#: mcode-calendar.php:192
+#: mcode-calendar.php:17
 msgid "f_September"
 msgstr ""
 
-#: mcode-calendar.php:193
+#: mcode-calendar.php:18
 msgid "f_October"
 msgstr ""
 
-#: mcode-calendar.php:194
+#: mcode-calendar.php:19
 msgid "f_November"
 msgstr ""
 
-#: mcode-calendar.php:195
+#: mcode-calendar.php:20
 msgid "f_December"
+msgstr ""
+
+#: mcode-calendar.php:24 mcode-calendar.php:447
+msgid "Mon"
+msgstr ""
+
+#: mcode-calendar.php:25 mcode-calendar.php:448
+msgid "Tue"
+msgstr ""
+
+#: mcode-calendar.php:26 mcode-calendar.php:449
+msgid "Wed"
+msgstr ""
+
+#: mcode-calendar.php:27 mcode-calendar.php:450
+msgid "Thu"
+msgstr ""
+
+#: mcode-calendar.php:28 mcode-calendar.php:451
+msgid "Fri"
+msgstr ""
+
+#: mcode-calendar.php:29 mcode-calendar.php:452
+msgid "Sat"
+msgstr ""
+
+#: mcode-calendar.php:30 mcode-calendar.php:453
+msgid "Sun"
+msgstr ""
+
+#: mcode-calendar.php:51
+msgid "Calendar"
+msgstr ""
+
+#: mcode-calendar.php:81
+msgid "Days"
+msgstr ""
+
+#: mcode-calendar.php:83
+msgid "Month"
+msgstr ""
+
+#: mcode-calendar.php:411 mcode-calendar.php:492 mcode-calendar.php:518
+#: mcode-calendar.php:560
+msgid "Event list"
+msgstr ""
+
+#: mcode-calendar.php:432
+msgid "January"
+msgstr ""
+
+#: mcode-calendar.php:433
+msgid "February"
+msgstr ""
+
+#: mcode-calendar.php:434
+msgid "March"
+msgstr ""
+
+#: mcode-calendar.php:435
+msgid "April"
+msgstr ""
+
+#: mcode-calendar.php:436
+msgid "May"
+msgstr ""
+
+#: mcode-calendar.php:437
+msgid "June"
+msgstr ""
+
+#: mcode-calendar.php:438
+msgid "July"
+msgstr ""
+
+#: mcode-calendar.php:439
+msgid "August"
+msgstr ""
+
+#: mcode-calendar.php:440
+msgid "September"
+msgstr ""
+
+#: mcode-calendar.php:441
+msgid "October"
+msgstr ""
+
+#: mcode-calendar.php:442
+msgid "November"
+msgstr ""
+
+#: mcode-calendar.php:443
+msgid "December"
+msgstr ""
+
+#: page.php:3
+msgid "Calendar settings"
+msgstr ""
+
+#: page.php:11
+msgid "Categories for calendar events"
+msgstr ""
+
+#: page.php:32
+msgid ""
+"The name of the additional field that stores the date and time of the event "
+"start"
+msgstr ""
+
+#: page.php:41
+msgid ""
+"The name of the additional field, which stores the date and time of the end "
+"of the event"
+msgstr ""
+
+#: page.php:54
+msgid "Save changes"
 msgstr ""
 
 #. Name of the plugin

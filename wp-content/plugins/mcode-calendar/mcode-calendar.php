@@ -16,87 +16,98 @@ function mcode_calendar_styles()
 
 add_action('wp_enqueue_scripts', 'mcode_calendar_styles');
 
-class McodeCalendar extends WP_Widget
-{
-
-    function __construct()
-    {
-        parent::__construct(
-            'mcode_calendar', // Base ID
-            __('Calendar of events', 'mcode-calendar'), // Name
-            array('description' => __('Building an event calendar based on an additional field in notes', 'mcode-calendar'),) // Args
-        );
-    }
-
-    public function widget($args, $instance)
-    {
-        $day = !empty($_POST['date']) ? $_POST['date'] : date('Y-m-d');
-        $mount = date('n', strtotime($day));
-        $year = date('Y', strtotime($day));
-
-        if (isset($instance['field'])) $field = $instance['field'];
-        else $field = 'event_datetime';
-        if (isset($instance['section'])) $section = $instance['section'];
-        else $section = -1;
-        echo "<div class='mcode-calendar' data-field='$field' data-section='$section'>" .
-            mcode_calendar($mount, $year, $section, $field) . "</div>" .
-            get_future_events($section, $field);
-    }
-
-    public function form($instance)
-    {
-        if (isset($instance['field'])) $field = $instance['field'];
-        else $field = 'event_datetime';
-        if (isset($instance['section'])) $section = $instance['section'];
-        else $section = -1;
-
-        $categories = get_categories();
-        $selectCategoryHtml = "";
-        foreach ($categories as $c) {
-            $selected = $c->cat_ID == $section ? 'selected' : '';
-            $selectCategoryHtml .= "<option value='{$c->cat_ID}' {$selected}>{$c->name}</option>";
-        }
-
-        ?>
-        <p><label><?= __('Category: ', 'mcode-calendar') ?></label></p>
-        <p><select name="<?= $this->get_field_name('section') ?>" class="widefat"><?= $selectCategoryHtml ?></select>
-        </p>
-        <p><label><?= __('Name of the field in which the date of the event is stored: ', 'mcode-calendar') ?></label>
-        </p>
-        <p><input name="<?= $this->get_field_name('field') ?>" value="<?= $field ?>" class="widefat"/></p>
-        <?php
-    }
-
-    public function update($new_instance, $old_instance)
-    {
-        $instance = array();
-        $instance['field'] = (!empty($new_instance['field'])) ? $new_instance['field'] : 'event_datetime';
-        $instance['section'] = (!empty($new_instance['section'])) ? $new_instance['section'] : -1;
-        return $instance;
-    }
-
+if (is_admin()) {
+    add_action('admin_menu', 'mcode_calendar_init');
 }
 
-// регистрация Foo_Widget в WordPress
-function mcode_calendar_register()
+function mcode_calendar_init()
 {
-    register_widget('McodeCalendar');
+
+    add_menu_page(__('Calendar', 'mcode-calendar'), __('Calendar', 'mcode-calendar'), 'manage_options', 'mcode_calendar-menu', 'mcode_calendar_page', 'dashicons-schedule', 82);
 }
 
-add_action('widgets_init', 'mcode_calendar_register');
+function mcode_calendar_page()
+{
+
+    if (isset($_POST["submit"])) {
+        if (isset($_POST["mcode_calendar_field_start"])) update_option('mcode_calendar_field_start', $_POST['mcode_calendar_field_start']);
+        if (isset($_POST["mcode_calendar_field_finish"])) update_option('mcode_calendar_field_finish', $_POST['mcode_calendar_field_finish']);
+        if (isset($_POST["mcode_calendar_category"])) update_option('mcode_calendar_category', $_POST['mcode_calendar_category']);
+    }
+
+    $categories = get_categories();
+
+    $mcode_calendar_field_start = get_option('mcode_calendar_field_start');
+    $mcode_calendar_field_finish = get_option('mcode_calendar_field_finish');
+    $mcode_calendar_category = get_option('mcode_calendar_category');
+
+    require_once('page.php');
+
+}
 
 /***
- * Генерация календаря
+ * Получить календарь в формате "дни-месяц"
+ * @param $count
+ * @return string
+ */
+function mcode_calendar_get_days_month_calendar($count)
+{
+    $html = '<div class="mcode_calendar-days_month"><div class="tabs"><a href="#days" class="tab days current">' .
+        __('Days', 'mcode-calendar') .
+        '</a><a  href="#month" class="tab month">' .
+        __('Month', 'mcode-calendar') . '</a></div><div data-name="#days" class="tab-content visibility">';
+
+    $posts = mcode_calendar_get_future_events($count);
+
+    // Текущее и будующие мероприятия
+    if (count($posts) != 0) {
+
+        foreach ($posts as $post) {
+
+            $event_class = date('d.m.Y', strtotime($post['start'])) == date('d.m.Y') ? 'today' : 'feature';
+            $date = get_locale() == 'ru_RU' ? date('d.m.Y', strtotime($post['start'])) : date('Y-m-d', strtotime($post['start']));
+            $html .= "<a class='event-item $event_class' href='{$post['permalink']}'><span class='date-start'>{$date}</span><h2>{$post['title']}</h2></a>";
+
+        }
+    }
+
+    // Прошедшие мероприятия
+    if (count($posts) < $count) {
+
+        $posts = mcode_calendar_get_past_events($count - count($posts));
+
+        if (count($posts) != 0) {
+
+            foreach ($posts as $post) {
+
+                $date = get_locale() == 'ru_RU' ? date('d.m.Y', strtotime($post['start'])) : date('Y-m-d', strtotime($post['start']));
+                $event_class = date('m', strtotime($post['start'])) != date('m') ? 'old' : 'past';
+                $html .= "<a class='event-item $event_class' href='{$post['permalink']}'><span class='date-start'>{$date}</span><h2>{$post['title']}</h2></a>";
+
+            }
+        }
+
+    }
+
+    $html .= '</div><div data-name="#month" class="tab-content">';
+
+    $html .= mcode_calendar_get_grid(date('n'), date('Y'));
+
+    $html .= '</div></div>';
+
+    return $html;
+}
+
+/**
+ * Получить полный календарь на заданный месяц
  * @param $month
  * @param $year
  * @return string
  */
-function mcode_calendar($month, $year, $section, $field)
+function mcode_calendar_get_full_calendar($month, $year)
 {
-    $events = get_events($section, $field);
-    $category = rtrim(get_category_link($section), "/");
 
-    $months = [
+    $mcode_calendar_months = [
         __('January', 'mcode-calendar'),
         __('February', 'mcode-calendar'),
         __('March', 'mcode-calendar'),
@@ -111,23 +122,15 @@ function mcode_calendar($month, $year, $section, $field)
         __('December', 'mcode-calendar'),
     ];
 
-    $days = [
-        __('Mon', 'mcode-calendar'),
-        __('Tue', 'mcode-calendar'),
-        __('Wed', 'mcode-calendar'),
-        __('Thu', 'mcode-calendar'),
-        __('Fri', 'mcode-calendar'),
-        __('Sat', 'mcode-calendar'),
-        __('Sun', 'mcode-calendar'),
-    ];
+    $section = get_option('mcode_calendar_category');
+    $field = get_option('mcode_calendar_field_start');
 
-    $day = date('w', mktime(0, 0, 0, $month, 1, $year)) - 1;
-    $day = $day == -1 ? 6 : $day;
+    $html = "<div class='mcode_calendar-full'>";
 
-    $calendar = "<div class='actions'>
+    $html .= "<div class='actions'>
                     <div class='month' data-item='$month'>
                         <button class='btn prev'><i class='fa fa-angle-left'></i></button>
-                        <span class='i'>{$months[$month - 1]}</span>
+                        <span class='i'>{$mcode_calendar_months[$month - 1]}</span>
                         <button class='btn next'><i class='fa fa-angle-right'></i></button>
                     </div>
                     <div class='year' data-item='$year'>
@@ -135,205 +138,270 @@ function mcode_calendar($month, $year, $section, $field)
                         <span class='i'>{$year}</span>
                         <button class='btn next'><i class='fa fa-angle-right'></i></button>
                     </div>
-                </div>
-                <table cellpadding='0' cellspacing='0' class='calendar'>
+                </div>";
+
+    $html .= mcode_calendar_get_grid($month, $year);
+
+    $html .= '</div>';
+
+    return $html;
+
+}
+
+/***
+ * Получить все меропрития
+ * @param int $count
+ * @return array
+ */
+function mcode_calendar_get_events($count = 10)
+{
+
+    $section = get_option('mcode_calendar_category');
+    $field = get_option('mcode_calendar_field_start');
+
+    if (pll_current_language() != pll_get_term_language($section)) {
+        $section = pll_get_term($section, pll_current_language());
+    }
+
+    $query = new WP_Query([
+        'posts_per_page' => $count,
+        'post_status' => 'publish',
+        'cat' => $section,
+        'meta_query' => [
+            [
+                'key' => $field,
+                'compare' => '!=',
+                'value' => ''
+            ],
+        ],
+        'orderby' => 'meta_value_num',
+        'meta_key' => $field,
+        'order' => 'ASC'
+    ]);
+
+    $result = [];
+
+    while ($query->have_posts()) {
+
+        $query->the_post();
+
+        $result[] = [
+            'title' => get_the_title(),
+            'excerpt' => get_the_excerpt(),
+            'permalink' => get_permalink(get_the_ID()),
+            'start' => get_post_meta(get_the_ID(), $field, true),
+            'finish' => get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true),
+            'start_tm' => strtotime(get_post_meta(get_the_ID(), $field, true)),
+            'finish_tm' => strtotime(get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true)),
+        ];
+
+    }
+    wp_reset_postdata();
+
+    return $result;
+}
+
+/***
+ * Получить все меропрития в будущем
+ * @param int $count
+ * @return array
+ */
+function mcode_calendar_get_future_events($count = 10)
+{
+
+    $section = get_option('mcode_calendar_category');
+    $field = get_option('mcode_calendar_field_start');
+
+    if (pll_current_language() != pll_get_term_language($section)) {
+        $section = pll_get_term($section, pll_current_language());
+    }
+
+    $query = new WP_Query([
+        'posts_per_page' => $count,
+        'post_status' => 'publish',
+        'cat' => $section,
+        'meta_query' => [
+            'relation' => 'AND',
+            [
+                'key' => $field,
+                'compare' => '>=',
+                'value' => date('Y-m-d 00:00:00')
+            ],
+            [
+                'key' => $field,
+                'compare' => '!=',
+                'value' => ''
+            ],
+        ],
+        'orderby' => 'meta_value_num',
+        'meta_key' => $field,
+        'order' => 'ASC'
+    ]);
+
+    $result = [];
+
+    while ($query->have_posts()) {
+
+        $query->the_post();
+
+        $result[] = [
+            'title' => get_the_title(),
+            'excerpt' => get_the_excerpt(),
+            'permalink' => get_permalink(get_the_ID()),
+            'start' => get_post_meta(get_the_ID(), $field, true),
+            'finish' => get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true),
+            'start_tm' => strtotime(get_post_meta(get_the_ID(), $field, true)),
+            'finish_tm' => strtotime(get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true)),
+        ];
+
+    }
+    wp_reset_postdata();
+
+    return $result;
+}
+
+/***
+ * Получить все меропрития в прошлом
+ * @param int $count
+ * @return array
+ */
+function mcode_calendar_get_past_events($count = 10)
+{
+
+    $section = get_option('mcode_calendar_category');
+    $field = get_option('mcode_calendar_field_start');
+
+    if (pll_current_language() != pll_get_term_language($section)) {
+        $section = pll_get_term($section, pll_current_language());
+    }
+
+    $query = new WP_Query([
+        'posts_per_page' => $count,
+        'post_status' => 'publish',
+        'cat' => $section,
+        'meta_query' => [
+            'relation' => 'AND',
+            [
+                'key' => $field,
+                'compare' => '<',
+                'value' => date('Y-m-d 00:00:00')
+            ],
+            [
+                'key' => $field,
+                'compare' => '!=',
+                'value' => ''
+            ],
+        ],
+        'orderby' => 'meta_value_num',
+        'meta_key' => $field,
+        'order' => 'DESC'
+    ]);
+
+    $result = [];
+
+    while ($query->have_posts()) {
+
+        $query->the_post();
+
+        $result[] = [
+            'title' => get_the_title(),
+            'excerpt' => get_the_excerpt(),
+            'permalink' => get_permalink(get_the_ID()),
+            'start' => get_post_meta(get_the_ID(), $field, true),
+            'finish' => get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true),
+            'start_tm' => strtotime(get_post_meta(get_the_ID(), $field, true)),
+            'finish_tm' => strtotime(get_post_meta(get_the_ID(), get_option('mcode_calendar_field_finish'), true)),
+        ];
+
+    }
+    wp_reset_postdata();
+
+    return $result;
+}
+
+/***
+ * Генерация сетки календаря
+ * @param $month
+ * @param $year
+ * @return string
+ */
+function mcode_calendar_get_grid($month, $year)
+{
+
+    $events = mcode_calendar_get_events();
+
+    $day = date('w', mktime(0, 0, 0, $month, 1, $year)) - 1;
+    $day = $day == -1 ? 6 : $day;
+
+    $calendar = "<table cellpadding='0' cellspacing='0' class='calendar-grid'>
                     <tbody>
                         <tr class='row'>";
 
     // Предыдущий месяц
     $date = new DateTime("$year-$month-1");
-    $date->modify('-' . ($day + 1) .' day');
+    $date->modify('-' . ($day + 1) . ' day');
     for ($i = 0; $i < $day; $i++) {
-
         $date->modify('+1 day');
-        $m = date_format($date, 'm');
-        $d = date_format($date, 'd');
-        $y = date_format($date, 'Y');
-        $dt = date('Y-m-d', mktime(0, 0, 0, $m, $d, $y));
-
-        if (!empty($events[$dt])) {
-            $event = $events[$dt][0];
-            $eventsCount = count($events[$dt]) - 1;
-            $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
-            $calendar .= "<td class='day event previous'>
-                                <form action='$category' method='POST'>
-                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
-                                        <input type='hidden' name='date' value='$dt'/>
-                                        $d
-                                        <div class='event-title'>{$event['title']}</div>
-                                        $eventsCountHTML
-                                    </div>
-                                </form>
-                              </td>";
-        } else {
-            $calendar .= "<td class='day previous'><div>$d</div></td>";
-        }
-
+        $calendar .= mcode_calendar_get_cell($date, $events, 'previous');
     }
 
     // Текущий месяц
     $count = date('t', mktime(0, 0, 0, $month, 1, $year));
-    $current = date('Y-m-d');
     for ($i = 1; $i <= $count; $i++) {
-        $dt = date('Y-m-d', mktime(0, 0, 0, $month, $i, $year));
-        $currentClass = $current == $dt ? 'current' : '';
-        if (!empty($events[$dt])) {
-            $event = $events[$dt][0];
-            $eventsCount = count($events[$dt]) - 1;
-            $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
-            $calendar .= "<td class='day event $currentClass'>
-                                <form action='$category' method='POST'>
-                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
-                                        <input type='hidden' name='date' value='$dt'/>
-                                        $i
-                                        <div class='event-title'>{$event['title']}</div>
-                                        $eventsCountHTML
-                                    </div>
-                                </form>
-                              </td>";
-        } else {
-            $calendar .= "<td class='day $currentClass'><div>$i</div></td>";
-        }
-
-        if ($day == 6) {
-            $calendar .= "</tr>";
-            $day = 0;
-        } else {
-            $day++;
-        }
+        $calendar .= mcode_calendar_get_cell(new DateTime("$year-$month-$i"), $events) . ($day == 6 ? "</tr><tr>" : "");
+        $day = ($day + 1) % 7;
     }
 
     // Следующий месяц
     if ($day != 0) {
-
-        if ($month == 12) {
-            $date = new DateTime(($year + 1) . "-1-1");
-        } else {
-            $date = new DateTime("$year-" . ($month + 1) . "-1");
-        }
-
-
+        $date = $month != 12 ? new DateTime("$year-" . ($month + 1) . "-1") : new DateTime(($year + 1) . "-1-1");
         for ($i = 7; $i > $day; $i--) {
-
-            $m = date_format($date, 'm');
-            $d = date_format($date, 'j');
-            $y = date_format($date, 'Y');
-            $dt = date('Y-m-d', mktime(0, 0, 0, $m, $d, $y));
-            if (!empty($events[$dt])) {
-                $event = $events[$dt][0];
-                $eventsCount = count($events[$dt]) - 1;
-                $eventsCountHTML = $eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>";
-                $calendar .= "<td class='day event previous'>
-                                <form action='$category' method='POST'>
-                                    <div class='events' title='" . __('Event list', 'mcode-calendar') . "'>
-                                        <input type='hidden' name='date' value='$dt'/>
-                                        $d
-                                        <div class='event-title'>{$event['title']}</div>
-                                        $eventsCountHTML
-                                    </div>
-                                </form>
-                              </td>";
-            } else {
-                $calendar .= "<td class='day previous'><div>$d</div></td>";
-            }
-
+            $calendar .= mcode_calendar_get_cell($date, $events, 'next') . (($i - $day) == 1 ? "</tr>" : "");
             $date->modify('+1 day');
         }
-
     }
 
-    $calendar .= "</tr></tbody></table>";
+    $calendar .= "</tbody></table>";
+
     return $calendar;
 }
 
-/***
- * Получить все меропрития в будущем
+/**
+ * Сформировать ячейку календаря
+ * @param $date
+ * @param array $events
+ * @param $period_class
+ * @return string
  */
-function get_future_events($section, $field)
+function mcode_calendar_get_cell($date, $events = [], $period_class = "")
 {
 
-    $months = [
-        __('f_January', 'mcode-calendar'),
-        __('f_February', 'mcode-calendar'),
-        __('f_March', 'mcode-calendar'),
-        __('f_April', 'mcode-calendar'),
-        __('f_May', 'mcode-calendar'),
-        __('f_June', 'mcode-calendar'),
-        __('f_July', 'mcode-calendar'),
-        __('f_August', 'mcode-calendar'),
-        __('f_September', 'mcode-calendar'),
-        __('f_October', 'mcode-calendar'),
-        __('f_November', 'mcode-calendar'),
-        __('f_December', 'mcode-calendar'),
-    ];
+    $day = (int)date_format($date, 'd');
+    $format_date = date('Y-m-d', mktime(0, 0, 0, date_format($date, 'm'), $day, date_format($date, 'Y')));
 
-    $query = new WP_Query([
-        'posts_per_page' => -1,
-        'paged' => 0,
-        'post_status' => 'publish',
-        'cat' => $section,
-        'orderby' => 'meta_value',
-        'meta_key' => 'event_datetime',
-        'order' => 'ASC'
-    ]);
+    $events = array_values(array_filter($events, function($item) use ($format_date) {
+        return (date('Y-m-d', $item['start_tm']) == $format_date);
+    }));
 
-    $result = '';
-    if ($query->have_posts()) {
-        $result = '<div class="mcode-calendar-future">';
-        while ($query->have_posts()) {
-            $query->the_post();
-            $tm = strtotime(get_post_meta(get_the_ID(), $field, true));
-            if ($tm < strtotime('now')) continue;
+    $has_events_class = empty($events) ? '' : 'event';
+    $current_day_class = date('Y-m-d') == $format_date ? 'current' : '';
 
-            $title = get_the_title();
-            $description = get_post_meta(get_the_ID(), 'event_description', true);
-            $mount = $months[date('n', $tm) - 1];
-            $date = date("j $mount Y · H:i", $tm);
-            // $date = date('d F Y · H:i', $tm);
-            $url = get_permalink(get_the_ID());
-
-            $result .= "<div class='item'><a href='$url' title='$title'>
-                <h3>$title</h3><p class='description'>$description</p><p class='datetime'>$date</p></a></div>";
-        }
-        $result .= '</div>';
+    $section = get_option('mcode_calendar_category');
+    if (pll_current_language() != pll_get_term_language($section)) {
+        $section = pll_get_term($section, pll_current_language());
     }
-    return $result;
-}
+    $category = get_category($section);
 
-/***
- * Получить все мероприятия по заданному полю
- * @param $section
- * @param $field
- * @return array
- */
-function get_events($section, $field)
-{
-    $query = new WP_Query([
-        'posts_per_page' => -1,
-        'paged' => 0,
-        'post_status' => 'publish',
-        'cat' => $section
-    ]);
+    $eventsCount = !wp_is_mobile() ? count($events) - 1 : count($events);
 
-    $result = [];
-    if ($query->have_posts()) {
-        while ($query->have_posts()) {
-            $query->the_post();
-            $dt = explode(' ', get_post_meta(get_the_ID(), $field, true));
-            if (count($dt) != 2) {
-                continue;
-            }
-            $result[$dt[0]][] = [
-                'url' => get_permalink(get_the_ID()),
-                'title' => get_the_title(),
-                'strtotime' => strtotime(get_post_meta(get_the_ID(), $field, true)),
-                'field' => get_post_meta(get_the_ID(), $field, true),
-                'day' => $dt[0],
-                'time' => $dt[1]
-            ];
-        }
-    }
-    return $result;
+    $cell = "<td class='day $period_class $has_events_class $current_day_class'>" . ( empty($events) ? $day :
+            "<form action='{$category->slug}' method='POST' title='" . __('Event list', 'mcode-calendar') . "'>
+                <input type='hidden' name='date' value='$format_date'/>$day                
+                <div class='event-title'>{$events[0]['title']}</div>" .
+                ($eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>") .
+            "</form>" ) . "</td>";
+
+    return $cell;
 }
 
 /***
@@ -343,14 +411,13 @@ function mcode_calendar_get_callback()
 {
     $month = (int)$_POST['month'];
     $year = (int)$_POST['year'];
-    $section = (int)$_POST['section'];
-    $field = $_POST['field'];
-    if (!is_int($month) || !is_int($year) || !is_int($section) || !preg_match('/\w+/', $field)) {
+
+    if (!is_int($month) || !is_int($year)) {
         echo json_encode(['error' => 'not valid data type']);
     } elseif ($month < 1 || $month > 12 || $year < 2018 || $year > 2100) {
         echo json_encode(['error' => 'not valid value']);
     } else {
-        echo json_encode(['html' => mcode_calendar($month, $year, $section, $field)]);
+        echo json_encode(['html' => mcode_calendar_get_full_calendar($month, $year)]);
     }
     wp_die();
 }
@@ -361,7 +428,6 @@ add_action('wp_ajax_nopriv_mcode_calendar_get', 'mcode_calendar_get_callback');
 /**
  * LANGUAGES
  */
-
 function mcode_calendar_load_plugin_textdomain()
 {
     load_plugin_textdomain('mcode-calendar', false, dirname(plugin_basename(__FILE__)) . '/languages/');

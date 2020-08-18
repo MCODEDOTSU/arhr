@@ -2,13 +2,15 @@
 
     <div class="page homepage">
 
-        <?php get_template_part('inc/main/geography'); ?>
+        <?php get_template_part('inc/homepage/geography'); ?>
+
+        <?php get_template_part('inc/homepage/news-calendar'); ?>
+
+        <?php get_template_part('inc/homepage/advantages'); ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
             <?php the_content(); ?>
-
-            <?php get_template_part('inc/homepage-advantages'); ?>
 
         <?php endwhile ?>
 

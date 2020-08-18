@@ -1,253 +1,201 @@
-.mcode-calendar .actions {
-    margin: 0 0 32px;
-}
-
-.mcode-calendar .actions .month,
-.mcode-calendar .actions .year {
-    display: inline-block;
-    vertical-align: top;
-    width: 154px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.mcode-calendar .actions button {
-    border: none;
-    background: none;
-    color: #000000;
-    font-size: 16px;
-    width: 32px;
-    text-align: center;
-}
-
-.mcode-calendar table {
+.calendar-grid {
     width: 100%;
-    max-width: 100%;
-    line-height: 1;
+    border-collapse: separate;
+    border-spacing: 6px;
 }
 
-.mcode-calendar table.calendar tr,
-.mcode-calendar table.calendar tr:nth-child(2n) {
-    background: none;
-}
-
-.mcode-calendar table.calendar .dw {
-    border-right: none;
-}
-
-.mcode-calendar table th,
-.mcode-calendar table td {
+.calendar-grid td {
+    border: 1px solid #000000;
     text-align: center;
     vertical-align: middle;
-    height: 100px;
-    border: none;
-    padding: 1px 1px 0 0;
-}
-
-.mcode-calendar table.calendar tr td:last-child,
-.mcode-calendar table.calendar tr th:last-child {
-    padding: 1px 0 0 0;
-}
-
-.mcode-calendar table td {
-    border: 1px solid #969696;
-    width: calc(100% / 7);
-}
-
-.mcode-calendar table th > div,
-.mcode-calendar table td > div {
-    padding: 10px;
-    height: 100px;
-    text-align: left;
-    font-size: 28px;
-    border: 1px solid #000000;
+    padding: 6px 0;
+    font-size: 10pt;
+    cursor: default;
     font-weight: 300;
-    margin: 0!important;
 }
 
-.mcode-calendar table td form {
-    display: block;
-    height: 100px;
-    width: 100%;
+.calendar-grid td.current {
+    color: #ffffff;
+    background: #000000;
+}
+
+.calendar-grid td.previous,
+.calendar-grid td.next {
+    opacity: .5;
+}
+
+.calendar-grid td form {
     cursor: pointer;
+    font-weight: 800;
+    height: auto;
     -webkit-transition: all .1s ease-out;
     -moz-transition: all .1s ease-out;
     transition: all .1s ease-out;
 }
 
-.mcode-calendar table td form:hover {
-    opacity: 0.75;
+.calendar-grid td form:hover {
+    opacity: .5;
 }
 
-.mcode-calendar table td form > div {
-    padding: 10px;
-    height: 100px;
+.calendar-grid td.previous form:hover,
+.calendar-grid td.next form:hover {
+    opacity: .25;
+}
+
+.mcode_calendar-days_month a {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.mcode_calendar-days_month .tabs {
+    color: #000000;
+    font-weight: 400;
+}
+
+.mcode_calendar-days_month .tabs .tab {
+    font-size: 14pt;
+    display: inline-block;
+    width: 50%;
+}
+
+.mcode_calendar-days_month .tabs .tab.month {
+    text-align: right;
+}
+
+.mcode_calendar-days_month .tabs .tab.current {
+    font-weight: 600;
+}
+
+.mcode_calendar-days_month .tab-content {
+    display: none;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+.mcode_calendar-days_month .tab-content.visibility {
+    display: block;
+}
+
+.mcode_calendar-days_month .event-item {
+    display: block;
+    padding: 8px;
+    font-size: 12pt;
+}
+
+.mcode_calendar-days_month .event-item.today span,
+.mcode_calendar-days_month .event-item.today h2,
+.mcode_calendar-days_month .event-item.feature span,
+.mcode_calendar-days_month .event-item.feature h2 {
+    font-weight: 700;
+}
+
+.mcode_calendar-days_month .event-item.old {
+    opacity: 0.5;
+}
+
+.mcode_calendar-days_month .event-item.old:hover {
+    opacity: 0.25;
+}
+
+.mcode_calendar-days_month .calendar-grid .event-title {
+    display: none;
+}
+
+.mcode_calendar-days_month .calendar-grid .event-count {
+    display: none;
+}
+
+.mcode_calendar-full .actions {
+    margin: 0 0 32px;
+}
+
+.mcode_calendar-full .actions .month,
+.mcode_calendar-full .actions .year {
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16pt;
+    margin: 0;
+}
+
+.mcode_calendar-full .actions button {
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 16pt;
+    width: 32px;
+    text-align: center;
+}
+
+.mcode_calendar-full .calendar-grid {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+    margin: 0 !important;
+}
+
+.mcode_calendar-full .calendar-grid tr,
+.mcode_calendar-full .calendar-grid tr:nth-child(2n) {
+    background: none;
+}
+
+.mcode_calendar-full .calendar-grid th,
+.mcode_calendar-full .calendar-grid td {
     text-align: left;
-    font-size: 28px;
-    line-height: 1.1;
-    border: 1px solid #000000;
-    font-weight: 800;
+    vertical-align: top;
+    height: 100px;
+    border: 1px solid #969696;
+    width: calc(100% / 7);
+    padding: 10px;
+    font-size: 26pt;
+    font-weight: 300;
     position: relative;
-    margin: 0!important;
 }
 
-.mcode-calendar table td form > div .event-title {
+.mcode_calendar-full .calendar-grid .event-title {
     margin: 8px 0 0;
-    font-size: 14px;
+    font-size: 11pt;
     font-weight: 300;
     height: 42px;
     line-height: 1;
     overflow: hidden;
 }
 
-.mcode-calendar table td form > div .event-count {
+.mcode_calendar-full .calendar-grid .event-count {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 14px;
+    font-size: 10pt;
     font-weight: 400;
 }
 
-.mcode-calendar table td > a,
-.mcode-calendar table td input[type="submit"] {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-    border: none;
-    margin: 0;
-    height: 100px;
-    width: 100%;
-    text-align: left;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.mcode-calendar table td > a:hover,
-.mcode-calendar table td input[type="submit"]:hover {
-    opacity: 0.5;
-}
-
-.mcode-calendar table .row:first-child td {
-    border-top: none;
-}
-
-.mcode-calendar .dw {
-    background: #333333;
-    color: #ffffff;
-    border-right: 1px solid #333333;
-    font-size: 12px;
-}
-
-.mcode-calendar .btn {
-    background: none;
-    color: #333333;
-}
-
-.mcode-calendar .btn:hover {
-    opacity: 0.5;
-}
-
-.mcode-calendar-future {
-    margin: 20px 0;
-}
-
-.mcode-calendar-future .item {
-    background: #f5f5f5;
-    border-bottom: 1px solid #ffffff;
-    padding: 16px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.mcode-calendar-future .item:hover {
-    background: #cdcdcd;
-}
-
-.mcode-calendar-future .item a {
-    text-decoration: none;
-    color: #333333;
-}
-
-.mcode-calendar-future .item:last-child {
-    border-bottom: none;
-}
-
-.mcode-calendar-future .item h3 {
-    margin: 0 0 12px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.mcode-calendar-future .item p {
-    margin: 4px 0 0;
-    font-size: 14px;
-}
-
-.mcode-calendar-future .item p.description {
-    font-style: italic;
-}
-
-.mcode-calendar-future .item p.datetime {
-    font-size: 13px;
-}
-
-.mcode-calendar table.calendar tr td,
-.mcode-calendar table.calendar tr th {
-    border: none;
-    padding: 1px 1px 0 0;
-}
-
-.mcode-calendar table.calendar td.current div {
-    font-weight: 900;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.mcode-calendar table td.current form > div .event-title {
-    font-weight: 300;
-}
-
-.mcode-calendar table td.previous {
-    opacity: .5;
-}
-
 @media only screen and (max-width: 900px) {
 
-    .mcode-calendar table td form > div .event-title {
+    .mcode_calendar-full .calendar-grid .event-title {
         display: none;
     }
-}
 
-@media only screen and (max-width: 900px) {
-
-    .mcode-calendar .actions {
+    .mcode_calendar-full .actions {
         text-align: center;
     }
 
-    .mcode-calendar table th,
-    .mcode-calendar table td,
-    .mcode-calendar table th > div,
-    .mcode-calendar table td > div,
-    .mcode-calendar table td form,
-    .mcode-calendar table td form > div,
-    .mcode-calendar table td > a,
-    .mcode-calendar table td input[type="submit"] {
-        height: 50px;
+    .mcode_calendar-full .calendar-grid td form {
+        height: auto;
     }
 
-    .mcode-calendar table th > div,
-    .mcode-calendar table td > div,
-    .mcode-calendar table td form > div,
-    .mcode-calendar table td > a,
-    .mcode-calendar table td input[type="submit"] {
-        font-size: 20px;
-        padding: 16px 4px 0;
+    .mcode_calendar-full .calendar-grid th,
+    .mcode_calendar-full .calendar-grid td {
+        vertical-align: middle;
+        font-size: 18pt;
+        padding: 16px 4px;
+        height: 70px;
     }
 
-    .mcode-calendar table td form > div .event-count {
+    .mcode_calendar-full .calendar-grid .event-count {
         top: 4px;
         right: 4px;
     }

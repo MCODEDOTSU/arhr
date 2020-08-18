@@ -1,5 +1,11 @@
 <?php
-$day = $_POST['date'];
+
+$post_date = $_POST['date'];
+
+$date = !empty($post_date) ? $post_date : date('Y-m-d');
+$mount = date('n', strtotime($date));
+$year = date('Y', strtotime($date));
+
 get_header();
 ?>
 
@@ -9,16 +15,14 @@ get_header();
 
         <div class="category-content">
 
-            <h1><?php single_cat_title(); ?><?php if (!empty($day)) {
-                    echo ": $day";
-                } ?></h1>
+            <h1><?php single_cat_title(); ?><?php if (!empty($post_date)) { echo ": $post_date"; } ?></h1>
 
             <?php echo category_description(); ?>
 
             <div class="sidebar sidebar-anonsy">
                 <?php
-                if (function_exists('dynamic_sidebar')) {
-                    dynamic_sidebar('sidebar-anonsy');
+                if (function_exists('mcode_calendar_get_full_calendar')) {
+                    echo mcode_calendar_get_full_calendar($mount, $year);
                 }
                 ?>
             </div>
@@ -32,10 +36,10 @@ get_header();
                 'meta_key' => 'event_date_start',
                 'order' => 'DESC'
             ];
-            if (!empty($day)) {
+            if (!empty($post_date)) {
                 $option['meta_query'] = [
                     'key' => 'event_date_start',
-                    'value' => $day,
+                    'value' => $post_date,
                     'type' => 'DATE'
                 ];
             }
@@ -48,25 +52,25 @@ get_header();
 
                     <?php while ($query->have_posts()): $query->the_post(); ?>
 
-                        <div class="post-item">
+                        <div class="post-item"><!--
 
                             <?php if (has_post_thumbnail()): ?>
 
-                                <a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
+                                --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
                                    title="<?= get_the_title() ?>"
                                    style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')">
-                                </a>
+                                </a><!--
 
                             <?php else: ?>
 
-                                <div class="post-thumbnail"></div>
+                                --><div class="post-thumbnail"></div><!--
 
                             <?php endif; ?>
 
-                            <a class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
+                            --><a class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
                                title="<?= get_the_title() ?>">
-                                <p class="post-metadata"><?= get_the_time('d.m.Y') ?></p>
-                                <h3 class="post-title"><?= get_the_title() ?></h3>
+                                <p class="post-metadata"><?= get_the_time('d.m.Y') ?></p><!--
+                                --><h3 class="post-title"><?= get_the_title() ?></h3>
                                 <div class="post-description"><?= get_the_excerpt() ?></div>
                                 <p class="post-event_date">
                                     <?php

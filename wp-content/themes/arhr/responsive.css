@@ -288,6 +288,27 @@
     .homepage .map-item.location-10 {
         left: calc(272px + (100% - 272px) * 0.36);
     }
+
+    .homepage .news-item:first-child .news-title {
+        font-size: 12pt;
+    }
+
+    .homepage .news-item:first-child .news-thumbnail {
+        margin-bottom: 16px;
+    }
+
+    .homepage .news-item:first-child .news-data {
+        padding: 0 0 0 256px;
+    }
+
+    .homepage .news-item:first-child .news-description.pc {
+        display: none;
+    }
+
+    .homepage .news-item:first-child .news-description.mb {
+        display: block;
+        font-size: 12pt;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -348,6 +369,19 @@
 
     .page-content.category .post-item:first-child .post-description,
     .page-content.category .post-item.main .post-description {
+        display: none;
+    }
+
+    .homepage .news-item:first-child .news-thumbnail {
+        width: 160px;
+        margin: 0 -160px 0 0;
+    }
+
+    .homepage .news-item:first-child .news-data {
+        padding: 0 0 0 176px;
+    }
+
+    .homepage .news-item:first-child .news-description.mb {
         display: none;
     }
 
@@ -429,6 +463,29 @@
 
 @media only screen and (max-width: 760px) {
 
+    .homepage .news-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .homepage .calendar-container.pc {
+        display: none;
+    }
+
+    .homepage .calendar-container.mb {
+        display: block;
+        margin: 0 auto 32px;
+    }
+
+    .homepage .news-item .news-date {
+        display: block;
+        margin: 0;
+    }
+
+    .homepage .news-item .news-title {
+        padding: 0;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -497,6 +554,23 @@
         display: block;
         text-align: center;
         width: 100%;
+    }
+
+    .page-content table.calendar-grid {
+        display: table;
+    }
+
+    .page-content table.calendar-grid tbody {
+        display: table-row-group;
+    }
+
+    .page-content table.calendar-grid tr {
+        display: table-row;
+    }
+
+    .page-content table.calendar-grid td {
+        display: table-cell;
+        text-align: center;
     }
 
     .page-content p,
