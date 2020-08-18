@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MCode Calendar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-17 09:17+0000\n"
+"PO-Revision-Date: 2020-08-17 09:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.2; wp-5.5"
+
+#: mcode-calendar.php:25
+msgid "Calendar"
+msgstr "Календарь"
+
+#: mcode-calendar.php:51
+msgid "Days"
+msgstr "Дни"
+
+#: mcode-calendar.php:53
+msgid "Month"
+msgstr "Месяц"
+
+#: mcode-calendar.php:102 mcode-calendar.php:389
+msgid "f_January"
+msgstr "Января"
+
+#: mcode-calendar.php:103 mcode-calendar.php:390
+msgid "f_February"
+msgstr "Февраля"
+
+#: mcode-calendar.php:104 mcode-calendar.php:391
+msgid "f_March"
+msgstr "Марта"
+
+#: mcode-calendar.php:105 mcode-calendar.php:392
+msgid "f_April"
+msgstr "Апреля"
+
+#: mcode-calendar.php:106 mcode-calendar.php:393
+msgid "f_May"
+msgstr "Мая"
+
+#: mcode-calendar.php:107 mcode-calendar.php:394
+msgid "f_June"
+msgstr "Июня"
+
+#: mcode-calendar.php:108 mcode-calendar.php:395
+msgid "f_July"
+msgstr "Июля"
+
+#: mcode-calendar.php:109 mcode-calendar.php:396
+msgid "f_August"
+msgstr "Августа"
+
+#: mcode-calendar.php:110 mcode-calendar.php:397
+msgid "f_September"
+msgstr "Сентября"
+
+#: mcode-calendar.php:111 mcode-calendar.php:398
+msgid "f_October"
+msgstr "Октября"
+
+#: mcode-calendar.php:112 mcode-calendar.php:399
+msgid "f_November"
+msgstr "Ноября"
+
+#: mcode-calendar.php:113 mcode-calendar.php:400
+msgid "f_December"
+msgstr "Декабря"
+
+#. Base ID
+#: mcode-calendar.php:159
+msgid "Calendar of events"
+msgstr "Календарь событий"
+
+#: mcode-calendar.php:160
+msgid "Building an event calendar based on an additional field in notes"
+msgstr "Создает календарь событий на основе дополнительного поля в заметке"
+
+#: mcode-calendar.php:194
+msgid "Category: "
+msgstr "Рубрика:"
+
+#: mcode-calendar.php:197
+msgid "Name of the field in which the date of the event is stored: "
+msgstr "Название поля, в котором хранится дата события:"
+
+#: mcode-calendar.php:233
+msgid "January"
+msgstr "Январь"
+
+#: mcode-calendar.php:234
+msgid "February"
+msgstr "Февраль"
+
+#: mcode-calendar.php:235
+msgid "March"
+msgstr "Март"
+
+#: mcode-calendar.php:236
+msgid "April"
+msgstr "Апрель"
+
+#: mcode-calendar.php:237
+msgid "May"
+msgstr "Май"
+
+#: mcode-calendar.php:238
+msgid "June"
+msgstr "Июнь"
+
+#: mcode-calendar.php:239
+msgid "July"
+msgstr "Июль"
+
+#: mcode-calendar.php:240
+msgid "August"
+msgstr "Август"
+
+#: mcode-calendar.php:241
+msgid "September"
+msgstr "Сентябрь"
+
+#: mcode-calendar.php:242
+msgid "October"
+msgstr "Октябрь"
+
+#: mcode-calendar.php:243
+msgid "November"
+msgstr "Ноябрь"
+
+#: mcode-calendar.php:244
+msgid "December"
+msgstr "Декабрь"
+
+#: mcode-calendar.php:248
+msgid "Mon"
+msgstr "пн"
+
+#: mcode-calendar.php:249
+msgid "Tue"
+msgstr "вт"
+
+#: mcode-calendar.php:250
+msgid "Wed"
+msgstr "ср"
+
+#: mcode-calendar.php:251
+msgid "Thu"
+msgstr "чт"
+
+#: mcode-calendar.php:252
+msgid "Fri"
+msgstr "пт"
+
+#: mcode-calendar.php:253
+msgid "Sat"
+msgstr "сб"
+
+#: mcode-calendar.php:254
+msgid "Sun"
+msgstr "вс"
+
+#: mcode-calendar.php:293 mcode-calendar.php:319 mcode-calendar.php:361
+msgid "Event list"
+msgstr "Список событий"
+
+#: page.php:3
+msgid "Calendar settings"
+msgstr "Настройки календаря"
+
+#: page.php:11
+msgid "Categories for calendar events"
+msgstr "Категории события календаря"
+
+#: page.php:33
+msgid ""
+"The name of the additional field that stores the date and time of the event "
+"start"
+msgstr ""
+"Наименование дополнительного поля, в котором хранится дата и время начала "
+"события"
+
+#: page.php:42
+msgid ""
+"The name of the additional field, which stores the date and time of the end "
+"of the event"
+msgstr ""
+"Наименование дополнительного поля, в котором хранится дата и время окончания "
+"события"
+
+#: page.php:55
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#. Name of the plugin
+msgid "MCode Calendar"
+msgstr "MCode Calendar"
+
+#. Author of the plugin
+msgid "Sirotkina Aliona (info@mcode.su)"
+msgstr "Sirotkina Aliona (info@mcode.su)"
+
+#. Author URI of the plugin
+msgid "http://mcode.su/"
+msgstr "http://mcode.su/"

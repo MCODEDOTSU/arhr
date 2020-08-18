@@ -1,0 +1,202 @@
+.calendar-grid {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.calendar-grid td {
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 0;
+    font-size: 10pt;
+    cursor: default;
+    font-weight: 300;
+}
+
+.calendar-grid td.current {
+    color: #ffffff;
+    background: #000000;
+}
+
+.calendar-grid td.previous,
+.calendar-grid td.next {
+    opacity: .5;
+}
+
+.calendar-grid td form {
+    cursor: pointer;
+    font-weight: 800;
+    height: auto;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+.calendar-grid td form:hover {
+    opacity: .5;
+}
+
+.calendar-grid td.previous form:hover,
+.calendar-grid td.next form:hover {
+    opacity: .25;
+}
+
+.mcode_calendar-days_month a {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.mcode_calendar-days_month .tabs {
+    color: #000000;
+    font-weight: 400;
+}
+
+.mcode_calendar-days_month .tabs .tab {
+    font-size: 14pt;
+    display: inline-block;
+    width: 50%;
+}
+
+.mcode_calendar-days_month .tabs .tab.month {
+    text-align: right;
+}
+
+.mcode_calendar-days_month .tabs .tab.current {
+    font-weight: 600;
+}
+
+.mcode_calendar-days_month .tab-content {
+    display: none;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+.mcode_calendar-days_month .tab-content.visibility {
+    display: block;
+}
+
+.mcode_calendar-days_month .event-item {
+    display: block;
+    padding: 8px;
+    font-size: 12pt;
+}
+
+.mcode_calendar-days_month .event-item.today span,
+.mcode_calendar-days_month .event-item.today h2,
+.mcode_calendar-days_month .event-item.feature span,
+.mcode_calendar-days_month .event-item.feature h2 {
+    font-weight: 700;
+}
+
+.mcode_calendar-days_month .event-item.old {
+    opacity: 0.5;
+}
+
+.mcode_calendar-days_month .event-item.old:hover {
+    opacity: 0.25;
+}
+
+.mcode_calendar-days_month .calendar-grid .event-title {
+    display: none;
+}
+
+.mcode_calendar-days_month .calendar-grid .event-count {
+    display: none;
+}
+
+.mcode_calendar-full .actions {
+    margin: 0 0 32px;
+}
+
+.mcode_calendar-full .actions .month,
+.mcode_calendar-full .actions .year {
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16pt;
+    margin: 0;
+}
+
+.mcode_calendar-full .actions button {
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 16pt;
+    width: 32px;
+    text-align: center;
+}
+
+.mcode_calendar-full .calendar-grid {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+    margin: 0 !important;
+}
+
+.mcode_calendar-full .calendar-grid tr,
+.mcode_calendar-full .calendar-grid tr:nth-child(2n) {
+    background: none;
+}
+
+.mcode_calendar-full .calendar-grid th,
+.mcode_calendar-full .calendar-grid td {
+    text-align: left;
+    vertical-align: top;
+    height: 100px;
+    border: 1px solid #969696;
+    width: calc(100% / 7);
+    padding: 10px;
+    font-size: 26pt;
+    font-weight: 300;
+    position: relative;
+}
+
+.mcode_calendar-full .calendar-grid .event-title {
+    margin: 8px 0 0;
+    font-size: 11pt;
+    font-weight: 300;
+    height: 42px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.mcode_calendar-full .calendar-grid .event-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .mcode_calendar-full .calendar-grid .event-title {
+        display: none;
+    }
+
+    .mcode_calendar-full .actions {
+        text-align: center;
+    }
+
+    .mcode_calendar-full .calendar-grid td form {
+        height: auto;
+    }
+
+    .mcode_calendar-full .calendar-grid th,
+    .mcode_calendar-full .calendar-grid td {
+        vertical-align: middle;
+        font-size: 18pt;
+        padding: 16px 4px;
+        height: 70px;
+    }
+
+    .mcode_calendar-full .calendar-grid .event-count {
+        top: 4px;
+        right: 4px;
+    }
+}
