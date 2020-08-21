@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 11:53+0000\n"
-"PO-Revision-Date: 2020-08-12 11:54+0000\n"
+"POT-Creation-Date: 2020-08-20 10:19+0000\n"
+"PO-Revision-Date: 2020-08-20 10:19+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.0; wp-5.4.2"
+"X-Loco-Version: 2.4.2; wp-5.4"
 
 #: 404.php:5
 msgid "Oh! Page not found."
@@ -28,11 +28,11 @@ msgstr ""
 msgid "All by tag:"
 msgstr "Всё по тегу:"
 
-#: category-anonsy-meropriyatij.php:74 category-event-announcements.php:74
+#: category-anonsy-meropriyatij.php:79 category-event-announcements.php:78
 msgid "Start: "
 msgstr "Начало:"
 
-#: category-anonsy-meropriyatij.php:80 category-event-announcements.php:80
+#: category-anonsy-meropriyatij.php:85 category-event-announcements.php:84
 msgid "Ending: "
 msgstr "Окончание:"
 
@@ -120,13 +120,21 @@ msgstr "Страница поиска"
 msgid "Search:"
 msgstr "Поиск:"
 
-#: inc/homepage/advantages.php:5
+#: inc/homepage/advantages.php:7
 msgid "Our advantages"
 msgstr "Наши преимущества"
 
-#: inc/homepage/news-calendar.php:62
+#: inc/homepage/experts.php:7
+msgid "Gallery of experts"
+msgstr "Галерея экспертов"
+
+#: inc/homepage/news-calendar.php:66 inc/homepage/partners.php:37
 msgid "watch more"
 msgstr "смотреть ещё"
+
+#: inc/homepage/partners.php:7
+msgid "Our partners"
+msgstr "Наши партнёры"
 
 #: inc/members/geography.php:1
 msgid "Geography of the Partnership"

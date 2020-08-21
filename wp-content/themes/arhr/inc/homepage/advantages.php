@@ -1,37 +1,40 @@
-<?php $home_count_blocks = get_theme_mod('home_count_blocks', 4); ?>
+<?php $advantages = arhr_advantages_get(pll_current_language()) ?>
+
+<?php if (count($advantages) != 0): ?>
 
 <div class="arhr-advantages fix">
 
     <h2 class="title"><?= __('Our advantages', 'arhr') ?></h2>
 
-    <div class="items">
+    <div class="items"><!--
 
-        <?php for ($i = 0; $i < $home_count_blocks; $i++) : ?>
+        <?php foreach($advantages as $advantage): ?>
 
-            <?php $block_number = $i + 1; ?>
-
-            <div class="arhr-advantages-item">
+            --><div class="arhr-advantages-item">
 
                 <div class="container animate">
 
                     <?php
-                    $icon = get_theme_mod("home_advantages_{$block_number}_svg", '');
+
+                    $icon = wp_unslash(htmlspecialchars_decode($advantage['svg']));
                     if (empty($icon)) {
-                        $icon = get_theme_mod("home_advantages_{$block_number}_icon", '');
-                        $icon = "<img src='$icon' alt='' />";
+                        $src = wp_get_attachment_url($advantage['image']);
+                        $icon = "<img src='$src' alt='{$advantage['name']}' />";
                     }
                     ?>
 
                     <?= $icon ?>
-                    <h2><?= get_theme_mod("home_advantages_{$block_number}_title", '') ?></h2>
-                    <h3><?= get_theme_mod("home_advantages_{$block_number}_description", '') ?></h3>
+                    <h2><?= $advantage['name'] ?></h2>
+                    <h3><?= $advantage['description'] ?></h3>
 
                 </div>
 
-            </div>
+            </div><!--
 
-        <?php endfor; ?>
+        <?php endforeach; ?>
 
-    </div>
+    --></div>
 
 </div>
+
+<?php endif; ?>

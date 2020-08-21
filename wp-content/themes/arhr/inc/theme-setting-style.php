@@ -82,7 +82,8 @@
     .homepage .map-description .btn,
     .homepage .calendar-container .event-item.today,
     .calendar-grid td.current,
-    .mcode_calendar-days_month .empty {
+    .mcode_calendar-days_month .empty,
+    .arhr-advantages .arhr-advantages-item:hover .container {
         background: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -101,7 +102,8 @@
     .btn-link,
     .homepage .map-item .map-item-count span,
     .homepage .map-item a,
-    .homepage .news-container a.news-category {
+    .homepage .news-container a.news-category,
+    .arhr-partners .arhr-partners-more {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -120,7 +122,8 @@
     .mcode-calendar table.calendar td.current div,
     .arhr-advantages .arhr-advantages-item:hover .container,
     .page-content .post-tags a,
-    .homepage .map-description .btn {
+    .homepage .map-description .btn,
+    .arhr-advantages .arhr-advantages-item:hover .container {
         border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -202,7 +205,8 @@
     .homepage .calendar-container,
     .homepage .calendar-container,
     .homepage .news-item:first-child,
-    .calendar-grid td {
+    .calendar-grid td,
+    .arhr-advantages .arhr-advantages-item .container {
         border-color: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 

@@ -8,6 +8,10 @@
 
         <?php get_template_part('inc/homepage/advantages'); ?>
 
+        <?php get_template_part('inc/homepage/partners'); ?>
+
+        <?php get_template_part('inc/homepage/experts'); ?>
+
         <?php while (have_posts()) : the_post(); ?>
 
             <?php the_content(); ?>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 11:53+0000\n"
+"POT-Creation-Date: 2020-08-20 10:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -27,11 +27,11 @@ msgstr ""
 msgid "All by tag:"
 msgstr ""
 
-#: category-anonsy-meropriyatij.php:74 category-event-announcements.php:74
+#: category-anonsy-meropriyatij.php:79 category-event-announcements.php:78
 msgid "Start: "
 msgstr ""
 
-#: category-anonsy-meropriyatij.php:80 category-event-announcements.php:80
+#: category-anonsy-meropriyatij.php:85 category-event-announcements.php:84
 msgid "Ending: "
 msgstr ""
 
@@ -119,12 +119,20 @@ msgstr ""
 msgid "Search:"
 msgstr ""
 
-#: inc/homepage/advantages.php:5
+#: inc/homepage/advantages.php:7
 msgid "Our advantages"
 msgstr ""
 
-#: inc/homepage/news-calendar.php:62
+#: inc/homepage/experts.php:7
+msgid "Gallery of experts"
+msgstr ""
+
+#: inc/homepage/news-calendar.php:66 inc/homepage/partners.php:37
 msgid "watch more"
+msgstr ""
+
+#: inc/homepage/partners.php:7
+msgid "Our partners"
 msgstr ""
 
 #: inc/members/geography.php:1

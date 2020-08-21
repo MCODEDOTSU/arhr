@@ -1,0 +1,57 @@
+.mcode-arhr h1 {
+    margin: 0 0 20px;
+}
+
+.mcode-arhr .item-dialog {
+    display: none;
+}
+
+.mcode-arhr .item-dialog.visibility {
+    display: table-row;
+}
+
+.mcode-arhr input {
+    width: 100%;
+}
+
+.mcode-arhr .item-dialog tr td:first-child {
+    width: 150px;
+}
+
+.mcode-arhr .item-dialog tr td:nth-child(2) {
+    width: 100px;
+}
+
+.mcode-arhr textarea {
+    width: 100%;
+    height: 68px;
+}
+
+.mcode-arhr .notice {
+    display: none;
+}
+
+.mcode-arhr .image-container {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.mcode-arhr .image-container img {
+    width: 100%;
+}
+
+.mcode-arhr .item-image-container .add-image {
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.mcode-arhr .item-image-container .delete-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 10px;
+}

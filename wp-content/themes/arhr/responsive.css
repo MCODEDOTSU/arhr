@@ -313,6 +313,14 @@
 
 @media only screen and (max-width: 900px) {
 
+    .arhr-experts .arhr-experts-item {
+        width: 50%;
+    }
+
+    .arhr-partners .arhr-partners-item {
+        width: 50%;
+    }
+
     footer .footer-1,
     footer .footer-2,
     footer .footer-3,
@@ -649,6 +657,44 @@
         font-size: 24px;
         font-weight: 300;
         line-height: 1.2;
+    }
+
+    .arhr-experts .title {
+        text-align: center;
+    }
+
+    .arhr-experts .arhr-experts-item {
+        width: 100%;
+    }
+
+    .arhr-partners .title {
+        text-align: center;
+    }
+
+    .arhr-partners .arhr-partners-item {
+        width: 100%;
+    }
+
+    .arhr-partners .arhr-partners-item img {
+        display: inline-block;
+        margin: 0 -100px 0 0;
+        vertical-align: middle;
+    }
+
+    .arhr-partners .arhr-partners-item h2 {
+        display: inline-block;
+        padding: 0 0 0 132px;
+        margin: 0;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .arhr-partners .arhr-partners-more {
+        margin: 24px 0 0 0;
+        text-align: center;
+        display: block;
     }
 
     .breadcrumbs {

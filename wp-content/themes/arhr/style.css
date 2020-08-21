@@ -2067,6 +2067,7 @@ news, calendar
     font-size: 16pt;
     font-weight: 700;
     text-decoration: none;
+    padding: 0 0 0 96px;
 }
 
 .homepage .mcode_calendar-days_month .tabs {
@@ -2092,7 +2093,7 @@ arhr-advantages
 
 .arhr-advantages .arhr-advantages-item {
     display: inline-block;
-    margin: 0 -5px 0 0;
+    margin: 0;
     width: 25%;
     vertical-align: top;
     cursor: pointer;
@@ -2126,15 +2127,124 @@ arhr-advantages
 }
 
 .arhr-advantages .arhr-advantages-item h2 {
-    margin: 24px 0;
+    margin: 20pt 0;
     font-size: 20px;
     font-weight: 700;
 }
 
 .arhr-advantages .arhr-advantages-item h3 {
-    font-size: 14px;
+    font-size: 10pt;
     font-weight: 300;
     line-height: 1.4;
+}
+
+/**
+arhr-experts
+ */
+
+.arhr-experts {
+    display: block;
+    margin-bottom: 64px;
+}
+
+.arhr-experts .title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 64px 0 32px;
+}
+
+.arhr-experts .arhr-experts-item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    vertical-align: top;
+    cursor: default;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.arhr-experts .items {
+    margin: 0 -16px;
+}
+
+.arhr-experts .arhr-experts-item img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.arhr-experts .arhr-experts-item h2 {
+    margin: 24px 0 8px;
+    font-size: 15pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.arhr-experts .arhr-experts-item h3 {
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/**
+arhr-experts
+ */
+
+.arhr-partners {
+    display: block;
+    margin-bottom: 64px;
+}
+
+.arhr-partners .title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 64px 0 32px;
+}
+
+.arhr-partners .arhr-partners-item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    vertical-align: top;
+    cursor: default;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.arhr-partners .items {
+    margin: 0 -16px;
+}
+
+.arhr-partners .arhr-partners-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    text-align: left;
+}
+
+.arhr-partners .arhr-partners-item h2 {
+    margin: 24px 0 8px;
+    font-size: 15pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.arhr-partners .arhr-partners-more {
+    font-size: 14pt;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /**
