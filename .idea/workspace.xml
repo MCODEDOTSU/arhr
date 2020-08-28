@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-settings.php" afterDir="false" />
-    </list>
+    <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="560" lean-forward="true" selection-start-line="560" selection-end-line="560" />
+            <state relative-caret-position="389">
+              <caret line="256" column="92" selection-start-line="256" selection-start-column="92" selection-end-line="256" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -110,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../wordpress-5.5-ru_RU/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="568" lean-forward="true" selection-start-line="290" selection-end-line="568" />
+            <state relative-caret-position="355">
+              <caret line="254" selection-start-line="254" selection-end-line="256" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -360,12 +358,12 @@
       <workItem from="1597909586155" duration="7699000" />
       <workItem from="1597991584748" duration="1446000" />
       <workItem from="1598251038600" duration="9000" />
-      <workItem from="1598591625611" duration="4436000" />
+      <workItem from="1598591625611" duration="4496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277863000" />
+    <option name="totallyTimeSpent" value="277923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -675,15 +673,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../wordpress-5.5-ru_RU/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="568" lean-forward="true" selection-start-line="290" selection-end-line="568" />
+        <state relative-caret-position="355">
+          <caret line="254" selection-start-line="254" selection-end-line="256" selection-end-column="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="560" lean-forward="true" selection-start-line="560" selection-end-line="560" />
+        <state relative-caret-position="389">
+          <caret line="256" column="92" selection-start-line="256" selection-start-column="92" selection-end-line="256" selection-end-column="92" />
         </state>
       </provider>
     </entry>
