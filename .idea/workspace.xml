@@ -76,7 +76,7 @@
           <entry key="htaccess" value="136" />
           <entry key="html" value="369" />
           <entry key="js" value="1350" />
-          <entry key="php" value="14586" />
+          <entry key="php" value="14587" />
           <entry key="svg" value="826" />
         </counts>
       </usages-collector>
@@ -85,7 +85,7 @@
           <entry key="CSS" value="11141" />
           <entry key="HTML" value="457" />
           <entry key="JavaScript" value="1349" />
-          <entry key="PHP" value="14494" />
+          <entry key="PHP" value="14495" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SQL" value="5" />
           <entry key="SVG" value="826" />
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../wordpress-5.4-ru_RU/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="258" column="65" selection-start-line="258" selection-start-column="65" selection-end-line="258" selection-end-column="65" />
+            <state relative-caret-position="85">
+              <caret line="267" column="24" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="259" selection-start-line="259" selection-end-line="260" selection-end-column="93" />
+            <state relative-caret-position="-17">
+              <caret line="261" column="69" lean-forward="true" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -358,12 +358,12 @@
       <workItem from="1597909586155" duration="7699000" />
       <workItem from="1597991584748" duration="1446000" />
       <workItem from="1598251038600" duration="9000" />
-      <workItem from="1598591625611" duration="3242000" />
+      <workItem from="1598591625611" duration="3296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276669000" />
+    <option name="totallyTimeSpent" value="276723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -667,15 +667,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="259" selection-start-line="259" selection-end-line="260" selection-end-column="93" />
+        <state relative-caret-position="-17">
+          <caret line="261" column="69" lean-forward="true" selection-start-line="261" selection-start-column="69" selection-end-line="261" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../wordpress-5.4-ru_RU/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="258" column="65" selection-start-line="258" selection-start-column="65" selection-end-line="258" selection-end-column="65" />
+        <state relative-caret-position="85">
+          <caret line="267" column="24" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
         </state>
       </provider>
     </entry>
