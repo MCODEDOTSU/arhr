@@ -237,7 +237,7 @@ function mcode_calendar_get_future_events($count = 10)
                 'value' => ''
             ],
         ],
-        'orderby' => 'meta_value_num',
+        'orderby' => 'meta_value',
         'meta_key' => $field,
         'order' => 'ASC'
     ]);
@@ -296,7 +296,7 @@ function mcode_calendar_get_past_events($count = 10)
                 'value' => ''
             ],
         ],
-        'orderby' => 'meta_value_num',
+        'orderby' => 'meta_value',
         'meta_key' => $field,
         'order' => 'DESC'
     ]);

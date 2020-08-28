@@ -43,17 +43,31 @@
 
                     <?php endif; ?>
 
-                    --><div class="news-data">
+                    --><div class="news-data"><a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
 
-                        <span class="news-date"><?= get_the_time('d.m.Y') ?></span><!--
+                        <span class="news-date">
+                            <?= get_the_time('d.m.Y') ?>
+                        </span><!--
 
-                        --><h3 class="news-title"><?= get_the_title() ?></h3>
+                        --><h3 class="news-title">
+                            <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                                <?= get_the_title() ?>
+                            </a>
+                        </h3>
 
-                        <p class="news-description pc"><?= get_the_excerpt() ?></p>
+                        <p class="news-description pc">
+                            <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                                <?= get_the_excerpt() ?>
+                            </a>
+                        </p>
 
-                    </div>
+                    </a></div>
 
-                    <p class="news-description mb"><?= get_the_excerpt() ?></p>
+                    <p class="news-description mb">
+                        <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                            <?= get_the_excerpt() ?>
+                        </a>
+                    </p>
 
                 </article>
 

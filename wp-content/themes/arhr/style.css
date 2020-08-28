@@ -1973,6 +1973,11 @@ news, calendar
     margin: 0 0 32px;
 }
 
+.homepage .news-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .homepage .news-item:first-child {
     margin: 0 0 32px;
     padding: 24px;
