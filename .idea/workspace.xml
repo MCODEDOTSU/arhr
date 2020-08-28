@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="" />
+    <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/wp-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-settings.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
           <entry key="htaccess" value="136" />
           <entry key="html" value="369" />
           <entry key="js" value="1350" />
-          <entry key="php" value="14592" />
+          <entry key="php" value="14597" />
           <entry key="svg" value="826" />
         </counts>
       </usages-collector>
@@ -85,7 +87,7 @@
           <entry key="CSS" value="11141" />
           <entry key="HTML" value="457" />
           <entry key="JavaScript" value="1349" />
-          <entry key="PHP" value="14500" />
+          <entry key="PHP" value="14505" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SQL" value="5" />
           <entry key="SVG" value="826" />
@@ -99,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="256" column="92" selection-start-line="256" selection-start-column="92" selection-end-line="256" selection-end-column="92" />
+            <state relative-caret-position="593">
+              <caret line="267" column="60" selection-start-line="267" selection-start-column="60" selection-end-line="267" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -108,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../wordpress-5.5-ru_RU/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="254" selection-start-line="254" selection-end-line="256" selection-end-column="92" />
+            <state relative-caret-position="576">
+              <caret line="267" column="60" selection-start-line="267" selection-start-column="60" selection-end-line="267" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -358,12 +360,12 @@
       <workItem from="1597909586155" duration="7699000" />
       <workItem from="1597991584748" duration="1446000" />
       <workItem from="1598251038600" duration="9000" />
-      <workItem from="1598591625611" duration="4496000" />
+      <workItem from="1598591625611" duration="4569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277923000" />
+    <option name="totallyTimeSpent" value="277996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -673,15 +675,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../wordpress-5.5-ru_RU/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="254" selection-start-line="254" selection-end-line="256" selection-end-column="92" />
+        <state relative-caret-position="576">
+          <caret line="267" column="60" selection-start-line="267" selection-start-column="60" selection-end-line="267" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="256" column="92" selection-start-line="256" selection-start-column="92" selection-end-line="256" selection-end-column="92" />
+        <state relative-caret-position="593">
+          <caret line="267" column="60" selection-start-line="267" selection-start-column="60" selection-end-line="267" selection-end-column="60" />
         </state>
       </provider>
     </entry>
