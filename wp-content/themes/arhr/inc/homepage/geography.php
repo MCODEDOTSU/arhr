@@ -21,6 +21,8 @@
 
         </div>
 
+        <p class="map-after"><?= get_post_meta(get_the_ID(), 'homepage_map_text_after', true) ?></p>
+
 
         <!-- Всплывающие окна -->
         <?php $list = arhr_get_members_list() ?>

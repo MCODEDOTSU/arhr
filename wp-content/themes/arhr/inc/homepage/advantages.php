@@ -4,7 +4,7 @@
 
 <div class="arhr-advantages fix">
 
-    <h2 class="title"><?= __('Our advantages', 'arhr') ?></h2>
+    <h2 class="title"><?= __('Our values', 'arhr') ?></h2>
 
     <div class="items"><!--
 

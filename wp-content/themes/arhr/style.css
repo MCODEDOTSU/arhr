@@ -1934,6 +1934,13 @@ arhr-homapage-map
     left: calc(360px + (100% - 360px) * 0.36);
 }
 
+.homepage .map-after {
+    text-align: center;
+    margin: 24px 0;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
 /**
 news, calendar
  */

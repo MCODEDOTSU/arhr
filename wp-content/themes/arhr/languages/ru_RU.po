@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 10:19+0000\n"
-"PO-Revision-Date: 2020-08-20 10:19+0000\n"
+"POT-Creation-Date: 2020-08-28 12:15+0000\n"
+"PO-Revision-Date: 2020-08-28 12:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -121,14 +121,14 @@ msgid "Search:"
 msgstr "Поиск:"
 
 #: inc/homepage/advantages.php:7
-msgid "Our advantages"
-msgstr "Наши преимущества"
+msgid "Our values"
+msgstr "Наши ценности"
 
 #: inc/homepage/experts.php:7
 msgid "Gallery of experts"
 msgstr "Галерея экспертов"
 
-#: inc/homepage/news-calendar.php:66 inc/homepage/partners.php:37
+#: inc/homepage/news-calendar.php:80 inc/homepage/partners.php:37
 msgid "watch more"
 msgstr "смотреть ещё"
 
