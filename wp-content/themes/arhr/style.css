@@ -2226,7 +2226,15 @@ arhr-experts
 }
 
 .arhr-partners .items-container {
-    display: inline-block;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.arhr-partners .items-container.visibility {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .arhr-partners .arhr-partners-item {

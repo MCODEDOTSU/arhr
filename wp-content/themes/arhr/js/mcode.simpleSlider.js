@@ -53,28 +53,17 @@
                 $next = $(`${options.itemSelector}`, this).eq(0);
             }
 
-            $current.animate({
-                opacity: 0,
-                visibility: 'hidden',
-            }, 300, () => {
-                $current.removeClass('visibility');
-                $next.addClass('visibility');
-                $current.hide();
-                $next.show().animate({
-                    opacity: 1,
-                    visibility: 'visible',
-                }, 300);
+            $current.removeClass('visibility');
+            $next.addClass('visibility');
 
-                if (options.speed !== 0) {
-                    setTimeout(function () {
-                        methods.next.apply($slider, [{
-                            itemSelector: options.itemSelector,
-                            speed: options.speed,
-                        }]);
-                    }, options.speed);
-                }
-
-            });
+            if (options.speed !== 0) {
+                setTimeout(function () {
+                    methods.next.apply($slider, [{
+                        itemSelector: options.itemSelector,
+                        speed: options.speed,
+                    }]);
+                }, options.speed);
+            }
 
         },
 
