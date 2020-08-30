@@ -24,8 +24,6 @@
 
             <?php the_content(); ?>
 
-            <?php comments_template('/comments.php', true); ?>
-
         <?php endif ?>
 
     </div>

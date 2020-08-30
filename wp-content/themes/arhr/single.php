@@ -34,8 +34,6 @@
 
         </div>
 
-        <?php comments_template('/comments.php', true) ?>
-
     </div>
 
 <?php get_footer(); ?>
