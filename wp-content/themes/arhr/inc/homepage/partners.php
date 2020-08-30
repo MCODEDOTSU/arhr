@@ -8,27 +8,49 @@
 
         <div class="items"><!--
 
-            <?php foreach($partners as $partner): ?>
+            --><div class="items-container"><!--
 
-                --><div class="arhr-partners-item">
+                <?php foreach($partners as $i => $partner): ?>
 
-                <div class="container animate"><!--
+                    <?php if($i % 4 == 0 && $i != 0): ?>
 
-                    <?php if (!empty($partner['image'])): ?>
-                        --><img src="<?= wp_get_attachment_image_src($partner['image'], 'thumbnail')[0] ?>"
-                             alt="<?= $partner['name'] ?>" /><!--
-                    <?php else: ?>
-                        --><img src="<?= get_template_directory_uri() . '/img/thumb-150-150.png' ?>"
-                             alt="<?= $partner['name'] ?>" /><!--
-                    <?php endif; ?>
+                        --></div><div class="items-container"><!--
 
-                    --><h2><?= $partner['name'] ?></h2>
+                    <?php endif ?>
 
-                </div>
+                    --><div class="arhr-partners-item">
 
-            </div><!--
+                        <div class="container animate"><!--
 
-            <?php endforeach; ?>
+                            <?php if(!empty($partner['url'])): ?>
+
+                                --><a title="<?= $partner['name'] ?>" href="<?= $partner['url'] ?>" target="_blank"><!--
+
+                            <?php endif ?>
+
+                                <?php if (!empty($partner['image'])): ?>
+                                    --><img src="<?= wp_get_attachment_image_src($partner['image'], 'thumbnail')[0] ?>"
+                                         alt="<?= $partner['name'] ?>" /><!--
+                                <?php else: ?>
+                                    --><img src="<?= get_template_directory_uri() . '/img/thumb-150-150.png' ?>"
+                                         alt="<?= $partner['name'] ?>" /><!--
+                                <?php endif; ?>
+
+                                --><h2><?= $partner['name'] ?></h2>
+
+                            <?php if(!empty($partner['url'])): ?>
+
+                                </a>
+
+                            <?php endif ?>
+
+                        </div>
+
+                    </div><!--
+
+                <?php endforeach; ?>
+
+            --></div><!--
 
         --></div>
 

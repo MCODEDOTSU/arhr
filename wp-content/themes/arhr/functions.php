@@ -7,6 +7,7 @@ add_theme_support('menus');
 function arhr_enqueue_scripts()
 {
     wp_enqueue_style('main', get_template_directory_uri() . '/style.css', [], date('His'));
+    wp_enqueue_script('simpleSlider', get_template_directory_uri() . '/js/mcode.simpleSlider.js', date('His'));
     wp_enqueue_script('core', get_template_directory_uri() . '/js/core.js', date('His'));
     wp_enqueue_script('touchSwipe', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js');
     wp_enqueue_style('responsive', get_template_directory_uri() . '/responsive.css', [], date('His'));

@@ -11,6 +11,12 @@
         // MEMBERS
         members_page();
 
+        // PARTNERS SLIDER
+        $('.arhr-partners .items').mcodeSimpleSlider({
+            itemSelector: '.items-container',
+            speed: 10000,
+        });
+
     });
 
     function members_page() {
