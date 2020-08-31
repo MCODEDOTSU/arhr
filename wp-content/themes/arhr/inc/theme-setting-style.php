@@ -123,7 +123,8 @@
     .arhr-advantages .arhr-advantages-item:hover .container,
     .page-content .post-tags a,
     .homepage .map-description .btn,
-    .arhr-advantages .arhr-advantages-item:hover .container {
+    .arhr-advantages .arhr-advantages-item:hover .container,
+    .page-content.category .post-categories a {
         border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 

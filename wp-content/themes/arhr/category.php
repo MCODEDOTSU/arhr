@@ -16,10 +16,7 @@
 
                         <?php if (has_post_thumbnail()): ?>
 
-                            --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
-                               title="<?= get_the_title() ?>"
-                               style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')">
-                            </a><!--
+                            --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')"></a><!--
 
                         <?php else: ?>
 
@@ -27,12 +24,34 @@
 
                         <?php endif; ?>
 
-                        --><a class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
-                           title="<?= get_the_title() ?>">
+                     --><div class="post-data post-has-thumbnail">
+
                             <p class="post-metadata"><?= get_the_time('d.m.Y') ?></p><!--
-                            --><h3 class="post-title"><?= get_the_title() ?></h3>
-                            <div class="post-description"><?= get_the_excerpt() ?></div>
-                        </a>
+
+                         --><h3 class="post-title" >
+                                <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>"><?= get_the_title() ?></a>
+                            </h3>
+
+                            <div class="post-description">
+                                <a class="post-title" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                                    <?= get_the_excerpt() ?>
+                                </a>
+                            </div>
+
+                            <div class="post-categories">
+                                <?php
+                                $currentCategoryId = get_queried_object()->term_id;
+                                $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);
+                                foreach( $categories as $category ){
+                                    if ($category->parent != $currentCategoryId) {
+                                        continue;
+                                    }
+                                    ?> <a href="<?= get_category_link($category->term_id) ?>" title="<?= get_cat_name($category->term_id) ?>"><?= get_cat_name($category->term_id) ?></a> <?php
+                                }
+                                ?>
+                            </div>
+
+                        </div>
 
                     </div>
 

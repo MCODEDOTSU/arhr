@@ -1209,6 +1209,7 @@ CATEGORY
     display: inline-block;
     vertical-align: top;
     width: 100%;
+    line-height: 1.2;
 }
 
 .page-content.category .post-title {
@@ -1221,6 +1222,13 @@ CATEGORY
     box-sizing: border-box;
     vertical-align: top;
     margin: 0;
+    color: inherit;
+}
+
+.page-content.category .post-title a {
+    font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
 }
 
 .page-content.category .post-item:first-child .post-title,
@@ -1237,6 +1245,12 @@ CATEGORY
     font-weight: 300;
     line-height: 1.2;
     display: none;
+}
+
+.page-content.category .post-description a {
+    font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
 }
 
 .page-content.category .post-item:first-child .post-description,
@@ -1293,6 +1307,25 @@ CATEGORY
 
 .page-content.category a {
     font-size: 18pt;
+}
+
+.page-content.category .post-categories {
+    text-align: right;
+    margin: 16px 0;
+}
+
+.page-content.category .post-categories a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 8px 5px;
+    border: 1px solid #0087c6;
+    margin: 0 8px 0 0;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    font-size: 12pt;
 }
 
 .page-content.category-anonsy .sidebar-anonsy {

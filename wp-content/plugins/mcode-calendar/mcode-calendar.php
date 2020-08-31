@@ -399,7 +399,7 @@ function mcode_calendar_get_cell($date, $events = [], $period_class = "")
     $eventsCount = !wp_is_mobile() ? count($events) - 1 : count($events);
 
     $cell = "<td class='day $period_class $has_events_class $current_day_class'>" . ( empty($events) ? $day :
-            "<form action='{$category->slug}' method='POST' title='" . __('Event list', 'mcode-calendar') . "'>
+            "<form method='POST' title='" . __('Event list', 'mcode-calendar') . "'>
                 <input type='hidden' name='date' value='$format_date'/>$day                
                 <div class='event-title'>{$events[0]['title']}</div>" .
                 ($eventsCount == 0 ? '' : "<span class='event-count'>+$eventsCount</span>") .
