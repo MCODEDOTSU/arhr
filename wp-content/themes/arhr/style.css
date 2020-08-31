@@ -2459,6 +2459,19 @@ members
     margin: 4px 0 0;
 }
 
+.page-members .member-items .member-item-email,
+.page-members .member-items .member-item-more {
+    display: block;
+    /*text-align: right;*/
+}
+
+.page-members .member-items .member-item-email .btn,
+.page-members .member-items .member-item-more .btn {
+    font-size: 12pt;
+    margin: 4px 0 0;
+    padding: 0;
+}
+
 .page-members .member-items .member-item-data {
     display: block;
     margin: 0 0 16px;
@@ -2475,16 +2488,30 @@ members
     font-size: 14pt;
 }
 
+.page-content.page-members .member-items .article {
+    margin: 8px 0 32px;
+}
+
 .page-content.page-members .member-items p,
 .page-content.page-members .member-items div {
     max-width: 100%;
-    margin: 0 0 16px;
+    margin: 0 0 8px;
     font-size: 14pt;
 }
 
 .page-content.page-members .member-items li {
     margin: 0 0 16px;
     font-size: 14pt;
+}
+
+.page-content.page-members .member-items .cell {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.page-content.page-members .member-items .cell.align-left .btn {
+    margin-right: 16px;
 }
 
 .page-members .member-items .actions {

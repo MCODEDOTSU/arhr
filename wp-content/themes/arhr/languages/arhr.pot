@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ARHR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-28 12:15+0000\n"
+"POT-Creation-Date: 2020-08-31 04:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -43,43 +43,43 @@ msgstr ""
 msgid "Account"
 msgstr ""
 
-#: functions.php:153 inc/homepage/map.php:47 inc/members/map.php:47
+#: functions.php:154 inc/homepage/map.php:47 inc/members/map.php:47
 msgid "Central (Central Federal District)"
 msgstr ""
 
-#: functions.php:154 inc/homepage/map.php:106 inc/members/map.php:106
+#: functions.php:155 inc/homepage/map.php:106 inc/members/map.php:106
 msgid "Northwestern (NWFD)"
 msgstr ""
 
-#: functions.php:155 inc/homepage/map.php:163 inc/members/map.php:163
+#: functions.php:156 inc/homepage/map.php:163 inc/members/map.php:163
 msgid "Southern (Southern Federal District)"
 msgstr ""
 
-#: functions.php:156 inc/homepage/map.php:188 inc/members/map.php:188
+#: functions.php:157 inc/homepage/map.php:188 inc/members/map.php:188
 msgid "North Caucasian (NCFD)"
 msgstr ""
 
-#: functions.php:157 inc/homepage/map.php:213 inc/members/map.php:213
+#: functions.php:158 inc/homepage/map.php:213 inc/members/map.php:213
 msgid "Privolzhsky (Volga Federal District)"
 msgstr ""
 
-#: functions.php:158 inc/homepage/map.php:260 inc/members/map.php:260
+#: functions.php:159 inc/homepage/map.php:260 inc/members/map.php:260
 msgid "Uralsky (UFO)"
 msgstr ""
 
-#: functions.php:159 inc/homepage/map.php:283 inc/members/map.php:283
+#: functions.php:160 inc/homepage/map.php:283 inc/members/map.php:283
 msgid "Siberian (Siberian Federal District)"
 msgstr ""
 
-#: functions.php:160 inc/homepage/map.php:330 inc/members/map.php:330
+#: functions.php:161 inc/homepage/map.php:330 inc/members/map.php:330
 msgid "Far Eastern (Far Eastern Federal District)"
 msgstr ""
 
-#: functions.php:161 inc/homepage/map.php:387 inc/members/map.php:387
+#: functions.php:162 inc/homepage/map.php:387 inc/members/map.php:387
 msgid "Republic of Belarus"
 msgstr ""
 
-#: functions.php:162 inc/homepage/map.php:392 inc/members/map.php:392
+#: functions.php:163 inc/homepage/map.php:392 inc/members/map.php:392
 msgid "The Republic of Kazakhstan"
 msgstr ""
 
@@ -87,27 +87,31 @@ msgstr ""
 msgid "Members of the Association"
 msgstr ""
 
-#: page-members.php:79 page-members.php:113 page-members.php:113
+#: page-members.php:84 page-members.php:118 page-members.php:118
 msgid "write a letter"
 msgstr ""
 
-#: page-members.php:125
+#: page-members.php:130
 msgid "Mailing address"
 msgstr ""
 
-#: page-members.php:134 page-members.php:136
+#: page-members.php:139 page-members.php:141
 msgid "Web site"
 msgstr ""
 
-#: page-members.php:146 page-members.php:148
+#: page-members.php:151 page-members.php:153
 msgid "Phone"
 msgstr ""
 
-#: page-members.php:155 page-members.php:157
+#: page-members.php:160 page-members.php:162
 msgid "Fax"
 msgstr ""
 
-#: page-members.php:175
+#: page-members.php:177
+msgid "more detail"
+msgstr ""
+
+#: page-members.php:182
 msgid "collapse description"
 msgstr ""
 
@@ -127,7 +131,7 @@ msgstr ""
 msgid "Gallery of experts"
 msgstr ""
 
-#: inc/homepage/news-calendar.php:80 inc/homepage/partners.php:37
+#: inc/homepage/news-calendar.php:80 inc/homepage/partners.php:59
 msgid "watch more"
 msgstr ""
 

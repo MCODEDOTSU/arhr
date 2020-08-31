@@ -20,7 +20,7 @@
     });
 
     function members_page() {
-        $('.page-content .member-items .member-item .member-item-close').on('click', function () {
+        $('.page-content .member-items .member-item .member-item-close .btn-open').on('click', function () {
             $(this).parent().addClass('open');
         });
         $('.page-content .member-items .member-item .btn-close').on('click', function () {

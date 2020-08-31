@@ -747,6 +747,10 @@
         padding: 16px 0 0 0;
     }
 
+    .page-content.page-members .member-items .cell {
+        width: 100%;
+    }
+
     .homepage .map {
         padding: 128px 0 0;
     }
