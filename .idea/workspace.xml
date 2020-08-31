@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-anonsy-meropriyatij.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-event-announcements.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="2504" column="19" selection-start-line="2504" selection-start-column="19" selection-end-line="2504" selection-end-column="19" />
+            <state relative-caret-position="627">
+              <caret line="2500" lean-forward="true" selection-start-line="2500" selection-end-line="2500" />
             </state>
           </provider>
         </entry>
@@ -274,7 +276,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2045" />
+    <option name="x" value="375" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -414,15 +416,15 @@
       <workItem from="1598251038600" duration="9000" />
       <workItem from="1598591625611" duration="6956000" />
       <workItem from="1598768485154" duration="7650000" />
-      <workItem from="1598846723558" duration="2637000" />
+      <workItem from="1598846723558" duration="3557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290670000" />
+    <option name="totallyTimeSpent" value="291590000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
@@ -743,7 +745,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-event-announcements.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="65" lean-forward="true" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
@@ -773,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="2504" column="19" selection-start-line="2504" selection-start-column="19" selection-end-line="2504" selection-end-column="19" />
+        <state relative-caret-position="627">
+          <caret line="2500" lean-forward="true" selection-start-line="2500" selection-end-line="2500" />
         </state>
       </provider>
     </entry>
