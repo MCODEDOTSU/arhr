@@ -2495,12 +2495,18 @@ members
 .page-content.page-members .member-items p,
 .page-content.page-members .member-items div {
     max-width: 100%;
-    margin: 0 0 8px;
+    margin: 0 0 4px;
     font-size: 14pt;
 }
 
+.page-content.page-members .member-items ul,
+.page-content.page-members .member-items ol {
+    padding: 0 0 0 16px;
+    margin: 0 0 4px;
+}
+
 .page-content.page-members .member-items li {
-    margin: 0 0 16px;
+    margin: 0 0 4px;
     font-size: 14pt;
 }
 
