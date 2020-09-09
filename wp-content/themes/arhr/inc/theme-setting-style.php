@@ -46,6 +46,7 @@
     header .main-right .contacts button,
     footer h2,
     footer p,
+    footer a,
     footer .widget_nav_menu a,
     footer .subscribe .form-submit input,
     footer .subscribe .form-label label,
@@ -103,7 +104,8 @@
     .homepage .map-item .map-item-count span,
     .homepage .map-item a,
     .homepage .news-container a.news-category,
-    .arhr-partners .arhr-partners-more {
+    .arhr-partners .arhr-partners-more,
+    header .header-menu .menu li.current-menu-item a {
         color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -128,7 +130,7 @@
         border-color: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
-    .arhr-advantages-item svg .a {
+    .arhr-advantages-item svg path {
         fill: <?= get_theme_mod('color_3', '#3a85c0') ?>;
     }
 
@@ -197,6 +199,7 @@
         background: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 
+    header .main-right .search-input,
     .contact-form .row,
     .page-content.category .post-item:first-child,
     .page-content .border,

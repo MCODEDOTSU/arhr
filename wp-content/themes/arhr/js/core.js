@@ -14,7 +14,7 @@
         // PARTNERS SLIDER
         $('.arhr-partners .items').mcodeSimpleSlider({
             itemSelector: '.items-container',
-            speed: 10000,
+            speed: 4000,
         });
 
     });

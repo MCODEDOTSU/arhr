@@ -10,15 +10,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Lato', sans-serif;
     font-size: 100%;
     font-style: inherit;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     outline: 0;
     padding: 0;
     vertical-align: baseline;
+    letter-spacing: 0.04em;
 }
 
 h1, h2, h3, h4 {
     word-wrap: break-word;
+    letter-spacing: 0.04em;
 }
 
 input, textarea, select {
@@ -38,6 +40,7 @@ html {
 html, body {
     height: 100%;
     min-width: 360px;
+    letter-spacing: 0.04em;
 }
 
 html.noscroll,
@@ -147,6 +150,7 @@ input[type="submit"] {
     transition: all .1s ease-out;
     cursor: pointer;
     outline: none;
+    letter-spacing: 0.06em;
 }
 
 a:hover,
@@ -302,10 +306,10 @@ header .languages-menu li:last-child a {
 
 header .main {
     background: #ffffff;
-    background: -moz-linear-gradient(0deg, rgba(245, 245, 245, 1) 0%, rgba(254, 254, 254, 1) 20%, #ffffff 100%);
-    background: -webkit-linear-gradient(0deg, rgba(245, 245, 245, 1) 0%, rgba(254, 254, 254, 1) 20%, #ffffff 100%);
-    background: linear-gradient(0deg, rgba(245, 245, 245, 1) 0%, rgba(254, 254, 254, 1) 20%, #ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5", endColorstr="#ffffff", GradientType=1);
+    background: -moz-linear-gradient(0deg, #eeeeee 0%, #eeeeee 20%, #ffffff 100%);
+    background: -webkit-linear-gradient(0deg, #eeeeee 0%, #eeeeee 20%, #ffffff 100%);
+    background: linear-gradient(0deg, #eeeeee 0%, #eeeeee 20%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee", endColorstr="#ffffff", GradientType=1);
     padding: 20px 0;
 }
 
@@ -362,7 +366,7 @@ header .main-right .searchform-container {
     vertical-align: middle;
     width: 100%;
     margin: 0 -5px 0 0;
-    padding: 33px 442px 33px 0;
+    padding: 33px 466px 33px 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -371,8 +375,8 @@ header .main-right .searchform-container {
 header .main-right .contacts {
     display: inline-block;
     vertical-align: middle;
-    width: 410px;
-    margin: 0 0 0 -410px;
+    width: 450px;
+    margin: 0 0 0 -450px;
 }
 
 header .main-right .search-input {
@@ -428,6 +432,16 @@ header .main-right .contacts a {
     display: block;
 }
 
+header .main-right .contacts .phone {
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+header .main-right .contacts .email {
+    font-weight: 600;
+    font-size: 14pt;
+}
+
 header .main-right .contacts .btn {
     font-size: 16px;
     color: #ffffff;
@@ -435,7 +449,7 @@ header .main-right .contacts .btn {
     border: none;
     vertical-align: middle;
     display: inline-block;
-    margin: 0 0 0 32px;
+    margin: 0 0 0 16px;
     text-align: center;
     background: #0087c6;
     line-height: 40px;
@@ -449,6 +463,9 @@ header .main-right .contacts .btn:hover {
 header .header-menu {
     background: #ffffff;
     padding: 32px 0;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .2);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .2);
 }
 
 header .header-menu .menu a {
@@ -458,14 +475,11 @@ header .header-menu .menu a {
     line-height: 32px;
     margin: 0 32px 0 0;
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 header .header-menu .menu a:hover {
     color: #0087c6;
-}
-
-header .header-menu .menu li.current-menu-item a {
-    font-weight: 700;
 }
 
 header .header-menu .menu > li > a:hover {
@@ -614,6 +628,10 @@ header .header-menu .social-container a.zen {
     background-image: url('img/zen.svg');
 }
 
+header .header-menu .social-container a:before {
+    display: none;
+}
+
 /**
 FOOTER
  */
@@ -645,7 +663,7 @@ footer h2 {
     font-size: 14px;
     text-transform: uppercase;
     margin: 0 0 32px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff40;
 }
 
 footer p {
@@ -653,6 +671,11 @@ footer p {
     font-size: 14px;
     margin: 0 0 16px 0;
     line-height: 1.5;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 footer .widget_nav_menu li {
@@ -1808,7 +1831,7 @@ arhr-homapage-map
  */
 
 .homepage .map {
-    padding: 32px 0 128px;
+    padding: 32px 0;
     position: relative;
 }
 
@@ -1979,7 +2002,7 @@ news, calendar
  */
 
 .homepage .news-calendar {
-    margin: 64px auto;
+    margin: 40px auto;
 }
 
 .homepage .news-container {
@@ -2021,8 +2044,7 @@ news, calendar
 .homepage .news-item:first-child {
     margin: 0 0 32px;
     padding: 24px;
-    border: 1px solid #bbbbbb;
-    background: #fafafa;
+    background: #effaff ;
 }
 
 .homepage .news-item .news-data {
@@ -2127,13 +2149,13 @@ arhr-advantages
 
 .arhr-advantages {
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 
 .arhr-advantages .title {
     font-size: 60px;
     font-weight: 700;
-    margin: 64px 0 32px;
+    margin: 0 0 32px;
 }
 
 .arhr-advantages .arhr-advantages-item {
@@ -2189,13 +2211,13 @@ arhr-experts
 
 .arhr-experts {
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 
 .arhr-experts .title {
     font-size: 60px;
     font-weight: 700;
-    margin: 64px 0 32px;
+    margin: 0 0 32px;
 }
 
 .arhr-experts .arhr-experts-item {
@@ -2224,12 +2246,17 @@ arhr-experts
 }
 
 .arhr-experts .arhr-experts-item h2 {
-    margin: 24px 0 8px;
+    margin: 0 0 8px;
     font-size: 15pt;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
     line-height: 1.4;
+}
+
+.arhr-experts .arhr-experts-item h2.lastname {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 24px 0 0;
 }
 
 .arhr-experts .arhr-experts-item h3 {
@@ -2245,13 +2272,13 @@ arhr-experts
 
 .arhr-partners {
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 
 .arhr-partners .title {
     font-size: 60px;
     font-weight: 700;
-    margin: 64px 0 32px;
+    margin: 0 0 32px;
 }
 
 .arhr-partners .items {
@@ -2298,7 +2325,7 @@ arhr-experts
     margin: 24px 0 8px;
     font-size: 15pt;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     line-height: 1.4;
     white-space: initial;
 }

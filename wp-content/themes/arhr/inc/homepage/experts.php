@@ -22,7 +22,8 @@
                                  alt="<?= $expert['lastname'] ?> <?= $expert['firstname'] ?> <?= $expert['middlename'] ?>" />
                         <?php endif; ?>
 
-                        <h2><?= $expert['lastname'] ?> <br> <?= $expert['firstname'] ?> <?= $expert['middlename'] ?></h2>
+                        <h2 class="lastname"><?= $expert['lastname'] ?></h2>
+                        <h2><?= $expert['firstname'] ?> <?= $expert['middlename'] ?></h2>
                         <h3><?= $expert['post'] ?></h3>
 
                     </div>
