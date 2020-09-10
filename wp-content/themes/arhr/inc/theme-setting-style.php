@@ -68,7 +68,7 @@
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 
-    .arhr-advantages-item:hover svg .a {
+    .arhr-advantages-item:hover svg path {
         fill: <?= get_theme_mod('color_2', '#ffffff') ?>;
     }
 

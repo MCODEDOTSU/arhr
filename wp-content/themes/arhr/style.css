@@ -1702,7 +1702,7 @@ CONTACT FORM
 
 .contact-form {
     margin: 32px 0 0;
-    max-width: 560px;
+    max-width: 720px;
 }
 
 .contact-form .row {
@@ -1719,8 +1719,8 @@ CONTACT FORM
 .contact-form .input-text {
     display: inline-block;
     vertical-align: middle;
-    width: 140px;
-    margin: 0 -147px 0 0;
+    width: 180px;
+    margin: 0 -190px 0 0;
     line-height: 28px;
     font-size: 14pt;
 }
@@ -1729,7 +1729,7 @@ CONTACT FORM
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    padding: 0 0 0 140px;
+    padding: 0 0 0 200px;
     line-height: 1.5;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2039,6 +2039,10 @@ news, calendar
 .homepage .news-item a {
     color: inherit;
     text-decoration: none;
+}
+
+.homepage .news-item h3 a {
+    font-weight: 700;
 }
 
 .homepage .news-item:first-child {
