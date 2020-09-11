@@ -1103,7 +1103,7 @@ PAGE
 .page-content div {
     font-size: 18pt;
     line-height: 1.6;
-    margin: 0 0 38px;
+    margin: 0 0 32px;
     font-weight: 300;
 }
 
@@ -1125,7 +1125,7 @@ PAGE
 
 .page-content ul,
 .page-content ol {
-    margin: 0 0 16px;
+    margin: 0 0 32px;
     font-size: 18pt;
     line-height: 1.6;
     list-style-position: inside;
