@@ -17,7 +17,7 @@
         </div><!--
     --><div class="map-container">
 
-            <?php get_template_part('inc/homepage/map'); ?>
+            <?php get_template_part('inc/homepage/map-' . pll_current_language()); ?>
 
         </div>
 

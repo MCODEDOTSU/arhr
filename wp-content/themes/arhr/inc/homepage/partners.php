@@ -60,6 +60,9 @@
 
         <?php endif; ?>
 
+        <button class="arrow arrow-left"></button>
+        <button class="arrow arrow-right"></button>
+
     </div>
 
 <?php endif; ?>

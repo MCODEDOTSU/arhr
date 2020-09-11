@@ -2048,7 +2048,7 @@ news, calendar
 .homepage .news-item:first-child {
     margin: 0 0 32px;
     padding: 24px;
-    background: #effaff ;
+    background: #effaff;
 }
 
 .homepage .news-item .news-data {
@@ -2125,7 +2125,7 @@ news, calendar
     height: 160px;
 }
 
-.homepage .news-item:first-child .news-thumbnail  {
+.homepage .news-item:first-child .news-thumbnail {
     display: inline-block;
 }
 
@@ -2145,7 +2145,6 @@ news, calendar
     text-transform: uppercase;
     margin: 0 0 32px;
 }
-
 
 /**
 arhr-advantages
@@ -2236,7 +2235,6 @@ arhr-experts
     box-sizing: border-box;
 }
 
-
 .arhr-experts .items {
     margin: 0 -16px;
 }
@@ -2313,9 +2311,31 @@ arhr-experts
     box-sizing: border-box;
 }
 
+.arhr-partners .arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    background: none;
+    background-size: cover;
+    border: none;
+}
+
+.arhr-partners .arrow.arrow-left {
+    background-image: url('img/icon_arrow_left_black.svg');
+    left: 0;
+}
+
+.arhr-partners .arrow.arrow-right {
+    background-image: url('img/icon_arrow_right_black.svg');
+    right: 0;
+
+}
 
 .arhr-partners .items {
     margin: 0 -16px;
+    padding: 0 64px;
 }
 
 .arhr-partners .arhr-partners-item img {

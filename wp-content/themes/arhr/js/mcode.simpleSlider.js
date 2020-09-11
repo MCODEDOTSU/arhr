@@ -1,10 +1,13 @@
 (function ($) {
 
     let settings = {
+        itemsSelector: '.items',
         itemSelector: '.item',
         margin: 0,
         speed: 0,
     };
+
+    let isAuto = false;
 
     let methods = {
 
@@ -15,18 +18,20 @@
          */
         init: function (options) {
 
-            const $slider = this;
+            const $container = this;
+            const $slider = $(options.itemsSelector, this);
 
             $slider.css({
                 'white-space': 'nowrap',
                 'overflow': 'hidden',
             });
 
-            $(options.itemSelector, this).eq(0).addClass('visibility');
+            $(options.itemSelector, $slider).eq(0).addClass('visibility');
 
             if (options.speed !== 0) {
+                isAuto = true;
                 setTimeout(function () {
-                    methods.next.apply($slider, [{
+                    methods.auto.apply($slider, [{
                         itemSelector: options.itemSelector,
                         speed: options.speed,
                     }]);
@@ -34,12 +39,51 @@
             }
 
             let maxHeight = 0;
-            $(options.itemSelector, this).each(function() {
+            $(options.itemSelector, $slider).each(function() {
                 if ($(this).outerHeight() > maxHeight) {
                     maxHeight = $(this).outerHeight();
                 }
             });
-            this.height(maxHeight);
+            $slider.height(maxHeight);
+
+            $('.arrow-left', $container).on('click', function () {
+                isAuto = false;
+                methods.prev.apply($slider, [{
+                    itemSelector: options.itemSelector,
+                    speed: options.speed,
+                }]);
+            });
+
+            $('.arrow-right', $container).on('click', function () {
+                isAuto = false;
+                methods.next.apply($slider, [{
+                    itemSelector: options.itemSelector,
+                    speed: options.speed,
+                }]);
+            });
+
+        },
+
+        auto: function(options) {
+
+            if (!isAuto) {
+                return;
+            }
+
+            const $slider = this;
+
+            methods.next.apply($slider, [{
+                itemSelector: options.itemSelector,
+                speed: options.speed,
+            }]);
+
+            setTimeout(function () {
+                methods.auto.apply($slider, [{
+                    itemSelector: options.itemSelector,
+                    speed: options.speed,
+                }]);
+            }, options.speed);
+
         },
 
         next: function (options) {
@@ -56,9 +100,10 @@
             $current.removeClass('visibility');
             $next.addClass('visibility');
 
-            if (options.speed !== 0) {
+            if (options.speed !== 0 && isAuto === false) {
                 setTimeout(function () {
-                    methods.next.apply($slider, [{
+                    isAuto = true;
+                    methods.auto.apply($slider, [{
                         itemSelector: options.itemSelector,
                         speed: options.speed,
                     }]);
@@ -68,6 +113,28 @@
         },
 
         prev: function (options) {
+
+            const $slider = this;
+
+            $current = $(`${options.itemSelector}.visibility`, this);
+            $prev = $(`${options.itemSelector}.visibility`, this).prev();
+
+            if ($prev.length === 0) {
+                $prev = $(`${options.itemSelector}`, this).last();
+            }
+
+            $current.removeClass('visibility');
+            $prev.addClass('visibility');
+
+            if (options.speed !== 0 && isAuto === false) {
+                setTimeout(function () {
+                    isAuto = true;
+                    methods.auto.apply($slider, [{
+                        itemSelector: options.itemSelector,
+                        speed: options.speed,
+                    }]);
+                }, options.speed);
+            }
 
         },
 
