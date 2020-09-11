@@ -17,7 +17,7 @@ get_header();
 
             <h1><?php single_cat_title(); ?><?php if (!empty($post_date)) { echo ": $post_date"; } ?></h1>
 
-            <?php echo category_description(); ?>
+            <?php echo get_term_meta( get_queried_object_id(), 'category_description', true); ?>
 
             <div class="sidebar sidebar-anonsy">
                 <?php

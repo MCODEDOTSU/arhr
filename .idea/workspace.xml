@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +56,7 @@
           <entry key="htaccess" value="1" />
           <entry key="html" value="5" />
           <entry key="js" value="20" />
-          <entry key="php" value="204" />
+          <entry key="php" value="207" />
           <entry key="svg" value="10" />
           <entry key="txt" value="1" />
         </counts>
@@ -65,7 +66,7 @@
           <entry key="CSS" value="28" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="204" />
+          <entry key="PHP" value="207" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SVG" value="10" />
           <entry key="htaccess" value="1" />
@@ -78,7 +79,7 @@
           <entry key="htaccess" value="136" />
           <entry key="html" value="369" />
           <entry key="js" value="2685" />
-          <entry key="php" value="15444" />
+          <entry key="php" value="15464" />
           <entry key="svg" value="1191" />
         </counts>
       </usages-collector>
@@ -87,7 +88,7 @@
           <entry key="CSS" value="11751" />
           <entry key="HTML" value="457" />
           <entry key="JavaScript" value="2684" />
-          <entry key="PHP" value="15352" />
+          <entry key="PHP" value="15372" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SQL" value="5" />
           <entry key="SVG" value="1191" />
@@ -98,7 +99,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
@@ -129,10 +130,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="92" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/geography.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
               <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -260,10 +288,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/page-members.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/mcode-calendar/mcode-calendar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting-style.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" />
@@ -274,6 +299,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/geography.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" />
       </list>
     </option>
   </component>
@@ -455,12 +483,12 @@
       <workItem from="1598936353738" duration="14000" />
       <workItem from="1599653921857" duration="6986000" />
       <workItem from="1599719029918" duration="1384000" />
-      <workItem from="1599808677511" duration="8576000" />
+      <workItem from="1599808677511" duration="9252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314141000" />
+    <option name="totallyTimeSpent" value="314817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -754,27 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="34" selection-start-line="40" selection-start-column="28" selection-end-line="51" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="106" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -837,6 +844,27 @@
           <folding>
             <element signature="e#33642#35495#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="92" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
         </state>
       </provider>
     </entry>
