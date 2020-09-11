@@ -4,7 +4,8 @@
 
         <h1><?php single_cat_title(); ?></h1>
 
-        <?php echo get_term_meta( get_queried_object_id(), 'category_description', true); ?>
+        <?php $description = get_term_meta( get_queried_object_id(), 'category_description', true); ?>
+        <?php echo apply_filters( 'the_content', $description ); ?>
 
         <?php if (have_posts()) : ?>
 
