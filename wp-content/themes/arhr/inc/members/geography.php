@@ -3,7 +3,7 @@
 <?php $list = arhr_get_members_list() ?>
 
 <div class="members-map">
-    <?php get_template_part('inc/members/map'); ?>
+    <?php get_template_part('inc/members/map-' . pll_current_language()); ?>
 </div><!--
 --><div class="members-list">
     <ul>

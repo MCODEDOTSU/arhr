@@ -22,7 +22,7 @@
 
     function members_page() {
         $('.page-content .member-items .member-item .member-item-close .btn-open').on('click', function () {
-            $(this).parent().addClass('open');
+            $(this).parents('.member-item').addClass('open');
         });
         $('.page-content .member-items .member-item .btn-close').on('click', function () {
             $(this).parents('.member-item').removeClass('open');
