@@ -188,6 +188,19 @@ function _theme_setting($wp_customize)
         ['label' => 'Ссылка на Яндекс ZEN', 'section' => 'main_section', 'type' => 'text',]
     );
 
+    /* BACK */
+    $wp_customize->add_setting('map_back_image');
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize, 'map_back_image',
+            [
+                'label' => 'Картинка за картой на главной',
+                'section' => 'main_section',
+                'settings' => 'map_back_image',
+            ]
+        )
+    );
+
     #endregion
 
 }

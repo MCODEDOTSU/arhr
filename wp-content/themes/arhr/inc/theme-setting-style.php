@@ -14,13 +14,18 @@
         background-image: url('<?= $back ?>');
     }
 
+    .homepage .map {
+        <?php $back = get_theme_mod('map_back_image', '') == '' ? get_template_directory_uri() . "/img/back.png" : get_theme_mod('map_back_image', ''); ?>
+        background-image: url('<?= $back ?>');
+    }
+
     header,
     .page-content.category .post-item:first-child,
     .page-content.category .post-item.main,
     .contact-form input,
     .contact-form textarea,
     .homepage .map {
-        background: <?= get_theme_mod('color_1', '#fafafa') ?>;
+        background-color: <?= get_theme_mod('color_1', '#fafafa') ?>;
     }
 
     header .main,

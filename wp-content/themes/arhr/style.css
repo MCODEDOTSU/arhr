@@ -1243,9 +1243,12 @@ CATEGORY
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    vertical-align: middle;
+    vertical-align: top;
     margin: 0;
     color: inherit;
+    text-transform: inherit;
+    font-size: 16pt;
+    font-weight: 600;
 }
 
 .page-content.category .post-title a {
@@ -1254,26 +1257,30 @@ CATEGORY
     font-size: inherit;
 }
 
-.page-content.category .post-item:first-child .post-title,
-.page-content.category .post-item.main .post-title {
+.page-content.category .post-item:first-child h3.post-title,
+.page-content.category .post-item.main h3.post-title {
     margin: 0 0 16px 0;
     padding: 0;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .page-content.category .post-description {
-    margin: 16px 0 0;
+    margin: 0;
     font-weight: 300;
     line-height: 1.2;
     display: none;
+    text-transform: inherit;
 }
 
 .page-content.category .post-description a {
     font-weight: inherit;
     color: inherit;
-    font-size: inherit;
+    padding: 0;
+    letter-spacing: 0.06em;
+    font-size: 16pt;
 }
 
 .page-content.category .post-item:first-child .post-description,
@@ -1283,11 +1290,11 @@ CATEGORY
 
 .page-content.category .post-metadata {
     font-size: 13px;
-    line-height: 2.2;
+    line-height: 3;
     margin: 0 -80px 0 0;
     display: inline-block;
     width: 80px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .page-content.category .post-item:first-child .post-metadata,
@@ -1321,6 +1328,7 @@ CATEGORY
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .page-content.category p {
@@ -1851,6 +1859,8 @@ arhr-homapage-map
 .homepage .map {
     padding: 32px 0;
     position: relative;
+    background-image: url('img/back.png');
+    background-size: cover;
 }
 
 .homepage .map-description {
