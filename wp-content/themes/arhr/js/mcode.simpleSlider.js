@@ -27,6 +27,7 @@
             });
 
             $(options.itemSelector, $slider).eq(0).addClass('visibility');
+            methods.show.apply($slider, [{ item: $(options.itemSelector, $slider).eq(0) }]);
 
             if (options.speed !== 0) {
                 isAuto = true;
@@ -100,6 +101,9 @@
             $current.removeClass('visibility');
             $next.addClass('visibility');
 
+            methods.hide.apply($slider, [{ item: $current }]);
+            methods.show.apply($slider, [{ item: $next }]);
+
             if (options.speed !== 0 && isAuto === false) {
                 setTimeout(function () {
                     isAuto = true;
@@ -126,6 +130,9 @@
             $current.removeClass('visibility');
             $prev.addClass('visibility');
 
+            methods.hide.apply($slider, [{ item: $current }]);
+            methods.show.apply($slider, [{ item: $prev }]);
+
             if (options.speed !== 0 && isAuto === false) {
                 setTimeout(function () {
                     isAuto = true;
@@ -136,6 +143,21 @@
                 }, options.speed);
             }
 
+        },
+
+        show: function (options) {
+            options.item.show();
+            options.item.animate({
+                opacity: 1,
+            }, 500);
+        },
+
+        hide: function (options) {
+            options.item.animate({
+                opacity: 0,
+            }, 500, () => {
+                options.item.hide();
+            });
         },
 
     };
