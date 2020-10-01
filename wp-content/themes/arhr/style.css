@@ -2318,14 +2318,36 @@ arhr-experts
 .arhr-partners .items-container {
     display: none;
     opacity: 0;
-    /*visibility: hidden;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 64px;
+    animation: 0.2s ease-in 0s both running slidein;
 }
 
-/*.arhr-partners .items-container.visibility {*/
-    /*display: block;*/
-    /*opacity: 1;*/
-    /*visibility: visible;*/
-/*}*/
+.arhr-partners .items-container.visibility {
+    animation: 0.2s ease-in 0s both running slidein;
+    display: block;
+}
+
+@keyframes slidein {
+    from {
+        right: -100px;
+        opacity: 0;
+    }
+    80% {
+        right: -10px;
+        opacity: 0.8;
+    }
+    90% {
+        right: 10px;
+        opacity: 0.9;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
 
 .arhr-partners .arhr-partners-item {
     display: inline-block;

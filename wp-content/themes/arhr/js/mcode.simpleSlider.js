@@ -27,7 +27,7 @@
             });
 
             $(options.itemSelector, $slider).eq(0).addClass('visibility');
-            methods.show.apply($slider, [{ item: $(options.itemSelector, $slider).eq(0) }]);
+           //  methods.show.apply($slider, [{ item: $(options.itemSelector, $slider).eq(0) }]);
 
             if (options.speed !== 0) {
                 isAuto = true;
@@ -101,8 +101,8 @@
             $current.removeClass('visibility');
             $next.addClass('visibility');
 
-            methods.hide.apply($slider, [{ item: $current }]);
-            methods.show.apply($slider, [{ item: $next }]);
+           //  methods.hide.apply($slider, [{ item: $current }]);
+           //  methods.show.apply($slider, [{ item: $next }]);
 
             if (options.speed !== 0 && isAuto === false) {
                 setTimeout(function () {
@@ -130,8 +130,8 @@
             $current.removeClass('visibility');
             $prev.addClass('visibility');
 
-            methods.hide.apply($slider, [{ item: $current }]);
-            methods.show.apply($slider, [{ item: $prev }]);
+            // methods.hide.apply($slider, [{ item: $current }]);
+           //  methods.show.apply($slider, [{ item: $prev }]);
 
             if (options.speed !== 0 && isAuto === false) {
                 setTimeout(function () {
