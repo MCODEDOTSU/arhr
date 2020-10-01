@@ -1,5 +1,3 @@
-<h2><?= __('Geography of the Partnership', 'arhr') ?></h2>
-
 <?php $list = arhr_get_members_list() ?>
 
 <div class="members-map">

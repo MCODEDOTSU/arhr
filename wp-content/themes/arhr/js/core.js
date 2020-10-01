@@ -15,7 +15,7 @@
         $('.arhr-partners').mcodeSimpleSlider({
             itemsSelector: '.items',
             itemSelector: '.items-container',
-            speed: 0,
+            speed: 4000,
         });
 
     });

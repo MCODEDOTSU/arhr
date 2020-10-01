@@ -168,9 +168,6 @@
 
                     <div class="row">
                         <div class="cell align-left">
-                            <?php if (!empty($site)) { ?>
-                                <a class="btn btn-link" href="<?= $site ?>" target="_blank" title="<?= __('to the company\'s website', 'arhr') ?>"><?= __('more detail', 'arhr') ?></a>
-                            <?php } ?>
                             <?php if (!empty($email)) { ?>
                                 <a class="btn btn-link" href="mailto:<?= $email ?>" title="<?= __('write a letter', 'arhr') ?>"><?= __('write a letter', 'arhr') ?></a>
                             <?php } ?>
