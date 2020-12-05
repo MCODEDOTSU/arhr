@@ -77,7 +77,11 @@
 
         } ?>
 
-        <a class="news-category" href="<?= get_category_link( get_post_meta(get_the_ID(), 'homepage_news_category', true) ) ?>"><?= __('watch more', 'arhr') ?></a>
+        <div class="actions">
+            <a class="news-category" href="<?= get_category_link( get_post_meta(get_the_ID(), 'homepage_news_category', true) ) ?>">
+                <?= __('watch more', 'arhr') ?>
+            </a>
+        </div>
 
     </div><!--
 

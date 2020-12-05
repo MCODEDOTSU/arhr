@@ -31,6 +31,7 @@
 
             if (options.speed !== 0) {
                 isAuto = true;
+                console.log('isAuto = true');
                 setTimeout(function () {
                     methods.auto.apply($slider, [{
                         itemSelector: options.itemSelector,
@@ -49,6 +50,7 @@
 
             $('.arrow-left', $container).on('click', function () {
                 isAuto = false;
+                console.log('isAuto = false');
                 methods.prev.apply($slider, [{
                     itemSelector: options.itemSelector,
                     speed: options.speed,
@@ -57,6 +59,7 @@
 
             $('.arrow-right', $container).on('click', function () {
                 isAuto = false;
+                console.log('isAuto = false');
                 methods.next.apply($slider, [{
                     itemSelector: options.itemSelector,
                     speed: options.speed,
@@ -67,12 +70,15 @@
 
         auto: function(options) {
 
+            console.log('auto: ' + isAuto);
+
             if (!isAuto) {
                 return;
             }
 
             const $slider = this;
 
+            console.log('auto: start');
             methods.next.apply($slider, [{
                 itemSelector: options.itemSelector,
                 speed: options.speed,
@@ -101,19 +107,6 @@
             $current.removeClass('visibility');
             $next.addClass('visibility');
 
-           //  methods.hide.apply($slider, [{ item: $current }]);
-           //  methods.show.apply($slider, [{ item: $next }]);
-
-            if (options.speed !== 0 && isAuto === false) {
-                setTimeout(function () {
-                    isAuto = true;
-                    methods.auto.apply($slider, [{
-                        itemSelector: options.itemSelector,
-                        speed: options.speed,
-                    }]);
-                }, options.speed);
-            }
-
         },
 
         prev: function (options) {
@@ -130,32 +123,19 @@
             $current.removeClass('visibility');
             $prev.addClass('visibility');
 
-            // methods.hide.apply($slider, [{ item: $current }]);
-           //  methods.show.apply($slider, [{ item: $prev }]);
-
-            if (options.speed !== 0 && isAuto === false) {
-                setTimeout(function () {
-                    isAuto = true;
-                    methods.auto.apply($slider, [{
-                        itemSelector: options.itemSelector,
-                        speed: options.speed,
-                    }]);
-                }, options.speed);
-            }
-
         },
 
         show: function (options) {
             options.item.show();
             options.item.animate({
                 opacity: 1,
-            }, 500);
+            }, 1000);
         },
 
         hide: function (options) {
             options.item.animate({
                 opacity: 0,
-            }, 500, () => {
+            }, 1000, () => {
                 options.item.hide();
             });
         },

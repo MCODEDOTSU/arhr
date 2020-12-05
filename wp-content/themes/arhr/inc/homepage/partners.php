@@ -56,7 +56,11 @@
 
         <?php if(!empty(get_post_meta(get_the_ID(), 'homepage_parners_link', true))): ?>
 
-            <a class="arhr-partners-more" href="<?= get_post_meta(get_the_ID(), 'homepage_parners_link', true) ?>"><?= __('watch more', 'arhr') ?></a>
+            <div class="actions">
+                <a class="arhr-partners-more" href="<?= get_post_meta(get_the_ID(), 'homepage_parners_link', true) ?>">
+                    <?= __('watch more', 'arhr') ?>
+                </a>
+            </div>
 
         <?php endif; ?>
 

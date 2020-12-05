@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/fonts/Lato2OFL/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/fonts/Lato2OFL/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +39,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39882">
-              <caret line="2346" column="9" selection-start-line="2346" selection-start-column="9" selection-end-line="2346" selection-end-column="9" />
+            <state relative-caret-position="316">
+              <caret line="2270" column="21" selection-start-line="2270" selection-start-column="21" selection-end-line="2270" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="67" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="7" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -46,28 +109,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page-members.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/fonts/Lato2OFL/fonts.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="457">
+              <caret line="131" column="19" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/Downloads/Lato-Hairline/fonts.css">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page-members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -77,15 +131,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -121,25 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mcode_calendar_get_past_events</find>
-      <find>mcodeItemsSlider</find>
-      <find>options.circle</find>
-      <find>visibility</find>
-      <find>step</find>
-      <find>rowCount</find>
-      <find>single page-content fix</find>
-      <find>Categories for calendar events</find>
-      <find>mcode_calendar_category</find>
-      <find>&lt;form</find>
-      <find>cat</find>
-      <find>header .main</find>
-      <find>arhr-experts-item</find>
-      <find>box-shadow</find>
-      <find>arhr-partners</find>
-      <find>.arhr-advantages .arhr-advantages-item</find>
-      <find>lastname</find>
-      <find>footer h2</find>
-      <find>svg</find>
       <find>.arhr-advantages-item:hover svg .a</find>
       <find>arhr-partners-item</find>
       <find>.svg</find>
@@ -151,6 +177,25 @@
       <find>url</find>
       <find>.map</find>
       <find>post-description</find>
+      <find>text-transform: uppercase</find>
+      <find>letter-spacing</find>
+      <find>.page-content p</find>
+      <find>slidein</find>
+      <find>isAuto</find>
+      <find>.page-content div</find>
+      <find>.page-content .post-tags a</find>
+      <find>post-tags</find>
+      <find>news-description</find>
+      <find>.arhr-partners .arhr-partners-item</find>
+      <find>.homepage .news-container a.news-category</find>
+      <find>news-category</find>
+      <find>arhr-partners-more</find>
+      <find>.arhr-partners .arhr-partners-more</find>
+      <find>Юж</find>
+      <find>arhr_get_members_list</find>
+      <find>.arhr-partners</find>
+      <find>data-item</find>
+      <find>Южн</find>
     </findStrings>
     <replaceStrings>
       <replace>r=&quot;16px&quot;</replace>
@@ -194,8 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/mcode-calendar/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-anonsy-meropriyatij.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/mcode-calendar/script.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-event-announcements.php" />
@@ -215,9 +258,7 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/mcode-arhr/db/partners.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/mcode-arhr/db/experts.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/experts.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" />
         <option value="$PROJECT_DIR$/../wordpress-5.4-ru_RU/wp-settings.php" />
         <option value="$PROJECT_DIR$/wp-settings.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/advantages.php" />
@@ -225,32 +266,36 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/arhr/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/single.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/mcode-calendar/mcode-calendar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map.svg" />
         <option value="E:/Downloads/map_russia.svg" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/geography.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting-style.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/geography.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/page-members.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/fonts/Lato2OFL/fonts.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-46" />
+    <option name="y" value="7" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -297,23 +342,6 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="arhr" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arhr.local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arhr.local" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="arhr" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-              <item name="Lato2OFL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arhr.local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arhr.local" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="arhr" type="462c0819:PsiDirectoryNode" />
               <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,19 +367,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\members" />
-      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\homepage" />
-      <recent name="C:\OpenServer\domains\arhr.local\wp-content\plugins\mcode-calendar" />
-      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\main" />
-      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\arhr.local\wp-content\plugins\mcode-arhr\db" />
       <recent name="C:\OpenServer\domains\arhr.local" />
       <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\homepage" />
       <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\members" />
       <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr" />
+      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\members" />
+      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\homepage" />
+      <recent name="C:\OpenServer\domains\arhr.local\wp-content\plugins\mcode-calendar" />
+      <recent name="C:\OpenServer\domains\arhr.local\wp-content\themes\arhr\inc\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,7 +452,7 @@
       <workItem from="1601616778332" duration="644000" />
       <workItem from="1602047343643" duration="13000" />
       <workItem from="1602562821363" duration="332000" />
-      <workItem from="1607148855233" duration="876000" />
+      <workItem from="1607148855233" duration="6306000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1601480280165</created>
@@ -458,10 +486,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326674000" />
+    <option name="totallyTimeSpent" value="332104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
@@ -476,7 +504,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.21428572" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.21428572" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -505,13 +533,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/mcode-arhr/inc/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../archive/cmk.local/wp-content/plugins/mcode-simple-gallery/mcode-simple-gallery.php" />
     <entry file="file://$PROJECT_DIR$/../archive/cmk.local/wp-content/plugins/mcode-slider/mcode-slider.php" />
     <entry file="file://$PROJECT_DIR$/../archive/cmk.local/wp-content/plugins/mcode-slider/Classes/SlidersItems.php" />
@@ -533,13 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -568,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="15" selection-end-line="37" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -666,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="67" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -687,66 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/geography.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="80" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="396" column="8" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="396" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="396" column="8" lean-forward="true" selection-start-line="384" selection-start-column="4" selection-end-line="396" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="395" column="8" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="395" column="8" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39882">
-          <caret line="2346" column="9" selection-start-line="2346" selection-start-column="9" selection-end-line="2346" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/geography.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -768,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page-members.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -815,8 +752,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/fonts/Lato2OFL/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page-members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="131" column="19" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="67" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="155" column="54" selection-start-line="155" selection-start-column="54" selection-end-line="155" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/geography.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="2270" column="21" selection-start-line="2270" selection-start-column="21" selection-end-line="2270" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="155" column="54" lean-forward="true" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
         </state>
       </provider>
     </entry>

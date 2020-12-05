@@ -15,12 +15,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     outline: 0;
     padding: 0;
     vertical-align: baseline;
-    letter-spacing: 0.04em;
 }
 
 h1, h2, h3, h4 {
     word-wrap: break-word;
-    letter-spacing: 0.04em;
 }
 
 input, textarea, select {
@@ -40,7 +38,6 @@ html {
 html, body {
     height: 100%;
     min-width: 360px;
-    letter-spacing: 0.04em;
 }
 
 html.noscroll,
@@ -150,7 +147,6 @@ input[type="submit"] {
     transition: all .1s ease-out;
     cursor: pointer;
     outline: none;
-    letter-spacing: 0.06em;
 }
 
 a:hover,
@@ -344,23 +340,6 @@ header .logo {
     padding: 0;
 }
 
-/*header .logo .title {*/
-/*width: 100%;*/
-/*font-size: 28px;*/
-/*text-align: center;*/
-/*margin: 0;*/
-/*padding: 0;*/
-/*}*/
-
-/*header .logo .description {*/
-/*width: 100%;*/
-/*font-size: 16px;*/
-/*text-align: center;*/
-/*margin: 0;*/
-/*padding: 0;*/
-/*letter-spacing: 6px;*/
-/*}*/
-
 header .main-right .searchform-container {
     display: inline-block;
     vertical-align: middle;
@@ -471,11 +450,9 @@ header .header-menu {
 header .header-menu .menu a {
     font-size: 16px;
     color: #222222;
-    text-transform: uppercase;
     line-height: 32px;
     margin: 0 32px 0 0;
     font-weight: 400;
-    letter-spacing: 0.02em;
 }
 
 header .header-menu .menu a:hover {
@@ -661,7 +638,6 @@ footer h2 {
     height: 74px;
     color: #ffffff;
     font-size: 14px;
-    text-transform: uppercase;
     margin: 0 0 32px;
     border-bottom: 1px solid #ffffff40;
 }
@@ -925,7 +901,6 @@ MOBILE PANEL
     color: #222222;
     line-height: 1.8;
     margin: 0 0 16px;
-    text-transform: uppercase;
     font-weight: 600;
     position: relative;
 }
@@ -1073,7 +1048,7 @@ PAGE
 }
 
 .page-content h1 {
-    font-size: 40pt;
+    font-size: 22pt;
     line-height: 1.2;
     margin: 25px 0 38px;
     font-weight: 600;
@@ -1081,7 +1056,7 @@ PAGE
 }
 
 .page-content h2 {
-    font-size: 30pt;
+    font-size: 20pt;
     margin: 24px 0;
     font-weight: 600;
 }
@@ -1090,7 +1065,6 @@ PAGE
     font-size: 18pt;
     margin: 12px 0;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 .page-content h4 {
@@ -1101,7 +1075,7 @@ PAGE
 
 .page-content p,
 .page-content div {
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 1.6;
     margin: 0 0 32px;
     font-weight: 300;
@@ -1116,7 +1090,7 @@ PAGE
 }
 
 .page-content a {
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 1.6;
     text-decoration: none;
     color: #3a85c0;
@@ -1126,14 +1100,14 @@ PAGE
 .page-content ul,
 .page-content ol {
     margin: 0 0 32px;
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 1.6;
     list-style-position: inside;
     padding: 0;
 }
 
 .page-content li {
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 1.6;
     margin: 0 0 16px;
     font-weight: 300;
@@ -1141,7 +1115,7 @@ PAGE
 
 .page-content td p,
 .page-content td div {
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 1.2;
     margin: 0 0 4px;
     font-weight: 400;
@@ -1180,10 +1154,11 @@ PAGE
     margin: 32px 0;
 }
 
-.page-content .post-tags a {
+.page-content .post-tags a,
+.page-content .post-tags span {
     display: inline-block;
     vertical-align: top;
-    padding: 3px 8px 5px;
+    padding: 4px 16px 4px 24px;
     border: 1px solid #0087c6;
     margin: 0 8px 0 0;
     text-decoration: none;
@@ -1191,6 +1166,26 @@ PAGE
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
+    position: relative;
+}
+
+.page-content .post-tags span {
+    padding: 4px 24px 6px 34px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+}
+
+.page-content .post-tags a:before,
+.page-content .post-tags span:before {
+    content: '#';
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.page-content .post-tags span:before {
+    left: 14px;
 }
 
 .page-content .post-tags a:hover {
@@ -1204,8 +1199,8 @@ CATEGORY
  */
 
 .page-content.category h1 {
-    font-size: 52px;
-    margin: 32px 0 48px;
+    font-size: 32px;
+    margin: 64px 0 32px;
 }
 
 .page-content.category .post-item {
@@ -1264,7 +1259,6 @@ CATEGORY
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    text-transform: uppercase;
 }
 
 .page-content.category .post-description {
@@ -1279,8 +1273,7 @@ CATEGORY
     font-weight: inherit;
     color: inherit;
     padding: 0;
-    letter-spacing: 0.06em;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .page-content.category .post-item:first-child .post-description,
@@ -1900,7 +1893,6 @@ arhr-homapage-map
     color: #ffffff;
     text-decoration: none;
     font-size: 10pt;
-    text-transform: uppercase;
     font-weight: 400;
 }
 
@@ -2062,6 +2054,8 @@ news, calendar
 
 .homepage .news-item {
     margin: 0 0 32px;
+    padding: 24px;
+    background: #effaff;
 }
 
 .homepage .news-item a {
@@ -2073,18 +2067,9 @@ news, calendar
     font-weight: 700;
 }
 
-.homepage .news-item:first-child {
-    margin: 0 0 32px;
-    padding: 24px;
-    background: #effaff;
-}
-
 .homepage .news-item .news-data {
     color: #222222;
     text-decoration: none;
-}
-
-.homepage .news-item:first-child .news-data {
     padding: 0 0 0 272px;
     position: relative;
     display: inline-block;
@@ -2095,66 +2080,46 @@ news, calendar
 .homepage .news-item .news-title {
     display: inline-block;
     width: 100%;
-    padding: 0 0 0 96px;
-    font-size: 16pt;
+    padding: 0;
+    font-size: 15pt;
     font-weight: 600;
     line-height: 1.2;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: top;
-    margin: 0;
-}
-
-.homepage .news-item:first-child .news-title {
     margin: 0 0 16px 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 16pt;
-    line-height: 1.2;
-    text-transform: uppercase;
 }
 
 .homepage .news-item .news-description {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 300;
     line-height: 1.3;
-    display: none;
 }
 
-.homepage .news-item:first-child .news-description.pc {
+.homepage .news-item .news-description.pc {
     display: block;
 }
 
-.homepage .news-item:first-child .news-description.mb {
+.homepage .news-item .news-description.mb {
     display: none;
 }
 
 .homepage .news-item .news-date {
     font-size: 10pt;
-    line-height: 25px;
-    margin: 0 -80px 0 0;
-    display: inline-block;
+    margin: 0 0 16px;
+    line-height: 1.2;
+    display: block;
     width: 80px;
     vertical-align: top;
 }
 
-.homepage .news-item:first-child .news-date {
-    margin: 0 0 16px;
-    line-height: 1.2;
-    display: block;
-}
-
 .homepage .news-item .news-thumbnail {
-    display: none;
+    display: inline-block;
     vertical-align: top;
     margin: 0 -240px 0 0;
     width: 240px;
     height: 160px;
-}
-
-.homepage .news-item:first-child .news-thumbnail {
-    display: inline-block;
 }
 
 .homepage .news-item .news-thumbnail img {
@@ -2162,15 +2127,17 @@ news, calendar
     height: auto;
 }
 
+.homepage .news-container .actions {
+    text-align: right;
+}
+
 .homepage .news-container a.news-category {
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 700;
     text-decoration: none;
-    padding: 0 0 0 96px;
 }
 
 .homepage .mcode_calendar-days_month .tabs {
-    text-transform: uppercase;
     margin: 0 0 32px;
 }
 
@@ -2184,9 +2151,9 @@ arhr-advantages
 }
 
 .arhr-advantages .title {
-    font-size: 60px;
+    font-size: 26pt;
     font-weight: 700;
-    margin: 0 0 32px;
+    margin: 64px 0 32px;
 }
 
 .arhr-advantages .arhr-advantages-item {
@@ -2246,7 +2213,7 @@ arhr-experts
 }
 
 .arhr-experts .title {
-    font-size: 60px;
+    font-size: 26pt;
     font-weight: 700;
     margin: 0 0 32px;
 }
@@ -2284,7 +2251,6 @@ arhr-experts
 }
 
 .arhr-experts .arhr-experts-item h2.lastname {
-    text-transform: uppercase;
     font-weight: 700;
     margin: 24px 0 0;
 }
@@ -2302,11 +2268,11 @@ arhr-experts
 
 .arhr-partners {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 64px;
 }
 
 .arhr-partners .title {
-    font-size: 60px;
+    font-size: 26pt;
     font-weight: 700;
     margin: 0 0 32px;
 }
@@ -2332,15 +2298,15 @@ arhr-experts
 
 @keyframes slidein {
     from {
-        right: -100px;
+        right: -50px;
         opacity: 0;
     }
-    80% {
-        right: -10px;
+    60% {
+        right: -1px;
         opacity: 0.8;
     }
-    90% {
-        right: 10px;
+    80% {
+        right: 1px;
         opacity: 0.9;
     }
     to {
@@ -2359,6 +2325,7 @@ arhr-experts
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .arhr-partners .arrow {
@@ -2370,6 +2337,7 @@ arhr-experts
     background: none;
     background-size: cover;
     border: none;
+    margin-top: -48px;
 }
 
 .arhr-partners .arrow.arrow-left {
@@ -2392,7 +2360,7 @@ arhr-experts
     width: 150px;
     height: 150px;
     display: block;
-    text-align: left;
+    margin: 0 auto;
 }
 
 .arhr-partners .arhr-partners-item h2 {
@@ -2413,6 +2381,10 @@ arhr-experts
     font-size: 14pt;
     text-decoration: none;
     font-weight: 600;
+}
+
+.arhr-partners .actions {
+    text-align: right;
 }
 
 /**
@@ -2615,7 +2587,6 @@ members
 }
 
 .page-members .member-items .member-item-data .title {
-    text-transform: uppercase;
     margin: 0;
     display: block;
     font-weight: 400;
