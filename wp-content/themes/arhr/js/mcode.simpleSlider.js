@@ -10,28 +10,22 @@
     let isAuto = false;
 
     let methods = {
-
         /**
          * Инициализация
          * @returns {*|void}
          * @param options
          */
         init: function (options) {
-
             const $container = this;
             const $slider = $(options.itemsSelector, this);
-
             $slider.css({
                 'white-space': 'nowrap',
                 'overflow': 'hidden',
             });
-
             $(options.itemSelector, $slider).eq(0).addClass('visibility');
            //  methods.show.apply($slider, [{ item: $(options.itemSelector, $slider).eq(0) }]);
-
             if (options.speed !== 0) {
                 isAuto = true;
-                console.log('isAuto = true');
                 setTimeout(function () {
                     methods.auto.apply($slider, [{
                         itemSelector: options.itemSelector,
@@ -47,82 +41,61 @@
                 }
             });
             $slider.height(maxHeight);
-
             $('.arrow-left', $container).on('click', function () {
                 isAuto = false;
-                console.log('isAuto = false');
                 methods.prev.apply($slider, [{
                     itemSelector: options.itemSelector,
                     speed: options.speed,
                 }]);
             });
-
             $('.arrow-right', $container).on('click', function () {
                 isAuto = false;
-                console.log('isAuto = false');
                 methods.next.apply($slider, [{
                     itemSelector: options.itemSelector,
                     speed: options.speed,
                 }]);
             });
-
         },
 
         auto: function(options) {
-
-            console.log('auto: ' + isAuto);
-
             if (!isAuto) {
                 return;
             }
-
             const $slider = this;
-
-            console.log('auto: start');
             methods.next.apply($slider, [{
                 itemSelector: options.itemSelector,
                 speed: options.speed,
             }]);
-
             setTimeout(function () {
                 methods.auto.apply($slider, [{
                     itemSelector: options.itemSelector,
                     speed: options.speed,
                 }]);
             }, options.speed);
-
         },
 
         next: function (options) {
-
             const $slider = this;
-
             $current = $(`${options.itemSelector}.visibility`, this);
             $next = $(`${options.itemSelector}.visibility`, this).next();
 
             if ($next.length === 0) {
                 $next = $(`${options.itemSelector}`, this).eq(0);
             }
-
             $current.removeClass('visibility');
             $next.addClass('visibility');
-
         },
 
         prev: function (options) {
-
             const $slider = this;
-
             $current = $(`${options.itemSelector}.visibility`, this);
             $prev = $(`${options.itemSelector}.visibility`, this).prev();
 
             if ($prev.length === 0) {
                 $prev = $(`${options.itemSelector}`, this).last();
             }
-
             $current.removeClass('visibility');
             $prev.addClass('visibility');
-
         },
 
         show: function (options) {

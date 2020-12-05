@@ -92,11 +92,11 @@
 }
 
 .mcode_calendar-days_month .event-item.old {
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .mcode_calendar-days_month .event-item.old:hover {
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .mcode_calendar-days_month .calendar-grid .event-title {
