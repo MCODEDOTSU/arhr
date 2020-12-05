@@ -1123,6 +1123,7 @@ PAGE
 
 .page-content img {
     max-width: 100%;
+    height: auto;
 }
 
 .page-content img.alignleft {

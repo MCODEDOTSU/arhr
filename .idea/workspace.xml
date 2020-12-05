@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/js/mcode.simpleSlider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
-              <caret line="2270" column="21" selection-start-line="2270" selection-start-column="21" selection-end-line="2270" selection-end-column="21" />
+              <caret line="1125" column="17" selection-start-line="1125" selection-start-column="17" selection-end-line="1125" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -54,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="673">
@@ -166,7 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.arhr-advantages-item:hover svg .a</find>
       <find>arhr-partners-item</find>
       <find>.svg</find>
       <find>this</find>
@@ -196,6 +185,7 @@
       <find>.arhr-partners</find>
       <find>data-item</find>
       <find>Южн</find>
+      <find>южн</find>
     </findStrings>
     <replaceStrings>
       <replace>r=&quot;16px&quot;</replace>
@@ -285,11 +275,11 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/partners.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-en.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-ru.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/members/map-en.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
       </list>
     </option>
   </component>
@@ -452,7 +442,7 @@
       <workItem from="1601616778332" duration="644000" />
       <workItem from="1602047343643" duration="13000" />
       <workItem from="1602562821363" duration="332000" />
-      <workItem from="1607148855233" duration="6306000" />
+      <workItem from="1607148855233" duration="6923000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1601480280165</created>
@@ -486,7 +476,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332104000" />
+    <option name="totallyTimeSpent" value="332721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -820,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="2270" column="21" selection-start-line="2270" selection-start-column="21" selection-end-line="2270" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/map-ru.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="743">
@@ -845,6 +828,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
           <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="1125" column="17" selection-start-line="1125" selection-start-column="17" selection-end-line="1125" selection-end-column="17" />
         </state>
       </provider>
     </entry>
