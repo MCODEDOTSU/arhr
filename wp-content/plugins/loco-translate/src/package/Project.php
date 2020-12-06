@@ -356,6 +356,35 @@ class Loco_package_Project {
 
 
     /**
+     * Get first valid domain path
+     * @param bool whether directory should exist
+     * @return Loco_fs_Directory
+     */
+    private function getSafeDomainPath(){
+        // use first configured domain path that exists
+        foreach( $this->getConfiguredTargets() as $d ){
+            if( $d->exists() ){
+                return $d;
+            }
+        }
+        // fallback to unconfigured, but possibly existent folders
+        $base = $this->getBundle()->getDirectoryPath();
+        foreach( array('languages','language','lang','l10n','i18n') as $d ){
+            $d = new Loco_fs_Directory($d);
+            $d->normalize($base);
+            if( $this->isTargetExcluded($d) ){
+                continue;
+            }
+            if( $d->exists() ){
+                return $d;
+            }
+        }
+        // Give up and place in root
+        return new Loco_fs_Directory($base);
+    }
+
+
+    /**
      * Lazy create all searchable source paths
      * @return Loco_fs_FileFinder
      */
@@ -523,9 +552,10 @@ class Loco_package_Project {
      */
     public function getPot(){
         if( ! $this->pot ){
-            $name = $this->getSlug().'.pot';
+            $slug = $this->getSlug();
+            $name = ( $slug ? $slug : $this->getDomain()->getName() ).'.pot';
             if( '.pot' !== $name ){
-                // find under configured domain paths
+                // find actual file under configured domain paths
                 $targets = $this->getConfiguredTargets()->copy();
                 // always permit POT file in the bundle root (i.e. outside domain path)
                 if( $this->isDomainDefault() && $this->bundle->hasDirectoryPath() ){
@@ -551,11 +581,16 @@ class Loco_package_Project {
                     }
                 }
             }
+            // fall back to a directory that exists, but where the POT may not
+            if( ! $this->pot ){
+                $this->pot = new Loco_fs_File($name);
+                $this->pot->normalize( (string) $this->getSafeDomainPath() );
+            }
         }
         return $this->pot;
     }
 
-    
+
     /**
      * Force the use of a known POT file. This could be a PO file if necessary
      * @param Loco_fs_File template POT file
@@ -731,23 +766,19 @@ class Loco_package_Project {
         $suffix = sprintf( '%s.po', $locale );
         $prefix = $slug ? sprintf('%s-',$slug) : '';
         $choice = new Loco_fs_FileList;
-        /* @var $dir Loco_fs_Directory */
+        /* @var Loco_fs_Directory $dir */
         foreach( $this->getConfiguredTargets() as $dir ){
             // theme files under their own directory normally have no file prefix
             if( $default && $dir->underThemeDirectory() ){
                 $path = $dir->getPath().'/'.$suffix;
             }
-            // plugin files are prefixed even in their own directory, so empty prefix here implies incorrect bundle configuration
-            //else if( $default && ! $prefix && $dir->underPluginDirectory() ){
-            //    $path = $dir->getPath().'/'.$domain.'-'.$suffix;
-            //}
             // all other paths use configured prefix, which may be empty
             else {
                 $path = $dir->getPath().'/'.$prefix.$suffix;
             }
             $choice->add( new Loco_fs_LocaleFile($path) );
         }
-        /* @var $dir Loco_fs_Directory */
+        /* @var Loco_fs_Directory $dir */
         foreach( $this->getSystemTargets() as $dir ){
             $path = $dir->getPath();
             // themes and plugins under global locations will be loaded by domain, regardless of prefix
@@ -762,6 +793,26 @@ class Loco_package_Project {
         }
 
         return $choice;
+    }
+
+
+    /**
+     * Initialize a PO file path from required location
+     * @param Loco_fs_Directory
+     * @param Loco_Locale
+     * @return Loco_fs_LocaleFile
+     * @throws Loco_error_Exception
+     */
+    public function initLocaleFile( Loco_fs_Directory $dir, Loco_Locale $locale ){
+        $choice = $this->initLocaleFiles($locale);
+        $pattern = '!^'.preg_quote($dir->getPath(),'!').'/[^/.]+\\.po$!';
+        /* @var Loco_fs_LocaleFile $file */
+        foreach( $choice as $file ){
+            if( preg_match($pattern,$file->getPath()) ){
+                return $file;
+            }
+        }
+        throw new Loco_error_Exception('Unexpected file location: '.$dir );
     }
 
 

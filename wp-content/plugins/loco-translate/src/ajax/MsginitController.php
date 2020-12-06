@@ -77,14 +77,17 @@ class Loco_ajax_MsginitController extends Loco_ajax_common_BundleController {
             }
         }
         // else parse POT file if project defines one that exists
-        else if( ( $potfile = $project->getPot() ) && $potfile->exists() ){
-            $data = Loco_gettext_Data::load($potfile);
-        }
-        // else extract directly from source code, assuming domain passed though from front end
         else {
-            $extr = new Loco_gettext_Extraction( $bundle );
-            $data = $extr->addProject($project)->includeMeta()->getTemplate($domain);
-            $potfile = null;
+            $potfile = $project->getPot();
+            if( $potfile->exists() ){ 
+                $data = Loco_gettext_Data::load($potfile);
+            }
+            // else extract directly from source code, assuming domain passed though from front end
+            else {
+                $extr = new Loco_gettext_Extraction( $bundle );
+                $data = $extr->addProject($project)->includeMeta()->getTemplate($domain);
+                $potfile = null;
+            }
         }
 
         // Let template define Project-Id-Version, else set header to current project name
@@ -96,10 +99,15 @@ class Loco_ajax_MsginitController extends Loco_ajax_common_BundleController {
         // relative path from bundle root to the template/source this file was created from
         if( $potfile && $post->link ){
             $headers['X-Loco-Template'] = $potfile->getRelativePath( $bundle->getDirectoryPath() );
+            // legacy behaviour was to sync source AND target strings in the absence of the following
+            if( $post->strip ){
+                $headers['X-Loco-Template-Mode'] = 'POT';
+            }
             // without strip argument we need to remember the source PO is effectively a fallback locale
-            if( ! $post->strip ) {
+            else {
                 $fallback = $potfile instanceof Loco_fs_LocaleFile ? $potfile->getLocale() : $locale;
                 $headers['X-Loco-Fallback'] = (string) $fallback;
+                $headers['X-Loco-Template-Mode'] = 'PO';
             }
         }
 
