@@ -39,7 +39,7 @@
                                 </a>
                             </div>
 
-                            <div class="post-categories post-tags">
+                            <div class="post-categories">
                                 <?php
                                 $currentCategoryId = get_queried_object()->term_id;
                                 $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);

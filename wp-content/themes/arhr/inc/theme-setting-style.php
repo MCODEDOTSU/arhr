@@ -66,6 +66,7 @@
     .homepage .map-description .btn:hover,
     .homepage .map-description .btn.btn-2:hover,
     .homepage .calendar-container .event-item.today,
+    .page-content .calendar-container .event-item.today,
     .calendar-grid td.current,
     .mcode_calendar-days_month .empty {
         color: <?= get_theme_mod('color_2', '#ffffff') ?>;
@@ -85,6 +86,7 @@
     .page-content .post-tags a:hover,
     .homepage .map-description .btn,
     .homepage .calendar-container .event-item.today,
+    .page-content .calendar-container .event-item.today,
     .calendar-grid td.current,
     .mcode_calendar-days_month .empty,
     .arhr-advantages .arhr-advantages-item:hover .container {
@@ -170,7 +172,8 @@
     .homepage .map-description a,
     .homepage .map-description .btn.btn-2,
     .homepage .news-item .news-data,
-    .homepage .calendar-container a {
+    .homepage .calendar-container a,
+    .page-content .calendar-container a {
         color: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
@@ -209,7 +212,7 @@
     .page-content .member-items .member-item .member-item-close,
     .page-content .member-items .member-item .member-item-open,
     .homepage .calendar-container,
-    .homepage .calendar-container,
+    .page-content .calendar-container,
     .homepage .news-item:first-child,
     .calendar-grid td,
     .arhr-advantages .arhr-advantages-item .container {

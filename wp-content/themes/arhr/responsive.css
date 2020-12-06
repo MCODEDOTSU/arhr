@@ -495,11 +495,13 @@
         margin: 0;
     }
 
-    .homepage .calendar-container.pc {
+    .homepage .calendar-container.pc,
+    .page-content .calendar-container.pc {
         display: none;
     }
 
-    .homepage .calendar-container.mb {
+    .homepage .calendar-container.mb,
+    .page-content .calendar-container.mb {
         display: block;
         margin: 0 auto 32px;
     }
