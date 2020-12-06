@@ -2,190 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/acf.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/acf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/css/acf-global.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/css/acf-global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/css/acf-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/css/acf-input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-helper-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-helper-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-meta-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-meta-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-wp-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/acf-wp-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/api/api-helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/api/api-helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/api/api-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/api/api-term.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/assets.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/assets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-color_picker.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-color_picker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-page_link.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-page_link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-post_object.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-post_object.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-relationship.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-relationship.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/fields/class-acf-field-taxonomy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/forms/form-nav-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/forms/form-nav-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/forms/form-taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/forms/form-taxonomy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/local-json.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/local-json.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/locations/class-acf-location-post-category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/locations/class-acf-location-post-category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/locations/class-acf-location-post-taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/locations/class-acf-location-post-taxonomy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/revisions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/includes/revisions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-fr_FR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-fr_FR.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-id_ID.mo" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-id_ID.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-id_ID.po" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-id_ID.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-tr_TR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-tr_TR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-tr_TR.po" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf-tr_TR.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf.pot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/lang/acf.pot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/archive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/category-anonsy-meropriyatij.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/category-event-announcements.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Hairline.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Hairline.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-HairlineItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Heavy.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-HeavyItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Semibold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-SemiboldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/Lato-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/Lato2OFL/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/img/map-en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/img/map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/img/map.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/inc/counters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/inc/theme-setting-style.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/inc/theme-setting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/js/jquery.touchSwipe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/languages/arhr.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/languages/en_US.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/languages/en_US.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/languages/ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/languages/ru_RU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/searchform.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/arhr/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/homepage/news-calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting-style.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting-style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_197_694901-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_212_18578-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_58_128061-1-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_58_128061-1-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_58_128061-1-300x256.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_58_128061-1-300x256.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_93_797862-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_93_797862-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_93_797862-300x197.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_93_797862-300x197.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_94_807043-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_94_807043-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_94_807043-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2017/05/img_jpeg_94_807043-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-1024x683.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-1024x683.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/07/2019-06-26A23K3819-Moskva-VVK-den-3-s-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-150x150.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-300x200.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-300x200.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-768x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/08/1000_rc_1-768x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/091118_3_04-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-1024x258.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-1024x258.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-300x75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-300x75.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-768x193.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/09/wXyZuSGVpnI-768x193.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-1024x682.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-1024x682.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6337-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-1024x682.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-1024x682.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/10/121A6897-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-300x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-300x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-768x512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2019/12/RSPP-i-himkadry-768x512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-300x146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-300x146.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-768x374.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/20200529_101705-768x374.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-300x196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-300x196.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-768x502.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_24421-768x502.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-300x169.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-300x169.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-768x432.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/06/img_jpeg_205_292845-768x432.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,20 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="1285" column="59" selection-start-line="1285" selection-start-column="59" selection-end-line="1285" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="408" column="38" selection-start-line="408" selection-start-column="38" selection-end-line="408" selection-end-column="38" />
+            <state relative-caret-position="537">
+              <caret line="927" column="24" selection-start-line="927" selection-start-column="24" selection-end-line="927" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -333,7 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.arhr-partners .arhr-partners-more</find>
       <find>Юж</find>
       <find>arhr_get_members_list</find>
       <find>.arhr-partners</find>
@@ -363,6 +180,7 @@
       <find>post-title</find>
       <find>.page-content.category .post-description</find>
       <find>.homepage .news-item .news-title</find>
+      <find>360</find>
     </findStrings>
     <replaceStrings>
       <replace>r=&quot;16px&quot;</replace>
@@ -455,8 +273,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" />
       </list>
     </option>
   </component>
@@ -603,7 +421,7 @@
       <workItem from="1602047343643" duration="13000" />
       <workItem from="1602562821363" duration="332000" />
       <workItem from="1607148855233" duration="7999000" />
-      <workItem from="1607237968263" duration="5911000" />
+      <workItem from="1607237968263" duration="7207000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1601480280165</created>
@@ -637,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339708000" />
+    <option name="totallyTimeSpent" value="341004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -970,17 +788,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/responsive.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="408" column="38" selection-start-line="408" selection-start-column="38" selection-end-line="408" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="1285" column="59" selection-start-line="1285" selection-start-column="59" selection-end-line="1285" selection-end-column="59" />
+        <state relative-caret-position="537">
+          <caret line="927" column="24" selection-start-line="927" selection-start-column="24" selection-end-line="927" selection-end-column="24" />
         </state>
       </provider>
     </entry>
