@@ -94,7 +94,7 @@ get_header();
                                     ?>
                                 </p>
 
-                                <div class="post-categories">
+                                <div class="post-categories post-tags">
                                     <?php
                                     $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);
                                     foreach( $categories as $category ){

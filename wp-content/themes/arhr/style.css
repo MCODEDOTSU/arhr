@@ -1348,7 +1348,6 @@ CATEGORY
 .page-content.category .post-categories a {
     display: inline-block;
     vertical-align: top;
-    padding: 3px 8px 5px;
     border: 1px solid #0087c6;
     margin: 0 8px 0 0;
     text-decoration: none;
@@ -1357,6 +1356,10 @@ CATEGORY
     -moz-border-radius: 12px;
     border-radius: 12px;
     font-size: 12pt;
+}
+
+.page-content.category .post-categories a:before {
+    top: 5px;
 }
 
 .page-content.category-anonsy .sidebar-anonsy {
@@ -1373,6 +1376,72 @@ CATEGORY
     margin: 8px 0 0;
     font-size: 13px;
     line-height: 1.5;
+}
+
+/**
+CALENDAR
+ */
+
+.news-calendar .news-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0 307px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-content .calendar-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 275px;
+    margin: 0 0 0 -275px;
+    padding: 16px;
+    border: 1px solid #bbbbbb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-content .calendar-container.mb {
+    width: 100%;
+    display: none;
+}
+
+.page-content .mcode_calendar-days_month a {
+    color: #000000;
+    font-weight: 400;
+}
+
+.page-content .mcode_calendar-days_month .event-item {
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.page-content .mcode_calendar-days_month h2 {
+    font-size: 12pt;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.page-content .calendar-grid {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: 0;
+}
+
+.page-content .calendar-grid td {
+    border: 1px solid #bbbbbb;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 0;
+    font-size: 10pt;
+    cursor: default;
+    font-weight: 300;
 }
 
 /**

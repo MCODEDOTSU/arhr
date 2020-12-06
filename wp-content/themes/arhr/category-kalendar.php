@@ -12,22 +12,22 @@ get_header();
 
 <?php get_header(); ?>
 
-    <div class="category category-anonsy page-content fix">
+    <div class="category category-anonsy page-content news-calendar fix">
 
-        <div class="category-content">
+        <div class="calendar-container mb">
+            <?php
+            if (function_exists('mcode_calendar_get_days_month_calendar')) {
+                echo mcode_calendar_get_days_month_calendar(4);
+            }
+            ?>
+        </div><!--
+
+        --><div class="category-content news-container">
 
             <h1><?php single_cat_title(); ?><?php if (!empty($lang_date)) { echo ": $lang_date"; } ?></h1>
 
             <?php $description = get_term_meta( get_queried_object_id(), 'category_description', true); ?>
             <?php echo apply_filters( 'the_content', $description ); ?>
-
-            <div class="sidebar sidebar-anonsy">
-                <?php
-                if (function_exists('mcode_calendar_get_full_calendar')) {
-                    echo mcode_calendar_get_full_calendar($mount, $year);
-                }
-                ?>
-            </div>
 
             <?php
             $section = get_option('mcode_calendar_category');
@@ -95,7 +95,7 @@ get_header();
                                     ?>
                                 </p>
 
-                                <div class="post-categories">
+                                <div class="post-categories post-tags">
                                     <?php
                                     $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);
                                     foreach( $categories as $category ){
@@ -130,6 +130,14 @@ get_header();
 
             <?php endif ?>
 
+        </div><!--
+
+        --><div class="calendar-container pc">
+            <?php
+            if (function_exists('mcode_calendar_get_days_month_calendar')) {
+                echo mcode_calendar_get_days_month_calendar(4);
+            }
+            ?>
         </div>
 
     </div>
