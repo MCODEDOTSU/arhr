@@ -11,9 +11,17 @@ get_header();
 
 <?php get_header(); ?>
 
-    <div class="category category-anonsy page-content fix">
+    <div class="category category-anonsy page-content news-calendar fix">
 
-        <div class="category-content">
+        <div class="calendar-container mb">
+            <?php
+            if (function_exists('mcode_calendar_get_days_month_calendar')) {
+                echo mcode_calendar_get_days_month_calendar(4);
+            }
+            ?>
+        </div><!--
+
+        --><div class="category-content news-container">
 
             <h1><?php single_cat_title(); ?><?php if (!empty($post_date)) { echo ": $post_date"; } ?></h1>
 
@@ -56,21 +64,21 @@ get_header();
 
                         <div class="post-item"><!--
 
-                            <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
+                                    <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
 
-                             --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')"></a><!--
+                                     --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')"></a><!--
 
-                            <?php else: ?>
+                                    <?php else: ?>
 
-                                --><div class="post-thumbnail"></div><!--
+                                        --><div class="post-thumbnail"></div><!--
 
-                            <?php endif; ?>
+                                    <?php endif; ?>
 
-                            --><div class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                                    --><div class="post-data post-has-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
 
                                 <p class="post-metadata"><?= get_the_time('d.m.Y') ?></p><!--
 
-                             --><h3 class="post-title">
+                                     --><h3 class="post-title">
                                     <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>"><?= get_the_title() ?></a>
                                 </h3>
 
@@ -105,7 +113,7 @@ get_header();
                                     }
                                     ?>
                                 </div>
-                                
+
                             </div>
 
                             <div class="post-description mb">
@@ -129,6 +137,14 @@ get_header();
 
             <?php endif ?>
 
+        </div><!--
+
+        --><div class="calendar-container pc">
+            <?php
+            if (function_exists('mcode_calendar_get_days_month_calendar')) {
+                echo mcode_calendar_get_days_month_calendar(4);
+            }
+            ?>
         </div>
 
     </div>

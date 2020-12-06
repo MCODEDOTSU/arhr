@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a652837d-965a-485b-b2ac-91b0a16f7502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/akismet.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/akismet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/views/stats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/css/styles-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/css/styles-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/admin/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/images/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/form-tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/form-tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/l10n.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/l10n.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/rest-api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/rest-api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/submission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/acceptance.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/acceptance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/akismet.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/akismet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/checkbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/checkbox.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/number.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/number.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/recaptcha/recaptcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/recaptcha/recaptcha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/select.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/select.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/textarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/textarea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/wp-contact-form-7.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/wp-contact-form-7.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="678">
@@ -99,17 +56,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="587">
+              <caret line="134" column="8" lean-forward="true" selection-start-line="134" selection-start-column="8" selection-end-line="141" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+            <state relative-caret-position="754">
+              <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -310,10 +267,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/inc/theme-setting-style.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/responsive.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/tag.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/arhr/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php" />
       </list>
     </option>
   </component>
@@ -477,7 +434,7 @@
       <workItem from="1602047343643" duration="13000" />
       <workItem from="1602562821363" duration="332000" />
       <workItem from="1607148855233" duration="7999000" />
-      <workItem from="1607237968263" duration="8682000" />
+      <workItem from="1607237968263" duration="8822000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1601480280165</created>
@@ -511,7 +468,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342479000" />
+    <option name="totallyTimeSpent" value="342619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -823,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -844,17 +794,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="678">
           <caret line="1433" column="14" selection-start-line="1433" selection-start-column="14" selection-end-line="1433" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-kalendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="134" column="8" lean-forward="true" selection-start-line="134" selection-start-column="8" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/arhr/category-calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
         </state>
       </provider>
     </entry>
