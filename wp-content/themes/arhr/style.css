@@ -1356,6 +1356,7 @@ CATEGORY
     -moz-border-radius: 12px;
     border-radius: 12px;
     font-size: 12pt;
+    padding: 4px 16px;
 }
 
 .page-content.category .post-categories a:before {
