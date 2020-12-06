@@ -15,9 +15,7 @@
 
     <div class="top fix">
 
-        <nav class="top-menu">
-            <?php wp_nav_menu(['theme_location' => 'top', 'container_class' => 'menu-container', 'depth' => 1, 'walker' => new MenuWalker()]) ?>
-        </nav>
+        <nav class="top-menu"></nav>
 
         <nav class="languages-menu">
             <ul class="menu">

@@ -10,7 +10,7 @@
 
                 <div class="post-item">
 
-                    <?php if (has_post_thumbnail()): ?>
+                    <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
 
                         <a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
                             <?php the_post_thumbnail('medium') ?>

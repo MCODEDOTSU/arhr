@@ -20,8 +20,6 @@
     }
 
     header,
-    .page-content.category .post-item:first-child,
-    .page-content.category .post-item.main,
     .contact-form input,
     .contact-form textarea,
     .homepage .map {
@@ -206,7 +204,6 @@
 
     header .main-right .search-input,
     .contact-form .row,
-    .page-content.category .post-item:first-child,
     .page-content .border,
     .breadcrumbs,
     .page-content .member-items .member-item .member-item-close,

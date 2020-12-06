@@ -6,7 +6,7 @@
 
             <?php if (have_posts()) : the_post(); ?>
 
-                <?php if (has_post_thumbnail()): ?>
+                <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
 
                     --><a class="post-thumbnail" href="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>"
                        style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')">

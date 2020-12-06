@@ -30,7 +30,7 @@
 
             <h1><?php the_title(); ?></h1>
 
-            <?php if (has_post_thumbnail()): ?>
+            <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID()))): ?>
 
                 <a href="<?= get_the_post_thumbnail_url() ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 

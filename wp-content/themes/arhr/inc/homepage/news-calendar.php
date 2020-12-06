@@ -30,7 +30,7 @@
 
                 <article class="news-item"><!--
 
-                    <?php if (has_post_thumbnail()): ?>
+                    <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
 
                         --><a class="news-thumbnail" href="<?= get_permalink(get_the_ID()) ?>"
                            title="<?= get_the_title() ?>"

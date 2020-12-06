@@ -56,7 +56,7 @@ get_header();
 
                         <div class="post-item"><!--
 
-                            <?php if (has_post_thumbnail()): ?>
+                            <?php if (has_post_thumbnail() && !empty(get_the_post_thumbnail_url(get_the_ID(), 'medium'))): ?>
 
                              --><a class="post-thumbnail" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>')"></a><!--
 
@@ -74,7 +74,7 @@ get_header();
                                     <a href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>"><?= get_the_title() ?></a>
                                 </h3>
 
-                                <div class="post-description">
+                                <div class="post-description pc">
                                     <a class="post-title" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
                                         <?= get_the_excerpt() ?>
                                     </a>
@@ -106,6 +106,12 @@ get_header();
                                     ?>
                                 </div>
                                 
+                            </div>
+
+                            <div class="post-description mb">
+                                <a class="post-title" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
+                                    <?= get_the_excerpt() ?>
+                                </a>
                             </div>
 
                         </div>

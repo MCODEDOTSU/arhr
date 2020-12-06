@@ -83,7 +83,6 @@ class MenuWalker extends Walker_Nav_Menu
 
 function arhr_register_menu()
 {
-    register_nav_menu('top', 'Меню над шапкой сайта');
     register_nav_menu('header', 'Меню под шапкой');
 }
 
