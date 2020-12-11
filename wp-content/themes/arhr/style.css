@@ -840,6 +840,7 @@ MOBILE PANEL
     z-index: 999999;
     opacity: 0;
     visibility: hidden;
+    min-width: 320px;
 }
 
 #mobile-menu .logo {
@@ -876,7 +877,7 @@ MOBILE PANEL
     border: none;
     background: url('img/icon_burger_open.svg');
     position: absolute;
-    right: 8px;
+    right: 25px;
     top: 15px;
 }
 
@@ -905,17 +906,6 @@ MOBILE PANEL
     position: relative;
 }
 
-#mobile-menu .menu > li.menu-item-has-children > a:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -16px;
-    width: 8px;
-    height: 8px;
-    margin: -4px 0 0 0;
-    background-image: url('img/icon_arrow_menu_black.svg');
-}
-
 #mobile-menu .menu > li.menu-item-has-children > a:before {
     content: "";
     position: absolute;
@@ -924,24 +914,12 @@ MOBILE PANEL
     width: 100%;
     height: 1px;
     background: #222222;
-    opacity: 0;
+    opacity: 1;
 }
 
 #mobile-menu .sub-menu {
     overflow: hidden;
-    max-height: 0;
-}
-
-#mobile-menu .menu > li.menu-item-has-children:hover > .sub-menu {
-    max-height: 100vh;
-}
-
-#mobile-menu .menu > li.menu-item-has-children:hover > a:after {
-    transform: rotate(90deg);
-}
-
-#mobile-menu .menu > li.menu-item-has-children:hover > a:before {
-    opacity: 1;
+    margin: 0;
 }
 
 #mobile-menu .sub-menu a {
@@ -1058,56 +1036,59 @@ PAGE
 .page-content h2 {
     font-size: 20pt;
     margin: 24px 0;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .page-content h3 {
     font-size: 18pt;
     margin: 12px 0;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .page-content h4 {
-    font-size: 18pt;
+    font-size: 16pt;
     margin: 8px 0;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.page-content {
+    font-size: 14pt;
 }
 
 .page-content p,
+.page-content a,
 .page-content div {
-    font-size: 14pt;
     line-height: 1.6;
     margin: 0 0 32px;
     font-weight: 300;
 }
 
-.page-content p.little,
-.page-content div.little {
-    font-size: 14pt;
-    line-height: 1.2;
-    margin: 0 0 4px;
-    font-weight: 300;
-}
-
 .page-content a {
-    font-size: 14pt;
     line-height: 1.6;
     text-decoration: none;
     color: #3a85c0;
     font-weight: 700;
 }
 
+.page-content p.little,
+.page-content div.little {
+    line-height: 1.2;
+    margin: 0 0 4px;
+    font-weight: 300;
+}
+
 .page-content ul,
 .page-content ol {
     margin: 0 0 32px;
-    font-size: 14pt;
     line-height: 1.6;
     list-style-position: inside;
     padding: 0;
 }
 
 .page-content li {
-    font-size: 14pt;
     line-height: 1.6;
     margin: 0 0 16px;
     font-weight: 300;
@@ -1115,7 +1096,6 @@ PAGE
 
 .page-content td p,
 .page-content td div {
-    font-size: 14pt;
     line-height: 1.2;
     margin: 0 0 4px;
     font-weight: 400;
