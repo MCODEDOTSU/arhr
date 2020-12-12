@@ -25,6 +25,9 @@ input, textarea, select {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     outline: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -112,7 +115,7 @@ q {
     padding: 20px 40px;
     position: relative;
     overflow: hidden;
-    margin: 40px 0;
+    margin: 8px 0;
     background: rgba(58, 133, 192, 0.2);
 }
 
@@ -1026,7 +1029,7 @@ PAGE
 }
 
 .page-content h1 {
-    font-size: 22pt;
+    font-size: 18pt;
     line-height: 1.2;
     margin: 25px 0 38px;
     font-weight: 600;
@@ -1034,35 +1037,35 @@ PAGE
 }
 
 .page-content h2 {
-    font-size: 20pt;
-    margin: 24px 0;
+    font-size: 14pt;
+    margin: 8px 0;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .page-content h3 {
-    font-size: 18pt;
-    margin: 12px 0;
+    font-size: 14pt;
+    margin: 8px 0;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .page-content h4 {
-    font-size: 16pt;
+    font-size: 14pt;
     margin: 8px 0;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .page-content {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .page-content p,
 .page-content a,
 .page-content div {
     line-height: 1.6;
-    margin: 0 0 32px;
+    margin: 0 0 8px;
     font-weight: 300;
 }
 
@@ -1082,7 +1085,7 @@ PAGE
 
 .page-content ul,
 .page-content ol {
-    margin: 0 0 32px;
+    margin: 0 0 8px;
     line-height: 1.6;
     list-style-position: inside;
     padding: 0;
@@ -1090,8 +1093,9 @@ PAGE
 
 .page-content li {
     line-height: 1.6;
-    margin: 0 0 16px;
+    margin: 0;
     font-weight: 300;
+    font-size: 12pt;
 }
 
 .page-content td p,
@@ -1180,7 +1184,7 @@ CATEGORY
  */
 
 .page-content.category h1 {
-    font-size: 32px;
+    font-size: 18pt;
     margin: 64px 0 32px;
 }
 
@@ -1222,7 +1226,7 @@ CATEGORY
     margin: 0;
     color: inherit;
     text-transform: inherit;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 600;
 }
 
@@ -1233,28 +1237,19 @@ CATEGORY
     line-height: 1.2;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) h3.post-title,
-.page-content.category .post-item.main h3.post-title {
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 18pt;
-    line-height: 1.2;
-}
-
 .page-content.category .post-description {
     font-weight: 300;
     line-height: 1.2;
     text-transform: inherit;
     margin: 16px 0 0 0;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .page-content.category .post-description a {
     font-weight: inherit;
     color: inherit;
     padding: 0;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .page-content.category .post-item:nth-child(5n - 4) .post-description,
@@ -1275,13 +1270,6 @@ CATEGORY
     display: inline-block;
     width: 80px;
     vertical-align: middle;
-}
-
-.page-content.category .post-item:nth-child(5n - 4) .post-metadata,
-.page-content.category .post-item.main .post-metadata {
-    font-size: 13px;
-    margin: 0 0 16px;
-    line-height: 1.2;
 }
 
 .page-content.category .post-thumbnail {
@@ -1335,7 +1323,7 @@ CATEGORY
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    font-size: 12pt;
+    font-size: 10pt;
     padding: 4px 16px;
 }
 
@@ -1399,6 +1387,7 @@ CALENDAR
     font-size: 12pt;
     font-weight: 300;
     line-height: 1.2;
+    padding: 0;
 }
 
 .page-content .mcode_calendar-days_month h2 {
@@ -2575,6 +2564,7 @@ members
 
 .page-members .member-items table {
     width: 100%;
+    margin: 0;
 }
 
 .page-members .member-items table td.title {
@@ -2583,7 +2573,20 @@ members
 
 .page-members .member-items table td.contacts {
     width: 25%;
-    vertical-align: top;
+    vertical-align: middle;
+}
+
+.page-members .member-items table td.hidden {
+    display: none;
+}
+
+.page-members .member-items table tr.mb {
+    display: none;
+}
+
+.page-members .member-items table tr.mb td.contacts {
+    width: 50%;
+    text-align: center;
 }
 
 .page-members .member-items .member-item-open .title img,

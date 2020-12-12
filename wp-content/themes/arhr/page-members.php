@@ -89,7 +89,7 @@
                 <div class="member-item-open">
 
                     <table>
-                        <tr>
+                        <tr class="pc">
                             <td class="title"><!--
 
                                 <?php if (!empty($logo)) { ?>
@@ -117,6 +117,80 @@
                                 </div>
 
                             </td>
+                            <td class="contacts">
+
+                                <?php if (!empty($address)) { ?>
+                                    <span class="member-item-data">
+                                        <label class="title">
+                                            <?= __('Mailing address', 'arhr') ?>
+                                        </label>
+                                        <?= $address ?>
+                                    </span>
+                                <?php } ?>
+
+                                <?php if (!empty($site)) { ?>
+                                    <span class="member-item-data">
+                                        <label class="title">
+                                            <?= __('Web site', 'arhr') ?>
+                                        </label>
+                                        <a href="<?= $site ?>" title="<?= __('Web site', 'arhr') ?>"><?= $site ?></a>
+                                    </span>
+                                <?php } ?>
+
+                            </td>
+                            <td class="contacts">
+
+                                <?php if (!empty($phone)) { ?>
+                                    <span class="member-item-data">
+                                        <label class="title">
+                                            <?= __('Phone', 'arhr') ?>
+                                        </label>
+                                        <a href="tel:<?= $phone ?>" title="<?= __('Phone', 'arhr') ?>"><?= $phone ?></a>
+                                    </span>
+                                <?php } ?>
+
+                                <?php if (!empty($fax)) { ?>
+                                    <span class="member-item-data">
+                                        <label class="title">
+                                            <?= __('Fax', 'arhr') ?>
+                                        </label>
+                                        <a href="tel:<?= $fax ?>" title="<?= __('Fax', 'arhr') ?>"><?= $fax ?></a>
+                                    </span>
+                                <?php } ?>
+
+                            </td>
+                        </tr>
+                        <tr class="mb">
+                            <td class="title" colspan="3"><!--
+
+                                <?php if (!empty($logo)) { ?>
+                                    --><img src="<?= wp_get_attachment_image_url($logo, 'thumbnail') ?>"/><!--
+                                <?php } else { ?>
+                                    --><img src="<?= get_template_directory_uri() ?>/img/thumb-150-150.png" /><!--
+                                <?php } ?>
+
+                                --><div class="member-item-title">
+
+                                    <h3><?= $page->post_title ?></h3>
+
+                                    <?php if (!empty($director)) { ?>
+                                        <span class="member-item-director">
+                                            <?= $director ?>
+                                        </span>
+                                    <?php } ?>
+
+                                    <?php if (!empty($email)) { ?>
+                                        <span class="member-item-email">
+                                            <a class="btn btn-link" href="mailto:<?= $email ?>" title="<?= __('write a letter', 'arhr') ?>"><?= __('write a letter', 'arhr') ?></a>
+                                        </span>
+                                    <?php } ?>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr class="mb">
+                            <td class="hidden"></td>
                             <td class="contacts">
 
                                 <?php if (!empty($address)) { ?>

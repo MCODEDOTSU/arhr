@@ -329,20 +329,73 @@
     footer .footer-2 {
         margin-right: -32px;
     }
+
+    .page-members .member-items .member-item-open .title img {
+        width: 100px;
+        height: 100px;
+        margin: 0 -100px 0 0;
+    }
+
+    .page-members .member-items .member-item-open .member-item-title {
+        padding: 0 0 0 116px !important;
+    }
+
+    .page-members .member-items .member-item-open h3 {
+        font-size: 14pt;
+    }
+
+    .page-members .member-items table td.contacts {
+        padding: 8px;
+    }
+
+    .page-members .member-items .member-item-data .title {
+        font-size: 12pt;
+    }
+
+    .page-members .member-items .member-item-data {
+        font-size: 12pt;
+        margin: 0 0 8px;
+    }
+
+    .page-members .member-items a {
+        font-size: 12pt;
+        font-weight: 400;
+    }
+
+    .page-content.page-members .member-items p, .page-content.page-members .member-items div {
+        font-size: 12pt;
+    }
+
+    .page-content.page-members .member-items .btn-link {
+        font-size: 12pt;
+    }
+
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-thumbnail {
+        width: 100%;
+        margin: 0;
+        height: 180px;
+    }
+
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-data.post-has-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-data.post-has-thumbnail {
+        margin: 16px 0 0;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 820px) {
 
     .page-content h1 {
-        font-size: 18pt;
-    }
-
-    .page-content h2 {
         font-size: 16pt;
     }
 
+    .page-content h2 {
+        font-size: 12pt;
+    }
+
     .page-content h3 {
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     .page-content h4 {
@@ -373,11 +426,6 @@
         margin: 0 -250px 0 0;
     }
 
-    .page-content.category .post-item:nth-child(5n - 4) .post-metadata,
-    .page-content.category .post-item.main .post-metadata {
-        margin: 0 0 8px;
-    }
-
     .page-content.category .post-item:nth-child(5n - 4) .post-title,
     .page-content.category .post-item.main .post-title {
         margin: 0;
@@ -397,6 +445,18 @@
 
     .page-content.category .post-description.mb a {
         font-size: 13pt;
+    }
+
+    .page-content.category .post-item:nth-child(5n - 4) .post-metadata,
+    .page-content.category .post-item.main .post-metadata {
+        display: block;
+        margin: 0 0 8px;
+    }
+
+    .page-content.category .post-item:nth-child(5n - 4) .post-title,
+    .page-content.category .post-item.main .post-title {
+        padding: 0;
+        margin: 0;
     }
 
     .homepage .news-item .news-thumbnail {
@@ -496,6 +556,28 @@
         left: calc((100% - 32px) * 0.38);
     }
 
+    .page-members .members-map {
+        padding: 0;
+        margin: 0 0 32px !important;
+    }
+
+    .page-members .members-list {
+        display: block;
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .page-members .members-list li {
+        display: inline-block;
+        margin: 0 16px 16px 0 !important;
+        padding: 0 0 0 16px;
+        font-size: 12pt !important;
+    }
+
+    .page-members .members-list li:before {
+        top: 7px;
+    }
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -513,11 +595,47 @@
     .homepage .calendar-container.mb,
     .page-content .calendar-container.mb {
         display: block;
-        margin: 0 auto 32px;
+        margin: 32px auto;
     }
 
     .homepage .news-item .news-title {
         padding: 0;
+    }
+
+    .page-members .member-items table tr.pc {
+        display: none;
+    }
+
+    .page-members .member-items table tr.mb {
+        display: table-row;
+    }
+
+    .page-members .member-items .member-item-open .title img {
+        display: block;
+        margin: 0 auto 16px !important;
+    }
+
+    .page-members .member-items .member-item-open .member-item-title {
+        display: block;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .news-calendar .news-container {
+        padding: 0;
+    }
+
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-thumbnail {
+        margin: 0 -250px 0 0;
+        width: 240px;
+        height: 160px;
+    }
+
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-data.post-has-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-data.post-has-thumbnail {
+        margin: 0;
+        padding: 0 0 0 272px;
     }
 
 }
@@ -577,10 +695,6 @@
     .page-content h1 {
         margin: 32px 0;
         text-align: center;
-    }
-
-    .page-content h3 {
-        font-size: 24px;
     }
 
     .page-content table {
@@ -662,10 +776,6 @@
         width: 150px;
         height: 100px;
         margin: 0 -160px 0 0;
-    }
-
-    .page-content.category-anonsy .post-event_date {
-        font-size: 18px;
     }
 
     .arhr-advantages .arhr-advantages-item {
@@ -795,12 +905,22 @@
         padding: 16px 0 0 0;
     }
 
-    .page-content.page-members .member-items .cell {
+    .homepage .map {
+        padding: 128px 0 0;
+    }
+
+    .page-members .member-items table tr.mb {
+        display: block;
+    }
+
+    .page-members .member-items table td.title {
         width: 100%;
     }
 
-    .homepage .map {
-        padding: 128px 0 0;
+    .page-members .member-items table tr.mb td.contacts {
+        display: inline-block;
+        width: 50%;
+        margin: 0 -5px 0 0;
     }
 
 }
@@ -877,6 +997,19 @@
         padding: 0;
     }
 
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-thumbnail {
+        width: 100%;
+        margin: 0;
+        height: 180px;
+    }
+
+    .page-content.category.news-calendar .post-item:nth-child(5n - 4) .post-data.post-has-thumbnail,
+    .page-content.category.news-calendar .post-item.main .post-data.post-has-thumbnail {
+        margin: 16px 0 0;
+        padding: 0;
+    }
+
     footer .footer-1,
     footer .footer-2,
     footer .footer-3,
@@ -908,10 +1041,6 @@
 
     #mobile-menu .menu-container a {
         margin: 0 0 8px;
-    }
-
-    #mobile-menu .menu-container .sub-menu {
-        margin: 0 0 0 16px;
     }
 
 }
@@ -963,6 +1092,29 @@
         display: none;
     }
 
+    .page-members .members-map {
+        display: none;
+    }
+
+    .page-content.page-members .member-items .article {
+        margin: 8px 0;
+    }
+
+    .page-content.page-members .member-items .cell {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 0 16px 0;
+    }
+
+    .page-content.page-members .member-items .cell.align-left .btn {
+        margin: 0;
+    }
+
+    .page-members .member-items .actions {
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 390px) {
@@ -974,22 +1126,6 @@
 
     .page-content .post-thumbnail {
         height: calc((100vw - 32px) * 0.5625);
-    }
-
-    .page-content h1 {
-        font-size: 16pt;
-    }
-
-    .page-content h2 {
-        font-size: 15pt;
-    }
-
-    .page-content h3 {
-        font-size: 14pt;
-    }
-
-    .page-content h4 {
-        font-size: 12pt;
     }
 
     #mobile-panel .logo,
@@ -1007,5 +1143,39 @@
         margin: 0 0 0 8px;
         padding: 0 16px;
         width: auto;
+    }
+
+    .page-members .member-items .member-item-close img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 16px;
+        display: block;
+    }
+
+    .page-members .member-items .member-item-title {
+        padding: 0;
+    }
+
+    .page-content.page-members .member-items p,
+    .page-content.page-members .member-items div {
+        text-align: center;
+    }
+
+    .page-members .member-items h3 {
+        font-size: 12pt;
+    }
+
+    .page-members .member-items .member-item-director {
+        font-size: 12pt;
+        line-height: 1.2;
+    }
+
+    .page-content table td {
+        padding: 8px;
+    }
+
+    .page-members .member-items table tr.mb td.contacts {
+        margin: 0;
+        width: 100%;
     }
 }

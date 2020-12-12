@@ -54,7 +54,7 @@
 }
 
 .mcode_calendar-days_month .tabs .tab {
-    font-size: 14pt;
+    font-size: 12pt;
     display: inline-block;
     width: 50%;
 }
@@ -81,7 +81,19 @@
 .mcode_calendar-days_month .event-item {
     display: block;
     padding: 8px;
-    font-size: 12pt;
+    font-size: 10pt;
+}
+
+.mcode_calendar-days_month .event-item .date-start {
+    margin: 0 0 8px;
+    display: inline-block;
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+.mcode_calendar-days_month h2 {
+    font-size: 10pt;
+    font-weight: 400;
 }
 
 .mcode_calendar-days_month .event-item.today span,

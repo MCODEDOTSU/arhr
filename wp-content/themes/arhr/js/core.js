@@ -55,20 +55,12 @@
             let $sidebar = this;
 
             $sidebar.swipe({
-                swipe: (event, direction, distance, duration, fingerCount, fingerData) => {
+                swipeLeft: function(event, direction, distance, duration, fingerCount) {
                     methods.hide.apply(this, [ $sidebar ]);
                 },
                 threshold: 50,
                 fingers: 'all'
             });
-
-            // $(document).swipe({
-            //     swipeRight: (event, direction, distance, duration, fingerCount, fingerData) => {
-            //         methods.show.apply(this, [ $sidebar ]);
-            //     },
-            //     threshold: 50,
-            //     fingers: 'all'
-            // });
 
             $(options.openButtonSelector).on('click', function () {
                 methods.show.apply(this, [ $sidebar ]);

@@ -102,24 +102,24 @@ get_header();
                                     ?>
                                 </p>
 
-                                <div class="post-categories">
-                                    <?php
-                                    $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);
-                                    foreach( $categories as $category ){
-                                        if ($category->parent != $section) {
-                                            continue;
-                                        }
-                                        ?> <a href="<?= get_category_link($category->term_id) ?>" title="<?= get_cat_name($category->term_id) ?>"><?= get_cat_name($category->term_id) ?></a> <?php
-                                    }
-                                    ?>
-                                </div>
-
                             </div>
 
                             <div class="post-description mb">
                                 <a class="post-title" href="<?= get_permalink(get_the_ID()) ?>" title="<?= get_the_title() ?>">
                                     <?= get_the_excerpt() ?>
                                 </a>
+                            </div>
+
+                            <div class="post-categories">
+                                <?php
+                                $categories = wp_get_post_categories(get_the_ID(), [ 'fields' => 'all' ]);
+                                foreach( $categories as $category ){
+                                    if ($category->parent != $section) {
+                                        continue;
+                                    }
+                                    ?> <a href="<?= get_category_link($category->term_id) ?>" title="<?= get_cat_name($category->term_id) ?>"><?= get_cat_name($category->term_id) ?></a> <?php
+                                }
+                                ?>
                             </div>
 
                         </div>
