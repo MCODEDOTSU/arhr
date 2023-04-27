@@ -219,4 +219,42 @@
         border-color: <?= get_theme_mod('color_5', '#bbbbbb') ?>;
     }
 
+    <?php
+        $frequency = (int)get_theme_mod('thumbnail_frequency', 1);
+        if (empty($frequency)) {
+            return;
+        }
+        $nthChild = 'nth-child(' . $frequency . 'n - ' . ($frequency - 1) . ')';
+    ?>
+
+    .page-content.category .post-item:<?= $nthChild ?> {
+        margin: 0 0 32px;
+        padding: 24px;
+        background: #effaff;
+    }
+    .page-content.category .post-item:<?= $nthChild ?> .post-data {
+        min-height: 150px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        line-height: 1.2;
+    }
+    .page-content.category .post-item:<?= $nthChild ?> .post-description {
+        display: block;
+    }
+    .page-content.category .post-item:<?= $nthChild ?> .post-description.mb {
+        display: none;
+    }
+    .page-content.category .post-item:<?= $nthChild ?> .post-thumbnail {
+        display: inline-block;
+    }
+    .page-content.category .post-item:<?= $nthChild ?> .post-data.post-has-thumbnail {
+        padding: 0 0 0 272px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
 </style>

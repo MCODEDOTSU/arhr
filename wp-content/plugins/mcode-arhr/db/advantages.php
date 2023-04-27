@@ -10,7 +10,7 @@ function arhr_advantages_get($lang = '') {
     $languages = pll_languages_list();
     $lang = in_array($lang, $languages) ? $lang : '';
     $sql = empty($lang) ? "SELECT * FROM " . $wpdb->arhr_advantages :
-        "SELECT * FROM " . $wpdb->arhr_advantages . " WHERE lang = '$lang'";
+        "SELECT * FROM " . $wpdb->arhr_advantages . " WHERE lang = '$lang' AND is_published = TRUE";
     return $wpdb->get_results($sql, ARRAY_A);
 }
 
@@ -77,3 +77,37 @@ function arhr_advantages_delete()
     wp_die();
 }
 add_action('wp_ajax_arhr_advantages_delete', 'arhr_advantages_delete');
+
+/**
+ * Активировать преимущесто
+ */
+function arhr_advantages_activate()
+{
+    global $wpdb;
+    $id = (int)$_POST['id'];
+    if($wpdb->update( $wpdb->arhr_advantages, ['is_published' => true], [ 'id' => $id ]) === false ) {
+        $result = [ 'status' => 'error', 'result' => $wpdb->last_error  ];
+    } else {
+        $result = [ 'status' => 'success', 'result' => $id ];
+    }
+    echo json_encode($result);
+    wp_die();
+}
+add_action('wp_ajax_arhr_advantages_activate', 'arhr_advantages_activate');
+
+/**
+ * Деактивировать преимущесто
+ */
+function arhr_advantages_deactivate()
+{
+    global $wpdb;
+    $id = (int)$_POST['id'];
+    if($wpdb->update( $wpdb->arhr_advantages, ['is_published' => false], [ 'id' => $id ]) === false ) {
+        $result = [ 'status' => 'error', 'result' => $wpdb->last_error  ];
+    } else {
+        $result = [ 'status' => 'success', 'result' => $id ];
+    }
+    echo json_encode($result);
+    wp_die();
+}
+add_action('wp_ajax_arhr_advantages_deactivate', 'arhr_advantages_deactivate');

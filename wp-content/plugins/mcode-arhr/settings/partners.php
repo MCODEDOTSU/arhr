@@ -17,6 +17,7 @@
             <th class="manage-column column-cb">Наименование</th>
             <th class="manage-column column-title column-primary">Описание</th>
             <th class="manage-column column-title">Язык</th>
+            <th class="manage-column column-title"></th>
         </tr>
         </thead>
 
@@ -35,6 +36,13 @@
                 </td>
                 <td class="title column-title"><?= $partner['description'] ?></td>
                 <td class="title column-title"><?= $partner['lang'] ?></td>
+                <td class="title column-title">
+                    <?php if ($partner['is_published']): ?>
+                        <span class="deactivate"><a data-id="<?= $partner['id'] ?>" href="#deactivate" aria-label="Деактивировать «<?= $partner['name'] ?>»">Деактивировать</a></span>
+                    <?php else: ?>
+                        <span class="activate"><a data-id="<?= $partner['id'] ?>" href="#activate" aria-label="Активировать «<?= $partner['name'] ?>»">Активировать</a></span>
+                    <?php endif; ?>
+                </td>
 
             </tr>
 

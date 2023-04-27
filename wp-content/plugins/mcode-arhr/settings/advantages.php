@@ -17,6 +17,7 @@
             <th class="manage-column column-cb">Наименование</th>
             <th class="manage-column column-title column-primary">Описание</th>
             <th class="manage-column column-title">Язык</th>
+            <th class="manage-column column-title"></th>
         </tr>
         </thead>
 
@@ -35,6 +36,13 @@
                 </td>
                 <td class="title column-title"><?= $advantage['description'] ?></td>
                 <td class="title column-title"><?= $advantage['lang'] ?></td>
+                <td class="title column-title">
+                    <?php if ($advantage['is_published']): ?>
+                        <span class="deactivate"><a data-id="<?= $advantage['id'] ?>" href="#deactivate" aria-label="Деактивировать «<?= $advantage['name'] ?>»">Деактивировать</a></span>
+                    <?php else: ?>
+                        <span class="activate"><a data-id="<?= $advantage['id'] ?>" href="#activate" aria-label="Активировать «<?= $advantage['name'] ?>»">Активировать</a></span>
+                    <?php endif; ?>
+                </td>
 
             </tr>
 

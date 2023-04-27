@@ -47,6 +47,18 @@
             event.preventDefault();
         });
 
+        // Активировать
+        $('.mcode-arhr .activate a').on('click', function (event) {
+            activateItem($(`#item-dialog-${$(this).data('id')}`), $(this).parents('tr.short-item-data'));
+            event.preventDefault();
+        });
+
+        // Деактивировать
+        $('.mcode-arhr .deactivate a').on('click', function (event) {
+            deactivateItem($(`#item-dialog-${$(this).data('id')}`), $(this).parents('tr.short-item-data'));
+            event.preventDefault();
+        });
+
     });
 
     /**
@@ -121,6 +133,64 @@
         }
 
 
+    }
+
+    /**
+     * Активировать
+     *
+     * @param $parent
+     * @param $tr
+     */
+    function activateItem($parent, $tr)
+    {
+        const table = $('.mcode-arhr input[name="table"]').val();
+
+        const data = {
+            id: $('input[name="id"]', $parent).val(),
+            action: `arhr_${table}_activate`,
+        };
+
+        $.post(
+            ajaxurl, data,
+            function (result) {
+                if (result['status'] === 'error') {
+                    $('.mcode-arhr .notice.error p').html(`Ошибка: ${result['result']}`);
+                    $('.mcode-arhr .notice.error').show(300);
+                    setTimeout(function () { $('.mcode-arhr .notice').hide(300) }, 3000);
+                } else {
+                    document.location.reload(true);
+                }
+            }, 'json'
+        );
+    }
+
+    /**
+     * Деактивировать
+     *
+     * @param $parent
+     * @param $tr
+     */
+    function deactivateItem($parent, $tr)
+    {
+        const table = $('.mcode-arhr input[name="table"]').val();
+
+        const data = {
+            id: $('input[name="id"]', $parent).val(),
+            action: `arhr_${table}_deactivate`,
+        };
+
+        $.post(
+            ajaxurl, data,
+            function (result) {
+                if (result['status'] === 'error') {
+                    $('.mcode-arhr .notice.error p').html(`Ошибка: ${result['result']}`);
+                    $('.mcode-arhr .notice.error').show(300);
+                    setTimeout(function () { $('.mcode-arhr .notice').hide(300) }, 3000);
+                } else {
+                    document.location.reload(true);
+                }
+            }, 'json'
+        );
     }
 
     function addItemDialog()

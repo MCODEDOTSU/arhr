@@ -203,6 +203,24 @@ function _theme_setting($wp_customize)
 
     #endregion
 
+    $wp_customize->add_section(
+        'news_section',
+        [
+            'title' => 'Список новостей',
+            'description' => 'Список новостей',
+            'priority' => 11,
+        ]
+    );
+
+    /* Max Width */
+    $wp_customize->add_setting(
+        'thumbnail_frequency'
+    );
+    $wp_customize->add_control(
+        'thumbnail_frequency',
+        ['label' => 'Частота фото в списке новостей', 'section' => 'news_section', 'type' => 'number', 'default' => 5, 'input_attrs' => ['min' => 0, 'step' => 1, 'max' => 5]]
+    );
+
 }
 
 add_action('customize_register', '_theme_setting');

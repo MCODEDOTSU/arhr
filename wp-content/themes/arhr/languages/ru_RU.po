@@ -149,8 +149,8 @@ msgid "ARHR"
 msgstr "АРХР"
 
 #. Author of the theme
-msgid "Elena Brykova"
-msgstr "Брыкова Елена"
+msgid "Elena Polukova"
+msgstr "Полукова Елена"
 
 #. Author URI of the theme
 msgid "http://mcode.su/"

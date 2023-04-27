@@ -1,22 +1,23 @@
 <?php
 /*
 	Plugin Name: ARHR by MCODE
-	Author: Brykova Aliona (e.sirotkina@mcode.su)
+	Author: Polukova Elena (info@mcode.su)
 	Author URI: https://mcode.su/
 */
 
 global $wpdb;
 $wpdb->arhr_experts = $wpdb->prefix . 'arhr_experts';
 global $arhr_experts_version;
-$arhr_experts_version = '1.2';
+$arhr_experts_version = '1.3';
 $wpdb->arhr_partners = $wpdb->prefix . 'arhr_partners';
 global $arhr_partners_version;
-$arhr_partners_version = '1.2';
+$arhr_partners_version = '1.3';
 $wpdb->arhr_advantages = $wpdb->prefix . 'arhr_advantages';
 global $arhr_advantages_version;
-$arhr_advantages_version = '1.2';
+$arhr_advantages_version = '1.3';
 
-function mcode_arhr_install() {
+function mcode_arhr_install()
+{
 
     global $wpdb;
     global $arhr_experts_version;
@@ -25,18 +26,16 @@ function mcode_arhr_install() {
 
     $charset = "DEFAULT CHARACTER SET {$wpdb->charset} COLLATE {$wpdb->collate}";
 
-    if(@is_file(ABSPATH.'/wp-admin/includes/upgrade.php')) {
-        include_once(ABSPATH.'/wp-admin/includes/upgrade.php');
-    } elseif(@is_file(ABSPATH.'/wp-admin/upgrade-functions.php')) {
-        include_once(ABSPATH.'/wp-admin/upgrade-functions.php');
+    if (@is_file(ABSPATH . '/wp-admin/includes/upgrade.php')) {
+        include_once(ABSPATH . '/wp-admin/includes/upgrade.php');
+    } elseif (@is_file(ABSPATH . '/wp-admin/upgrade-functions.php')) {
+        include_once(ABSPATH . '/wp-admin/upgrade-functions.php');
     } else {
         die('We have problem finding your \'/wp-admin/upgrade-functions.php\' and \'/wp-admin/includes/upgrade.php\'');
     }
 
     // EXPERTS
-    if($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_experts}'") != $wpdb->arhr_experts) {
-
-        $sql = 	"CREATE TABLE {$wpdb->arhr_experts} (
+    $sql = "CREATE TABLE {$wpdb->arhr_experts} (
 				id INT NOT NULL auto_increment,
 				firstname VARCHAR(255) NOT NULL,
 				lastname VARCHAR(255) NOT NULL,
@@ -45,54 +44,66 @@ function mcode_arhr_install() {
 				description TEXT,
 				photo INT,
 				lang VARCHAR(5),
+				is_published BOOL DEFAULT(TRUE),
 				PRIMARY KEY (id)
 				)
 				$charset;";
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
 
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql);
+    if ($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_experts}'") != $wpdb->arhr_experts) {
         add_option("arhr_experts_version", $arhr_experts_version);
+    } elseif (get_option("arhr_experts_version") === '1.2') {
+        update_option("arhr_experts_version", $arhr_experts_version);
     }
 
     // PARTNERS
-    if($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_partners}'") != $wpdb->arhr_partners) {
 
-        $sql = 	"CREATE TABLE {$wpdb->arhr_partners} (
+    $sql = "CREATE TABLE {$wpdb->arhr_partners} (
 				id INT NOT NULL AUTO_INCREMENT,
 				name VARCHAR(255) NOT NULL,
 				url VARCHAR(255),
 				description TEXT,
 				image INT,
 				lang VARCHAR(5),
+				is_published BOOL DEFAULT(TRUE),
 				PRIMARY KEY (id)
 				)
 				$charset;";
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
 
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql);
+    if ($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_partners}'") != $wpdb->arhr_partners) {
         add_option("arhr_partners_version", $arhr_partners_version);
+    } elseif (get_option("arhr_partners_version") === '1.2') {
+        update_option("arhr_partners_version", $arhr_partners_version);
     }
 
     // ADVANTAGES
-    if($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_advantages}'") != $wpdb->arhr_advantages) {
 
-        $sql = 	"CREATE TABLE {$wpdb->arhr_advantages} (
+    $sql = "CREATE TABLE {$wpdb->arhr_advantages} (
 				id INT NOT NULL AUTO_INCREMENT,
 				name VARCHAR(255) NOT NULL,
 				description TEXT,
 				image INT,
 				svg TEXT,
 				lang VARCHAR(5),
+				is_published BOOL DEFAULT(TRUE),
 				PRIMARY KEY (id)
 				)
 				$charset;";
 
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql);
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
+
+    if ($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->arhr_advantages}'") != $wpdb->arhr_advantages) {
         add_option("arhr_advantages_version", $arhr_advantages_version);
+    } elseif (get_option("arhr_advantages_version") === '1.2') {
+        update_option("arhr_advantages_version", $arhr_advantages_version);
     }
 
 }
+
 register_activation_hook(__FILE__, 'mcode_arhr_install');
 
 if (is_admin()) {

@@ -17,6 +17,7 @@
             <th class="manage-column column-cb">ФИО</th>
             <th class="manage-column column-title column-primary">Должность</th>
             <th class="manage-column column-title">Язык</th>
+            <th class="manage-column column-title"></th>
         </tr>
         </thead>
 
@@ -35,6 +36,13 @@
                 </td>
                 <td class="title column-title"><?= $expert['post'] ?></td>
                 <td class="title column-title"><?= $expert['lang'] ?></td>
+                <td class="title column-title">
+                    <?php if ($expert['is_published']): ?>
+                        <span class="deactivate"><a data-id="<?= $expert['id'] ?>" href="#deactivate" aria-label="Деактивировать «<?= $expert['lastname'] ?> <?= $expert['firstname'] ?> <?= $expert['middlename'] ?>»">Деактивировать</a></span>
+                    <?php else: ?>
+                        <span class="activate"><a data-id="<?= $expert['id'] ?>" href="#activate" aria-label="Активировать «<?= $expert['lastname'] ?> <?= $expert['firstname'] ?> <?= $expert['middlename'] ?>»">Активировать</a></span>
+                    <?php endif; ?>
+                </td>
 
             </tr>
 

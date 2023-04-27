@@ -10,7 +10,7 @@ function arhr_partners_get($lang = '') {
     $languages = pll_languages_list();
     $lang = in_array($lang, $languages) ? $lang : '';
     $sql = empty($lang) ? "SELECT * FROM " . $wpdb->arhr_partners :
-        "SELECT * FROM " . $wpdb->arhr_partners . " WHERE lang = '$lang'";
+        "SELECT * FROM " . $wpdb->arhr_partners . " WHERE lang = '$lang' AND is_published = TRUE";
     return $wpdb->get_results($sql, ARRAY_A);
 }
 
@@ -77,3 +77,37 @@ function arhr_partners_delete()
     wp_die();
 }
 add_action('wp_ajax_arhr_partners_delete', 'arhr_partners_delete');
+
+/**
+ * Активировать преимущесто
+ */
+function arhr_partners_activate()
+{
+    global $wpdb;
+    $id = (int)$_POST['id'];
+    if($wpdb->update( $wpdb->arhr_partners, ['is_published' => true], [ 'id' => $id ]) === false ) {
+        $result = [ 'status' => 'error', 'result' => $wpdb->last_error  ];
+    } else {
+        $result = [ 'status' => 'success', 'result' => $id ];
+    }
+    echo json_encode($result);
+    wp_die();
+}
+add_action('wp_ajax_arhr_partners_activate', 'arhr_partners_activate');
+
+/**
+ * Деактивировать преимущесто
+ */
+function arhr_partners_deactivate()
+{
+    global $wpdb;
+    $id = (int)$_POST['id'];
+    if($wpdb->update( $wpdb->arhr_partners, ['is_published' => false], [ 'id' => $id ]) === false ) {
+        $result = [ 'status' => 'error', 'result' => $wpdb->last_error  ];
+    } else {
+        $result = [ 'status' => 'success', 'result' => $id ];
+    }
+    echo json_encode($result);
+    wp_die();
+}
+add_action('wp_ajax_arhr_partners_deactivate', 'arhr_partners_deactivate');

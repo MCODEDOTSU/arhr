@@ -1,6 +1,6 @@
 /*
     Theme Name: ARHR
-    Author: Elena Brykova
+    Author: Elena Polukova
     Author URI: http://mcode.su/
     Version: 1.0.1
 */
@@ -1044,7 +1044,7 @@ PAGE
 
 .page-content h2 {
     font-size: 14pt;
-    margin: 8px 0;
+    margin: 32px 0 8px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -1198,7 +1198,6 @@ CATEGORY
     margin: 0 0 32px;
 }
 
-.page-content.category .post-item:nth-child(5n - 4),
 .page-content.category .post-item.main {
     margin: 0 0 32px;
     padding: 24px;
@@ -1210,7 +1209,6 @@ CATEGORY
     text-decoration: none;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) .post-data,
 .page-content.category .post-item.main .post-data {
     min-height: 150px;
     position: relative;
@@ -1258,12 +1256,10 @@ CATEGORY
     font-size: 12pt;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) .post-description,
 .page-content.category .post-item.main .post-description {
     display: block;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) .post-description.mb,
 .page-content.category .post-item.main .post-description.mb,
 .page-content.category .post-description.mb {
     display: none;
@@ -1286,7 +1282,6 @@ CATEGORY
     height: 160px;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) .post-thumbnail,
 .page-content.category .post-item.main .post-thumbnail {
     display: inline-block;
 }
@@ -1296,22 +1291,12 @@ CATEGORY
     height: auto;
 }
 
-.page-content.category .post-item:nth-child(5n - 4) .post-data.post-has-thumbnail,
 .page-content.category .post-item.main .post-data.post-has-thumbnail {
     padding: 0 0 0 272px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-}
-
-.page-content.category p {
-    font-size: 18pt;
-    font-weight: 300;
-}
-
-.page-content.category a {
-    font-size: 18pt;
 }
 
 .page-content.category .post-categories {
