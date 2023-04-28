@@ -2273,7 +2273,7 @@ arhr-experts
 }
 
 .arhr-experts .arhr-experts-item img {
-    width: 200px;
+    width: auto;
     height: 200px;
     display: block;
     margin: 0 auto;
