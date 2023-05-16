@@ -85,6 +85,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    font-size: 90%;
 }
 
 caption,
@@ -92,6 +93,19 @@ th,
 td {
     font-weight: normal;
     text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+table tr:nth-child(2n - 1) {
+    background: #fafafa;
+}
+
+table th, table td {
+    padding: 8px;
+    vertical-align: middle;
 }
 
 fieldset {
