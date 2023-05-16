@@ -15,7 +15,7 @@
                     <div class="container animate">
 
                         <?php if (!empty($expert['photo'])): ?>
-                            <img src="<?= wp_get_attachment_image_src($expert['photo'], 'thumbnail')[0] ?>"
+                            <img src="<?= wp_get_attachment_url($expert['photo']) ?>"
                                  alt="<?= $expert['lastname'] ?> <?= $expert['firstname'] ?> <?= $expert['middlename'] ?>" />
                         <?php else: ?>
                             <img src="<?= get_template_directory_uri() . '/img/thumb-150-150.png' ?>"

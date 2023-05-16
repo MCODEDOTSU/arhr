@@ -29,7 +29,7 @@
                             <?php endif ?>
 
                                 <?php if (!empty($partner['image'])): ?>
-                                    --><img src="<?= wp_get_attachment_image_src($partner['image'], 'thumbnail')[0] ?>"
+                                    --><img src="<?= wp_get_attachment_url($partner['image']) ?>"
                                          alt="<?= $partner['name'] ?>" /><!--
                                 <?php else: ?>
                                     --><img src="<?= get_template_directory_uri() . '/img/thumb-150-150.png' ?>"
