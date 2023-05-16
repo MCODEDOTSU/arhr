@@ -20,6 +20,7 @@
 
     table thead tr,
     table thead tr:nth-child(2n - 1) {
+        color: <?= get_theme_mod('color_2', '#ffffff') ?>;
         background: <?= get_theme_mod('color_4', '#222222') ?>;
     }
 
