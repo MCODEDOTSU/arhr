@@ -14,6 +14,15 @@
         background-image: url('<?= $back ?>');
     }
 
+    table tr:nth-child(2n - 1) {
+        background: <?= get_theme_mod('color_1', '#fafafa') ?>;
+    }
+
+    table thead tr,
+    table thead tr:nth-child(2n - 1) {
+        background: <?= get_theme_mod('color_4', '#222222') ?>;
+    }
+
     .homepage .map {
         <?php $back = get_theme_mod('map_back_image', '') == '' ? get_template_directory_uri() . "/img/back.png" : get_theme_mod('map_back_image', ''); ?>
         background-image: url('<?= $back ?>');

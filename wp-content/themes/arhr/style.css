@@ -99,10 +99,6 @@ th {
     font-weight: bold;
 }
 
-table tr:nth-child(2n - 1) {
-    background: #fafafa;
-}
-
 table th, table td {
     padding: 8px;
     vertical-align: middle;
