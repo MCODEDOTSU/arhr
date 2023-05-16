@@ -1150,7 +1150,8 @@ PAGE
     margin: 0 -16px;
 }
 
-.page-content table td {
+.page-content table td,
+.page-content table th {
     padding: 16px;
     vertical-align: middle;
 }
